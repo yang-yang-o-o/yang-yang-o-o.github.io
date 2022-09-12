@@ -3,7 +3,7 @@ title: Yang yang
 # bio: A Person who travels the world eating noodles
 
 # twitter summary info
-description: A blog about technology and stuff related
+# description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
 # better with square images
@@ -20,7 +20,7 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://yang-yang-o-o.github.io
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
