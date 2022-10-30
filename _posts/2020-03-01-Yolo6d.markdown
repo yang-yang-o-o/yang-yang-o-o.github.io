@@ -1,0 +1,44 @@
+---
+title: "6D object pose estimation based on YOLO6d"
+layout: post
+date: 2020-03-01 --:--
+tag: 6D pose
+image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
+headerImage: false
+projects: true
+hidden: true # don't count this post in blog pagination
+description: "This is a simple and minimalist template for Jekyll for those who likes to eat noodles."
+category: project
+author: yang yang
+externalLink: false
+---
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SHocQxS0PCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+&emsp;&emsp;The video above demonstrates yolo6d-based 6D pose estimation, where the projection of the 3D bbox is shown in green.
+<!-- Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. -->
+
+---
+
+<!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+
+--- -->
+
+### Key-inside
+
+- YOLO
+- EPnP algorithm
+- Opencv
+- Aruco
+- Pinhole camera model
+- Rigid Object 6D pose description
+
+---
+
+### Reference
+
+* #### Yolo6D: [paper](https://openaccess.thecvf.com/content_cvpr_2018/papers/Tekin_Real-Time_Seamless_Single_CVPR_2018_paper.pdf), [source code](https://github.com/microsoft/singleshotpose)
+
+<!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
+If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->

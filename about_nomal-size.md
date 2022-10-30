@@ -12,16 +12,16 @@ layout: page
 
 ## Experiences
 
-* ### SenseTime &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; 2022.6 - Present
+* ### SenseTime &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; 2022.6 - Present
 
 <p style="text-indent: 3em;"><strong><font size="4">Perceptual Algorithm Engineering - Automatic Drive
 </font></strong></p>
 
-* ### Chongqing University &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&thinsp; 2019.9 - 2022.6
+* ### Chongqing University &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2019.9 - 2022.6
 
 <p style="text-indent: 3em;"><strong>M.S in Mechatronic Engineering</strong></p>
 
-* ### Fuzhou University &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&thinsp;&thinsp; 2015.9 - 2019.6
+* ### Fuzhou University &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&thinsp; 2015.9 - 2019.6
 
 <p style="text-indent: 3em;"><strong>B.S in Mechanical Engineering</strong></p>
 
@@ -57,20 +57,18 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
 <h2>Skills</h2>
 
 <ul class="Skills-list">
- <li><strong>Monocular / Binocular stereo vision</strong></li>
- <li><strong>VSLAM</strong></li>
- <li><strong>C++</strong></li>
- <li><strong>Python</strong></li>
- <li><strong>Deep Learning (Monocular 6D pose estimation, 2D/3D object Detection)</strong></li>
- <li><strong>Image processing</strong></li>
- <li><strong>Linux</strong></li>
+ <li>Monocular / Binocular stereo vision</li>
+ <li>VSLAM</li>
+ <li>C++</li>
+ <li>Python</li>
+ <li>Deep Learning (Monocular 6D pose estimation, 2D/3D object Detection)</li>
+ <li>Image processing</li>
+ <li>Linux</li>
 </ul>
 
 ---
 
 <h2>Contacts</h2>
-<!-- * ### Email: yang-yang@cqu.edu.cn -->
-<!-- * ### Phone: (+86) 13308362646 -->
 <ul class="Contacts-list">
  <li><strong><font size="4">Email: yang-yang@cqu.edu.cn</font></strong></li>
  <li><strong><font size="4">Phone: (+86) 13308362646</font></strong></li>
