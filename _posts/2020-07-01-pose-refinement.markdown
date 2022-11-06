@@ -35,7 +35,11 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 <object data="Figure_21.pdf"
  type="application/pdf" width="800px" height="2400px"></object> -->
 
-![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/james.jpg?raw=true)
+![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/Figure_21.jpg)
+<figcaption class="caption">Fig. 1. Pose refinement visualization on test data.</figcaption>
+
+#### &emsp;&emsp;The Fig.1 shows the Pose refinement visualization of our method, where the refined and Ground-Truth 3D Bounding Box are shown in blue and green, respectively.
+
 
 ---
 <!-- What has inside?
