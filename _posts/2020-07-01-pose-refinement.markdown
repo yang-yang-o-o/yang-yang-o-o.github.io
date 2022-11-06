@@ -19,7 +19,7 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 ### 1. Video Demo
 <iframe src="https://player.bilibili.com/player.html?aid=689871603&bvid=BV1o24y1f7NQ&cid=883264732&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" high_quality="1"></iframe>
 
-#### &emsp;&emsp;&emsp;&emsp; link: [A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation](https://www.bilibili.com/video/BV1o24y1f7NQ/?share_source=copy_web&vd_source=926e5fb00a879a3a9c35633c5af54c69)
+#### &emsp;&emsp;&emsp;&emsp; Link: [A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation](https://www.bilibili.com/video/BV1o24y1f7NQ/?share_source=copy_web&vd_source=926e5fb00a879a3a9c35633c5af54c69)
 
 
 #### &emsp;&emsp;The above video shows the test results of our pose refinement method in the test environment and the open environment, where the initial, refined and Ground-Truth 3D Bounding Box are shown in orange, blue and green, respectively.
@@ -40,6 +40,18 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 #### &emsp;&emsp;The Fig.1 shows the Pose refinement visualization of our method, where the refined and Ground-Truth 3D Bounding Box are shown in blue and green, respectively.
 
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/111.png?raw=true" width = "60%" height = "60%"/>
+</center>
+
+<!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/111.png?raw=true){: class="center-image" } -->
+<figcaption class="caption">Fig. 2. Robotic manipulation platform of Eye-in-Hand.</figcaption>
+
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/Figure_12.jpg?raw=true)
+<figcaption class="caption">Fig. 3. The pose estimation results visualization of Eye-in-Hand.</figcaption>
+
+#### &emsp;&emsp;As shown in Fig. 3, we fix the relative pose between the calibration board and the object to evaluate the pose refinement accuracy under various camera view-points.
 
 ---
 <!-- What has inside?
@@ -52,10 +64,10 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 - [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F) -->
 ### 3. Key-inside
 
-- YOLO
-- EPnP algorithm
+- Siamese neural network
+- Image patch matching
+- PnP algorithm
 - Opencv
-- Aruco
 - Pinhole camera model
 - Rigid Object 6D pose description
 
@@ -63,8 +75,9 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 <!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
 If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->
-### 4. Reference
+### 4. Paper
 
-* #### Yolo6D: [paper](https://openaccess.thecvf.com/content_cvpr_2018/papers/Tekin_Real-Time_Seamless_Single_CVPR_2018_paper.pdf), [source code](https://github.com/microsoft/singleshotpose)
+* #### [A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation](https://pan.baidu.com/s/1se1wJLHhyGKLw54SS35zAQ), password: yang
+* #### code come soon.
 
 ---
