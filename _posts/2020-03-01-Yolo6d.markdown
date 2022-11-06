@@ -16,7 +16,7 @@ externalLink: false
 <!-- <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SHocQxS0PCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p> -->
-
+### 1. Video Demo
 <iframe src="//player.bilibili.com/player.html?bvid=BV1He4y1x7du&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 
 &emsp;&emsp;The video above demonstrates yolo6d-based 6D pose estimation, where the projection of the 3D bbox is shown in green.
@@ -28,7 +28,7 @@ externalLink: false
 
 --- -->
 
-### Key-inside
+### 2. Key-inside
 
 - YOLO
 - EPnP algorithm
@@ -39,9 +39,11 @@ externalLink: false
 
 ---
 
-### Reference
+### 3. Reference
 
 * #### Yolo6D: [paper](https://openaccess.thecvf.com/content_cvpr_2018/papers/Tekin_Real-Time_Seamless_Single_CVPR_2018_paper.pdf), [source code](https://github.com/microsoft/singleshotpose)
 
 <!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
 If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->
+
+---

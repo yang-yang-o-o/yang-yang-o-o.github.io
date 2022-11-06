@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-06T11:11:44+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-06T20:28:43+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;
 
@@ -20,8 +20,27 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;
 
-&lt;hr /&gt;
+&lt;h3 id=&quot;1-video-demo&quot;&gt;1. Video Demo&lt;/h3&gt;
+&lt;iframe src=&quot;https://player.bilibili.com/player.html?aid=689871603&amp;amp;bvid=BV1o24y1f7NQ&amp;amp;cid=883264732&amp;amp;page=1&amp;amp;high_quality=1&amp;amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot; high_quality=&quot;1&quot;&gt;&lt;/iframe&gt;
 
+&lt;h4 id=&quot;-link-a-patch-based-real-time-6d-object-pose-refinement-method-for-robotic-manipulation&quot;&gt;     link: &lt;a href=&quot;https://www.bilibili.com/video/BV1o24y1f7NQ/?share_source=copy_web&amp;amp;vd_source=926e5fb00a879a3a9c35633c5af54c69&quot;&gt;A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation&lt;/a&gt;&lt;/h4&gt;
+
+&lt;h4 id=&quot;the-above-video-shows-the-test-results-of-our-pose-refinement-method-in-the-test-environment-and-the-open-environment-where-the-initial-refined-and-ground-truth-3d-bounding-box-are-shown-in-orange-blue-and-green-respectively&quot;&gt;  The above video shows the test results of our pose refinement method in the test environment and the open environment, where the initial, refined and Ground-Truth 3D Bounding Box are shown in orange, blue and green, respectively.&lt;/h4&gt;
+&lt;hr /&gt;
+&lt;h3 id=&quot;2-image-demo&quot;&gt;2. Image Demo&lt;/h3&gt;
+
+&lt;!-- &lt;embed src=&quot;Figure_21.pdf&quot;
+ type=&quot;application/pdf&quot;  width=&quot;800px&quot; height=&quot;2400px&quot;&gt;
+
+&lt;iframe src=&quot;Figure_21.pdf&quot;
+ width=&quot;800px&quot; height=&quot;2400px&quot;&gt;&lt;/iframe&gt;
+
+&lt;object data=&quot;Figure_21.pdf&quot;
+ type=&quot;application/pdf&quot; width=&quot;800px&quot; height=&quot;2400px&quot;&gt;&lt;/object&gt; --&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/james.jpg?raw=true&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 &lt;!-- What has inside?
 
 - Gulp
@@ -30,26 +49,7 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 - SVG
 - No JS
 - [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F) --&gt;
-
-&lt;hr /&gt;
-
-&lt;!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). --&gt;</content><author><name>yang yang</name></author><category term="project" /><category term="6D pose" /><summary type="html">&amp;lt;!–</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" /><media:content medium="image" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">6D object pose estimation based on YOLO6d</title><link href="http://localhost:4000/Yolo6d/" rel="alternate" type="text/html" title="6D object pose estimation based on YOLO6d" /><published>2020-03-01T00:00:00+08:00</published><updated>2020-03-01T00:00:00+08:00</updated><id>http://localhost:4000/Yolo6d</id><content type="html" xml:base="http://localhost:4000/Yolo6d/">&lt;!-- &lt;p align=&quot;center&quot;&gt;
-&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/SHocQxS0PCc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/p&gt; --&gt;
-
-&lt;iframe src=&quot;//player.bilibili.com/player.html?bvid=BV1He4y1x7du&amp;amp;page=1&amp;amp;high_quality=1&amp;amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;  The video above demonstrates yolo6d-based 6D pose estimation, where the projection of the 3D bbox is shown in green.
-&lt;!-- Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
-
---- --&gt;
-
-&lt;h3 id=&quot;key-inside&quot;&gt;Key-inside&lt;/h3&gt;
+&lt;h3 id=&quot;3-key-inside&quot;&gt;3. Key-inside&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;YOLO&lt;/li&gt;
@@ -62,7 +62,45 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;reference&quot;&gt;Reference&lt;/h3&gt;
+&lt;!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
+If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). --&gt;
+&lt;h3 id=&quot;4-reference&quot;&gt;4. Reference&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;yolo6d-paper-source-code&quot;&gt;Yolo6D: &lt;a href=&quot;https://openaccess.thecvf.com/content_cvpr_2018/papers/Tekin_Real-Time_Seamless_Single_CVPR_2018_paper.pdf&quot;&gt;paper&lt;/a&gt;, &lt;a href=&quot;https://github.com/microsoft/singleshotpose&quot;&gt;source code&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;</content><author><name>yang yang</name></author><category term="project" /><category term="6D pose" /><summary type="html">&amp;lt;!–</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" /><media:content medium="image" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">6D object pose estimation based on YOLO6d</title><link href="http://localhost:4000/Yolo6d/" rel="alternate" type="text/html" title="6D object pose estimation based on YOLO6d" /><published>2020-03-01T00:00:00+08:00</published><updated>2020-03-01T00:00:00+08:00</updated><id>http://localhost:4000/Yolo6d</id><content type="html" xml:base="http://localhost:4000/Yolo6d/">&lt;!-- &lt;p align=&quot;center&quot;&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/SHocQxS0PCc&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt; --&gt;
+&lt;h3 id=&quot;1-video-demo&quot;&gt;1. Video Demo&lt;/h3&gt;
+&lt;iframe src=&quot;//player.bilibili.com/player.html?bvid=BV1He4y1x7du&amp;amp;page=1&amp;amp;high_quality=1&amp;amp;danmaku=0&quot; allowfullscreen=&quot;allowfullscreen&quot; width=&quot;100%&quot; height=&quot;500&quot; scrolling=&quot;no&quot; frameborder=&quot;0&quot; sandbox=&quot;allow-top-navigation allow-same-origin allow-forms allow-scripts&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;  The video above demonstrates yolo6d-based 6D pose estimation, where the projection of the 3D bbox is shown in green.
+&lt;!-- Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+
+--- --&gt;
+
+&lt;h3 id=&quot;2-key-inside&quot;&gt;2. Key-inside&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;YOLO&lt;/li&gt;
+  &lt;li&gt;EPnP algorithm&lt;/li&gt;
+  &lt;li&gt;Opencv&lt;/li&gt;
+  &lt;li&gt;Aruco&lt;/li&gt;
+  &lt;li&gt;Pinhole camera model&lt;/li&gt;
+  &lt;li&gt;Rigid Object 6D pose description&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;3-reference&quot;&gt;3. Reference&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -71,4 +109,6 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 &lt;/ul&gt;
 
 &lt;!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). --&gt;</content><author><name>yang yang</name></author><category term="project" /><category term="6D pose" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" /><media:content medium="image" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). --&gt;
+
+&lt;hr /&gt;</content><author><name>yang yang</name></author><category term="project" /><category term="6D pose" /><summary type="html">1. Video Demo</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" /><media:content medium="image" url="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
