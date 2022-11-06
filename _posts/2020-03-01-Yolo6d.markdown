@@ -13,9 +13,12 @@ author: yang yang
 externalLink: false
 ---
 
-<p align="center">
+<!-- <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SHocQxS0PCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
+</p> -->
+
+<iframe src="//player.bilibili.com/player.html?bvid=BV1He4y1x7du&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
+
 &emsp;&emsp;The video above demonstrates yolo6d-based 6D pose estimation, where the projection of the 3D bbox is shown in green.
 <!-- Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. -->
 
