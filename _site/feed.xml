@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-16T23:09:05+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-17T09:38:01+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;
 &lt;h3 id=&quot;1-video-demo&quot;&gt;1. Video Demo&lt;/h3&gt;
@@ -28,6 +28,33 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 &lt;h3 id=&quot;2-image-demo&quot;&gt;2. Image Demo&lt;/h3&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/Mechanical%20Parts.png?raw=true&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/112.png?raw=true&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;
+&lt;/center&gt;
+&lt;figcaption class=&quot;caption&quot;&gt;Fig. 1&lt;/figcaption&gt;
+
+&lt;h4 id=&quot;the-fig1-shows-the-pose-estimation-results-in-open-environment-of-our-method&quot;&gt;  The Fig.1 shows the pose estimation results in open environment of our method。&lt;/h4&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/2.png?raw=true&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/113.jpg?raw=true&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;figcaption class=&quot;caption&quot;&gt;Fig. 2&lt;/figcaption&gt;
+
+&lt;h4 id=&quot;the-fig2-shows-the-pose-estimation-results-under-the-different-camera-pose&quot;&gt;  The Fig.2 shows the pose estimation results under the different camera pose.&lt;/h4&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/4.png?raw=true&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/4.jpg?raw=true&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+&lt;figcaption class=&quot;caption&quot;&gt;Fig. 3&lt;/figcaption&gt;
+
+&lt;h4 id=&quot;the-fig3-shows-the-process-of-robot-assembly-of-our-method&quot;&gt;  The Fig.3 shows the process of robot assembly of our method.&lt;/h4&gt;
+
 &lt;hr /&gt;
 
 &lt;!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
@@ -35,12 +62,15 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 &lt;h3 id=&quot;3-key-inside&quot;&gt;3. Key-inside&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Siamese neural network&lt;/li&gt;
-  &lt;li&gt;Image patch matching&lt;/li&gt;
-  &lt;li&gt;PnP algorithm&lt;/li&gt;
+  &lt;li&gt;Yolo&lt;/li&gt;
+  &lt;li&gt;Convolutional Autoencoder&lt;/li&gt;
+  &lt;li&gt;Edge distance tensor&lt;/li&gt;
+  &lt;li&gt;Nonlinear optimization&lt;/li&gt;
   &lt;li&gt;Opencv&lt;/li&gt;
   &lt;li&gt;Pinhole camera model&lt;/li&gt;
+  &lt;li&gt;OpenGL&lt;/li&gt;
   &lt;li&gt;Rigid Object 6D pose description&lt;/li&gt;
+  &lt;li&gt;Lie groups and Lie algebras&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

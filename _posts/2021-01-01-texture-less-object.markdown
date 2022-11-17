@@ -43,18 +43,50 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 ### 2. Image Demo
 
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/Mechanical%20Parts.png?raw=true)
+
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/112.png?raw=true" width = "60%" height = "60%"/>
+</center>
+<figcaption class="caption">Fig. 1</figcaption>
+
+#### &emsp;&emsp;The Fig.1 shows the pose estimation results in open environment of our method。
+
+
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/2.png?raw=true" width = "60%" height = "60%"/>
+</center>
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/113.jpg?raw=true)
+<figcaption class="caption">Fig. 2</figcaption>
+
+#### &emsp;&emsp;The Fig.2 shows the pose estimation results under the different camera pose.
+
+
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/4.png?raw=true" width = "60%" height = "60%"/>
+</center>
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/4.jpg?raw=true)
+<figcaption class="caption">Fig. 3</figcaption>
+
+#### &emsp;&emsp;The Fig.3 shows the process of robot assembly of our method.
+
 ---
 
 <!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
 If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->
 ### 3. Key-inside
 
-- Siamese neural network
-- Image patch matching
-- PnP algorithm
+- Yolo
+- Convolutional Autoencoder
+- Edge distance tensor
+- Nonlinear optimization
 - Opencv
 - Pinhole camera model
+- OpenGL
 - Rigid Object 6D pose description
+- Lie groups and Lie algebras
 
 ---
 
