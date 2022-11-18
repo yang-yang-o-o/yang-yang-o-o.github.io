@@ -125,18 +125,18 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 ### 5. Contrast
 
 <center>
-<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true" width = "100%" height = "100%"/>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true" width = "80%" height = "80%"/>
 </center>
 
 <center>
-<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true" width = "60%" height = "60%"/>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true" width = "50%" height = "50%"/>
 </center>
 
 <!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true) -->
 
 <!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true) -->
 
-#### AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.
+##### AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.
 
 ---
 

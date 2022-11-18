@@ -76,9 +76,24 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 ### 4. Method
 
 ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/127.jpg?raw=true)
+
 ---
 
 ### 5. Contrast
+
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/128.png?raw=true" width = "100%" height = "100%"/>
+</center>
+
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/129.png?raw=true" width = "60%" height = "60%"/>
+</center>
+
+##### YOLO6D (CVPR 2018): B. Tekin, S. N. Sinha, and P. Fua, “Real-time seamless single shot 6d object pose prediction,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp. 292–301
+
+##### CullNet (ICCVW 2019): K. Gupta, L. Petersson, and R. Hartley, “Cullnet: Calibrated and pose aware confidence scores for object pose estimation,” in Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops, 2019, pp. 0–0
+
+##### PVNet (CVPR 2019): S. Peng, Y. Liu, Q. Huang, X. Zhou, and H. Bao, “Pvnet: Pixel-wise voting network for 6dof pose estimation,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 4561–4570
 
 ---
 <!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-18T23:50:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-19T00:10:39+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;
 &lt;h3 id=&quot;1-video-demo&quot;&gt;1. Video Demo&lt;/h3&gt;
@@ -110,18 +110,18 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 &lt;h3 id=&quot;5-contrast&quot;&gt;5. Contrast&lt;/h3&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true&quot; width=&quot;80%&quot; height=&quot;80%&quot; /&gt;
 &lt;/center&gt;
 
 &lt;center&gt;
-&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true&quot; width=&quot;50%&quot; height=&quot;50%&quot; /&gt;
 &lt;/center&gt;
 
 &lt;!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true) --&gt;
 
 &lt;!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true) --&gt;
 
-&lt;h4 id=&quot;aae-eccv-2018-sundermeyer-m-marton-z-c-durner-m-et-al-implicit-3d-orientation-learning-for-6d-object-detection-from-rgb-imagescproceedings-of-the-european-conference-on-computer-vision-eccv-2018-699-715&quot;&gt;AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.&lt;/h4&gt;
+&lt;h5 id=&quot;aae-eccv-2018-sundermeyer-m-marton-z-c-durner-m-et-al-implicit-3d-orientation-learning-for-6d-object-detection-from-rgb-imagescproceedings-of-the-european-conference-on-computer-vision-eccv-2018-699-715&quot;&gt;AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.&lt;/h5&gt;
 
 &lt;hr /&gt;
 
@@ -199,9 +199,25 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 &lt;h3 id=&quot;4-method&quot;&gt;4. Method&lt;/h3&gt;
 
-&lt;h2&gt;&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/127.jpg?raw=true&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/127.jpg?raw=true&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;5-contrast&quot;&gt;5. Contrast&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/128.png?raw=true&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/129.png?raw=true&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h5 id=&quot;yolo6d-cvpr-2018-b-tekin-s-n-sinha-and-p-fua-real-time-seamless-single-shot-6d-object-pose-prediction-in-proceedings-of-the-ieee-conference-on-computer-vision-and-pattern-recognition-2018-pp-292301&quot;&gt;YOLO6D (CVPR 2018): B. Tekin, S. N. Sinha, and P. Fua, “Real-time seamless single shot 6d object pose prediction,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp. 292–301&lt;/h5&gt;
+
+&lt;h5 id=&quot;cullnet-iccvw-2019-k-gupta-l-petersson-and-r-hartley-cullnet-calibrated-and-pose-aware-confidence-scores-for-object-pose-estimation-in-proceedings-of-the-ieeecvf-international-conference-on-computer-vision-workshops-2019-pp-00&quot;&gt;CullNet (ICCVW 2019): K. Gupta, L. Petersson, and R. Hartley, “Cullnet: Calibrated and pose aware confidence scores for object pose estimation,” in Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops, 2019, pp. 0–0&lt;/h5&gt;
+
+&lt;h5 id=&quot;pvnet-cvpr-2019-s-peng-y-liu-q-huang-x-zhou-and-h-bao-pvnet-pixel-wise-voting-network-for-6dof-pose-estimation-in-proceedings-of-the-ieeecvf-conference-on-computer-vision-and-pattern-recognition-2019-pp-45614570&quot;&gt;PVNet (CVPR 2019): S. Peng, Y. Liu, Q. Huang, X. Zhou, and H. Bao, “Pvnet: Pixel-wise voting network for 6dof pose estimation,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 4561–4570&lt;/h5&gt;
 
 &lt;hr /&gt;
 &lt;!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
