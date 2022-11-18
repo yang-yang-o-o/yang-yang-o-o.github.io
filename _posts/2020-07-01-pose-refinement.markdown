@@ -75,6 +75,7 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 ### 4. Method
 
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/127.jpg?raw=true)
 ---
 
 ### 5. Contrast
