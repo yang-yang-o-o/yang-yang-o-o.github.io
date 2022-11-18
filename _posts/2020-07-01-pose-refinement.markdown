@@ -73,9 +73,16 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 ---
 
+### 4. Method
+
+---
+
+### 5. Contrast
+
+---
 <!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
 If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->
-### 4. Paper
+### 6. Paper
 
 * #### [A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation](https://pan.baidu.com/s/1se1wJLHhyGKLw54SS35zAQ), password: yang
 * #### code come soon.

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-18T23:35:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-18T23:47:42+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">Texture-less object 6D pose estimation for Robotic Assembly</title><link href="http://localhost:4000/texture-less-object/" rel="alternate" type="text/html" title="Texture-less object 6D pose estimation for Robotic Assembly" /><published>2021-01-01T00:00:00+08:00</published><updated>2021-01-01T00:00:00+08:00</updated><id>http://localhost:4000/texture-less-object</id><content type="html" xml:base="http://localhost:4000/texture-less-object/">&lt;!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
 Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. --&gt;
 &lt;h3 id=&quot;1-video-demo&quot;&gt;1. Video Demo&lt;/h3&gt;
@@ -109,7 +109,20 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 &lt;hr /&gt;
 &lt;h3 id=&quot;5-contrast&quot;&gt;5. Contrast&lt;/h3&gt;
 
-&lt;h5 id=&quot;aae-eccv-2018-sundermeyer-m-marton-z-c-durner-m-et-al-implicit-3d-orientation-learning-for-6d-object-detection-from-rgb-imagescproceedings-of-the-european-conference-on-computer-vision-eccv-2018-699-715&quot;&gt;AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.&lt;/h5&gt;
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true&quot; width=&quot;100%&quot; height=&quot;100%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true&quot; width=&quot;60%&quot; height=&quot;60%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/125.png?raw=true) --&gt;
+
+&lt;!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/126.png?raw=true) --&gt;
+
+&lt;h4 id=&quot;aae-eccv-2018-sundermeyer-m-marton-z-c-durner-m-et-al-implicit-3d-orientation-learning-for-6d-object-detection-from-rgb-imagescproceedings-of-the-european-conference-on-computer-vision-eccv-2018-699-715&quot;&gt;AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.&lt;/h4&gt;
+
 &lt;hr /&gt;
 
 &lt;h3 id=&quot;6-paper&quot;&gt;6. Paper&lt;/h3&gt;
@@ -184,9 +197,16 @@ Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergioko
 
 &lt;hr /&gt;
 
+&lt;h3 id=&quot;4-method&quot;&gt;4. Method&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;5-contrast&quot;&gt;5. Contrast&lt;/h3&gt;
+
+&lt;hr /&gt;
 &lt;!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
 If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). --&gt;
-&lt;h3 id=&quot;4-paper&quot;&gt;4. Paper&lt;/h3&gt;
+&lt;h3 id=&quot;6-paper&quot;&gt;6. Paper&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
