@@ -92,8 +92,45 @@ If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/is
 
 ### 4. Method
 
+<!-- - #### Algorithm process -->
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/114.png?raw=true)
+<figcaption class="caption">Fig. 4. Algorithm overview</figcaption>
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/124.png?raw=true)
+<figcaption class="caption">Fig. 5. Visualization of the algorithm process</figcaption>
+
+<!-- - #### Object detection
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/115.png?raw=true)
+<figcaption class="caption">Fig. 6. The architecture of object detection network</figcaption>
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/118.png?raw=true)
+<figcaption class="caption">Fig. 7. Synthetic training data for object detection networks</figcaption>
+
+- #### Initial pose estimation
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/116.png?raw=true)
+<figcaption class="caption">Fig. 8. Convolutional Auto-encoder Network</figcaption>
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/119.png?raw=true)
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/120.png?raw=true)
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/117.png?raw=true)
+
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/121.png?raw=true)
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/122.png?raw=true)
+![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/123.png?raw=true) -->
+
+---
+### 5. Contrast
+
+
+##### AAE (ECCV 2018): Sundermeyer M, Marton Z C, Durner M, et al. Implicit 3d orientation learning for 6d object detection from rgb images[C]//Proceedings of the European Conference on Computer Vision (ECCV). 2018: 699-715.
 ---
 
-### 5. Paper
+### 6. Paper
+
+* #### [面向机器人精密操作的物体六自由度单目实时位姿估计方法研究 - 硕士学位论文](https://pan.baidu.com/s/1se1wJLHhyGKLw54SS35zAQ)
+* #### code come soon.
 
 ---
