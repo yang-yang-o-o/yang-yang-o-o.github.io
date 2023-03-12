@@ -5,5 +5,7 @@ Gemfile.lock
 .bundle
 vendor/
 弃用
+其他
 _site/弃用
 README.md
+**/候选/**
