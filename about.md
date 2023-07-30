@@ -72,7 +72,7 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
 <!-- * ### Email: yang-yang@cqu.edu.cn -->
 <!-- * ### Phone: (+86) 13308362646 -->
 <ul class="Contacts-list">
- <li><strong><font size="4">Email: yang-yang@cqu.edu.cn</font></strong></li>
+ <li><strong><font size="4">Email: yang-yang@alu.cqu.edu.cn</font></strong></li>
  <li><strong><font size="4">Phone: (+86) 13308362646</font></strong></li>
 </ul>
 <!-- <ul>
