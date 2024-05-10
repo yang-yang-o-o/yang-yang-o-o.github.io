@@ -1,0 +1,116 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\begin{document}
+
+% 代码见：F:\GitHub\mmdet3d\mmdet3d\core\evaluation\kuhn_munkres.py
+
+\begin{algorithm}
+    \caption{Kuhn–Munkres algorithm}
+    \label{alg:1}
+    \begin{algorithmic}[1]
+        \Require $\textbf{X}=\{x_{i}|0\leq i \leq m\}$, $\textbf{Y}=\{y_{j}|0\leq j \leq n\}$, cost/info matrix $\textbf{M[i][j]}$
+        \Ensure $\{matched[j]\ |\ 0\leq j \leq n\}:y_{j}\leftrightarrow x_{matched[j]}$
+		\Function {ProcessKM}{$\textbf{X}, \textbf{Y}, \textbf{M[i][j]}$}
+			\For{$(x_i) \in \textbf{X}$}
+			\While {True}
+				\If {\Call{PerfectMatch}{$i$}}
+					\State break
+				\Else
+					\State $delta = \{min\{slack[j]\}\ |\ vis\_y[j]==0\}$
+					\State Update $slack, label\_x, label\_y$ using $delta$
+				\EndIf
+			\EndWhile
+			\EndFor
+			\State \Return{$\{matched[j]\ |\ 0\leq j \leq n\}$}
+        \EndFunction
+		% \STATE \textbf{return} $U^{p}$, $V^{p}$, $b^{p}$
+		% \Function {AddChild}{$MT, traj, idx, map, flags$}
+        %     \State $node\gets traj[idx]$
+        %     \State $map[idx]\gets$ The number of nodes in $MT$
+        %     \State Add $node$ to $MT$
+        %     \If {$idx > 0$ and $flag[idx] != 0$}
+        %         \State $flag[idx]\gets 0$
+        %         \State $i\gets nary$
+        %         \While{$i > 0$}
+        %             \State $child\gets$ \Call{AddChild}{$MT, traj, idx-i, map, flags$}
+        %             \State $edge\gets$ $child$ to $node$  // $src \rightarrow dst$
+        %             \State Add $edge$ to $MT$
+        %         \EndWhile
+        %     \EndIf
+        %     \State \Return{$node$}
+        % \EndFunction
+        \State
+        \Function{PerfectMatch}{$i$}
+            % \State Initialize an empty tree $MT$ with no nodes and edges
+            % \State Initialize an empty dictionary variable $map$
+            % \State $len\gets$ The length of $traj$
+            % \State Initialize the dictionary variable $flags$ of length $len$
+            % \State \Call{AddChild}{$MT, traj, len-1, map, flags$}
+			\For{$(y_i) \in \textbf{Y}$}
+			\State $\Delta edge\_weight = label\_x[i]+label\_y[j]-\textbf{M[i][j]}$
+			\If {$\Delta edge\_weight == 0$}
+				\If {($y_j$ not matched) or \Call{PerfectMatch}{$matched[j]$}}
+					\State $matched[j] = i$
+					\State \Return{$\textbf{True}$}
+				\EndIf
+			\ElsIf {$slack[j] > \Delta edge\_weight$}
+				\State $slack[j] = \Delta edge\_weight$
+			\EndIf
+			\EndFor
+			
+			\State \Return{$\textbf{False}$}
+        \EndFunction
+    \end{algorithmic}
+\end{algorithm}
+
+\end{document}
+
+
+% \documentclass{article}
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
+
+% \begin{document}
+	
+\begin{algorithm}
+	\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+	\renewcommand{\algorithmicensure}{\textbf{Output:}}
+	\caption{Kuhn–Munkres algorithm}
+	% \label{alg:1}
+	\begin{algorithmic}[1]
+		\REQUIRE Set $\textbf{X}=\{x_{i}\}$, $\textbf{Y}=\{y_{j}\}$, cost/info matrix $\textbf{M[i][j]}$
+		\ENSURE $matched[j]:y_{j}\leftrightarrow x_{matched[j]}$
+		% \STATE Given target predicate $p$ and entire knowledge graph $G$, construct its bipartite subgraph, $G_{p}$ 
+		% \STATE $m$ = number of subject entities in $G_{p}$
+		% \STATE $n$ = number of object entities in $G_{p}$ 
+		% \STATE Generate a set of training samples $D_{p} = \{(s_p, o^{+}_{p}, o^{-}_{p})\}$ using uniform sampling technique
+		% \STATE Initialize $U^{p}$ as size $m \times K$ matrix with $0$ mean and standard deviation $0.1$
+		% \STATE Initialize $V^{p}$ as size $n \times K$ matrix with $0$ mean and stardard deviation $0.1$
+		% \STATE Initialize $b^{p}$ as size $n \times 1$ column vector with $0$ mean and stardard deviation $0.1$
+		\FORALL{$(x_i) \in \textbf{X}$}
+		% \STATE Update $U_{s}^{p}$ based on Equation~\ref{eq:sgd1}
+		% \STATE Update $V_{o^{+}}^{p}$ based on Equation~\ref{eq:sgd2}
+		% \STATE Update $V_{o^{-}}^{p}$ based on Equation~\ref{eq:sgd3}
+		% \STATE Update $b_{o^{+}}^{p}$ based on Equation~\ref{eq:sgd4}
+		% \STATE Update $b_{o^{-}}^{p}$ based on Equation~\ref{eq:sgd5}
+		\WHILE {True}
+			\IF {Found PerfectMatch}
+				\STATE break
+			\ELSE
+				\STATE $delta = \{min\{slack[j]\}\ |\ vis\_y[j]==0\}$
+				\STATE Update $slack, label\_x, label\_y$ using $delta$
+			\ENDIF
+		\ENDWHILE
+		\ENDFOR
+		% \STATE \textbf{return} $U^{p}$, $V^{p}$, $b^{p}$
+	\end{algorithmic}
+\end{algorithm}
+
+% \end{document}
+
