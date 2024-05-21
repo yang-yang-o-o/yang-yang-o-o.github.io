@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=author content="Yang yang">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>数据结构和算法 | Yang yang</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="数据结构和算法" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="目录" />
+<meta property="og:description" content="目录" />
+<link rel="canonical" href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" />
+<meta property="og:url" content="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" />
+<meta property="og:site_name" content="Yang yang" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-23T23:38:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="数据结构和算法" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-23T23:38:00+08:00","datePublished":"2022-12-23T23:38:00+08:00","description":"目录","headline":"数据结构和算法","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"},"url":"http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+
+    <link rel="canonical" href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">
+    <link rel="alternate" type="application/rss+xml" title="Yang yang" href="http://localhost:4000/feed.xml" />
+
+    <script src="https://kit.fontawesome.com/d9b09040a7.js" crossorigin="anonymous"></script>
+
+    <style>
+    
+    
+
+    @charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers. */
+body { margin: 0; }
+
+/** Render the `main` element consistently in IE. */
+main { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** Remove the gray background on active links in IE 10. */
+a { background-color: transparent; }
+
+/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Remove the border on images inside links in IE 10. */
+img { border-style: none; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/** Correct the inability to style clickable types in iOS and Safari. */
+button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress { vertical-align: baseline; }
+
+/** Remove the default vertical scrollbar in IE 10+. */
+textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+details { display: block; }
+
+/* Add the correct display in all browsers. */
+summary { display: list-item; }
+
+/* Misc ========================================================================== */
+/** Add the correct display in IE 10+. */
+template { display: none; }
+
+/** Add the correct display in IE 10. */
+[hidden] { display: none; }
+
+.highlight .c { color: #999988; font-style: italic; }
+.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .k { font-weight: bold; }
+.highlight .o { font-weight: bold; }
+.highlight .cm { color: #999988; font-style: italic; }
+.highlight .cp { color: #999999; font-weight: bold; }
+.highlight .c1 { color: #999988; font-style: italic; }
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic; }
+.highlight .gd { color: #000000; background-color: #ffdddd; }
+.highlight .gd .x { color: #000000; background-color: #ffaaaa; }
+.highlight .ge { font-style: italic; }
+.highlight .gr { color: #aa0000; }
+.highlight .gh { color: #999999; }
+.highlight .gi { color: #000000; background-color: #ddffdd; }
+.highlight .gi .x { color: #000000; background-color: #aaffaa; }
+.highlight .go { color: #888888; }
+.highlight .gp { color: #555555; }
+.highlight .gs { font-weight: bold; }
+.highlight .gu { color: #800080; font-weight: bold; }
+.highlight .gt { color: #aa0000; }
+.highlight .kc { font-weight: bold; }
+.highlight .kd { font-weight: bold; }
+.highlight .kn { font-weight: bold; }
+.highlight .kp { font-weight: bold; }
+.highlight .kr { font-weight: bold; }
+.highlight .kt { color: #445588; font-weight: bold; }
+.highlight .m { color: #009999; }
+.highlight .s { color: #dd1144; }
+.highlight .n { color: #333333; }
+.highlight .na { color: teal; }
+.highlight .nb { color: #0086b3; }
+.highlight .nc { color: #445588; font-weight: bold; }
+.highlight .no { color: teal; }
+.highlight .ni { color: purple; }
+.highlight .ne { color: #990000; font-weight: bold; }
+.highlight .nf { color: #990000; font-weight: bold; }
+.highlight .nn { color: #555555; }
+.highlight .nt { color: navy; }
+.highlight .nv { color: teal; }
+.highlight .ow { font-weight: bold; }
+.highlight .w { color: #bbbbbb; }
+.highlight .mf { color: #009999; }
+.highlight .mh { color: #009999; }
+.highlight .mi { color: #009999; }
+.highlight .mo { color: #009999; }
+.highlight .sb { color: #dd1144; }
+.highlight .sc { color: #dd1144; }
+.highlight .sd { color: #dd1144; }
+.highlight .s2 { color: #dd1144; }
+.highlight .se { color: #dd1144; }
+.highlight .sh { color: #dd1144; }
+.highlight .si { color: #dd1144; }
+.highlight .sx { color: #dd1144; }
+.highlight .sr { color: #009926; }
+.highlight .s1 { color: #dd1144; }
+.highlight .ss { color: #990073; }
+.highlight .bp { color: #999999; }
+.highlight .vc { color: teal; }
+.highlight .vg { color: teal; }
+.highlight .vi { color: teal; }
+.highlight .il { color: #009999; }
+.highlight .gc { color: #999; background-color: #EAF2F5; }
+
+body, html { font-size: 62.5%; }
+
+body { font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #666; background: #fff; }
+
+h1, h2, h3, h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #222; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+h1 { font-size: 3rem; letter-spacing: -1px; color: #222; font-weight: 700; }
+
+h2 { font-size: 2.2rem; }
+
+h3 { font-size: 2rem; }
+
+h4 { font-size: 1.6rem; }
+
+a { color: #4b0082; text-decoration: underline; font-weight: 300; }
+
+p { line-height: 1.7; color: #666; font-weight: 300; margin-bottom: 20px; letter-spacing: 0.4px; }
+@media only screen and (max-width: 400px) { p { letter-spacing: 0.2px; } }
+
+strong { font-weight: 400; color: #000; }
+
+ul li, ol li { line-height: 2.4rem; font-weight: 300; color: #666; }
+
+img, pre, iframe { max-width: 100%; }
+
+img, pre { border-radius: 4px; }
+
+figcaption { position: relative; top: -20px; left: 0; right: 0; margin: 0 auto; width: 100%; text-align: center; font-size: 1.3rem; color: #aaa; font-weight: 300; }
+@media only screen and (max-width: 400px) { figcaption { font-size: 1.2rem; } }
+
+blockquote { padding-left: 15px; border-left: 3px solid #eee; }
+
+hr { border: none; height: 1px; margin: 40px auto; background: #eee; width: 100%; }
+
+figure.highlight { width: 100%; margin: 0; }
+
+code { padding: 2px 3px; font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace; font-size: 12px; vertical-align: middle; background: #eee; border-radius: 2px; }
+
+pre > code, tt { padding: 1px 0; font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace; font-size: 12px; line-height: 20px; background: #fff; border-radius: 2px; }
+
+pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10px; font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace; font-size: 1.2rem; line-height: 2rem; overflow: auto; background: #fff; border: 1px solid #ededed; border-radius: 2px; }
+
+.wrapper-normal, .wrapper-large { height: 100%; width: 96%; margin: 0 auto; }
+@media only screen and (max-width: 400px) { .wrapper-normal, .wrapper-large { width: 88%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .wrapper-normal, .wrapper-large { width: 88%; } }
+
+.wrapper-normal { max-width: 560px; }
+
+.wrapper-large { max-width: 810px; }
+
+/* general helpers */
+.text-center { text-align: center; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+
+.clearfix:after { clear: both; }
+
+/* animations */
+.animated { animation: fade-in-down 0.6s; animation-delay: 0.3s; animation-fill-mode: both; }
+
+@keyframes fade-in-down { 0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); } }
+.home, .blog, .projects { margin-top: 125px; }
+.home > .list, .blog > .list, .projects > .list { border-top: 1px solid #ededed; margin-top: 30px; padding-top: 40px; position: relative; }
+.home > .list:before, .blog > .list:before, .projects > .list:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #fff; box-shadow: #fff 0 0 0 5px; border-radius: 3px; }
+
+.home > .list > .item, .blog > .list > .item, .projects > .list > .item { display: block; width: 95%; margin: 0 auto; }
+.home > .list > .item > .url, .blog > .list > .item > .url, .projects > .list > .item > .url { width: 100%; display: block; padding: 20px 0; text-decoration: none; }
+.home > .list > .item > .url > .title, .blog > .list > .item > .url > .title, .projects > .list > .item > .url > .title { margin: 0; width: 75%; font-weight: 500; transition: all ease-in-out 0.2s; }
+.home > .list > .item:hover > .url > .title, .blog > .list > .item:hover > .url > .title, .projects > .list > .item:hover > .url > .title { color: #4b0082; }
+.home > .list aside, .blog > .list aside, .projects > .list aside { position: relative; top: 2px; margin: 0; width: 25%; float: right; font-weight: 300; color: #aaa; text-align: right; transition: all ease-in-out 0.2s; }
+.home > .list .item:hover .url aside, .blog > .list .item:hover .url aside, .projects > .list .item:hover .url aside { color: #666; }
+
+.blog > .list > .item > .url > .title, .projects > .list > .item > .url > .title { display: inline; }
+.blog > .list > .item > .url > .emoji, .projects > .list > .item > .url > .emoji { display: inline; position: relative; top: -4px; margin-right: 10px; }
+
+.page { margin-top: 125px; }
+.page > h1 { text-align: center; margin-bottom: 6rem; }
+
+.about img { width: 50%; margin: 0 auto; display: block; }
+
+.post { margin-top: 125px; }
+.post > .title { text-align: center; margin-bottom: 3rem; }
+.post > .date, .post > .post-tags { color: #aaa; font-weight: 300; font-size: 1.4rem; text-transform: uppercase; text-align: center; display: block; margin-bottom: 6rem; letter-spacing: 1px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.post > .date { margin-bottom: 2rem; }
+.post > .post-tags > .item { padding: 2px 8px; border-radius: 3px; font-size: 1.1rem; background: #ededed; color: #666; letter-spacing: 1px; margin: 3px 1px; text-decoration: none; display: inline-block; }
+.post > h2, .post > h3, .post > h4 { margin-top: 40px; }
+.post > h2 a, .post > h3 a, .post > h4 a { text-decoration: none; }
+.post > .title-image { max-height: 120px; display: block; margin: 0 auto; }
+.post > .blog-navigation { font-size: 1.4rem; display: block; width: auto; overflow: hidden; }
+.post > .blog-navigation a { display: block; width: 50%; float: left; margin: 1em 0; }
+.post > .blog-navigation .next { text-align: right; }
+
+.tags { margin-top: 125px; }
+.tags > .list { border-top: 1px solid #ededed; margin-top: 30px; padding-top: 40px; position: relative; }
+.tags > .list:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #fff; box-shadow: #fff 0 0 0 5px; border-radius: 3px; }
+
+.tags > .list > .item { font-weight: 300; text-transform: uppercase; text-align: center; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; padding: 3px 9px; border-radius: 3px; font-size: 1.3rem; background: #ededed; color: #666; letter-spacing: 1px; margin: 0 0.5rem 1rem; text-decoration: none; display: inline-block; }
+
+.tag-list > .list { padding: 0; }
+.tag-list > .list > .item { display: block; width: 80%; margin: 0 10%; }
+.tag-list > .list > .item > .url { width: 100%; height: 100%; display: block; padding: 20px 0; text-decoration: none; }
+.tag-list > .list > .item > .url > .title { margin: 0; width: 75%; font-weight: 400; transition: all ease-in-out 0.2s; font-size: 1.6rem; }
+.tag-list > .list > .item:hover > .url > .title { color: #4b0082; }
+.tag-list > .list aside { position: relative; top: 2px; margin: 0; width: 25%; float: right; font-weight: 300; color: #aaa; text-align: right; transition: all ease-in-out 0.2s; font-size: 1.6rem; }
+.tag-list > .list .item:hover .url aside { color: #666; }
+
+.author { padding: 3rem 0; border-bottom: 1px solid #ededed; border-top: 1px solid #ededed; max-width: 100%; margin: 4rem auto 0; }
+.author > .toleft > .selfie { width: 90%; border-radius: 100%; }
+.author > .toright > .name, .author > .toright > .bio { width: 60%; display: inline-block; }
+.author > .toright > .name { font-size: 1.5rem; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; margin: 6px 0 0; }
+@media only screen and (max-width: 400px) { .author > .toright > .name { width: 100%; display: block; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toright > .name { width: 100%; display: block; } }
+.author > .toright > .bio { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; color: #aaa; font-size: 1.3rem; text-align: justify; line-height: 1.5; margin: 0; }
+@media only screen and (max-width: 400px) { .author > .toright > .bio { width: 100%; display: block; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toright > .bio { width: 100%; display: block; } }
+.author > .toleft { width: 10%; display: inline-block; }
+@media only screen and (max-width: 400px) { .author > .toleft { width: 20%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toleft { width: 20%; } }
+.author > .toright { width: 89%; display: inline-block; vertical-align: top; }
+@media only screen and (max-width: 400px) { .author > .toright { width: 78%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toright { width: 78%; } }
+
+.no-disqus { border-bottom: none; padding-bottom: 0; }
+
+.disqus { margin: 0 auto; max-width: 100%; padding: 40px 0; }
+
+.footer-main { border-top: 1px solid #ededed; padding: 40px 0; margin: 40px 0 0; font-size: 1.3rem; color: #aaa; font-weight: 300; text-align: center; position: relative; }
+.footer-main:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #fff; box-shadow: #fff 0 0 0 5px; border-radius: 3px; }
+.footer-main > .copyright { padding-left: 10px; }
+.footer-main > .link { display: inline; vertical-align: middle; }
+.footer-main > .link > .icon { width: 15px !important; fill: #aaa !important; transition: ease-in-out all 0.3s; position: relative; display: inherit; top: -2px; margin: 0; left: 2px; }
+.footer-main > .link > .icon:hover { fill: #4b0082 !important; }
+.footer-main > .extra { color: #aaa; margin-top: 0; font-weight: 300; }
+.footer-main > .extra > .link { color: #222; text-decoration: none; border-bottom: 1px solid transparent; transition: ease-in-out all 0.3s; padding-bottom: 1px; font-weight: 300; }
+.footer-main > .extra > .link:hover { border-color: #aaa; }
+
+.header-home { display: block; margin: 0 auto; text-align: center; position: relative; z-index: 99; }
+.header-home > .link > .selfie { width: 125px; height: 125px; margin-bottom: 25px; border-radius: 100%; transition: all 0.2s; opacity: 1; }
+.header-home > .link > .selfie:hover { box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.18), 0 0px 12px 0 rgba(0, 0, 0, 0.15); opacity: 0.8; }
+.header-home > .title { font-size: 4rem; margin: 0 0 13px; }
+.header-home > .description { font-size: 1.85rem; font-weight: 300; font-style: normal; color: #aaa; width: 70%; margin: 0 auto 30px; }
+.header-home > .description a { font-weight: 200; }
+
+.nav > .list, .nav-home > .list { list-style: none; margin: 0; padding: 0 13px 0; }
+.nav > .list > .item, .nav-home > .list > .item { display: inline-block; }
+.nav > .list > .item > .link, .nav-home > .list > .item > .link { display: inline-block; font-weight: 300; font-size: 1.4rem; padding: 20px 10px; text-decoration: none; }
+
+.nav { position: absolute; right: 0; top: 0; }
+.nav > .list { padding: 0 13px 0; }
+.nav > .list > .item > .link { font-size: 1.4rem; padding: 20px 10px; }
+
+.nav-home { margin-top: 40px; text-align: center; }
+.nav-home > .list { padding: 0; }
+.nav-home > .list > .item > .link { font-size: 2rem; padding: 7px 15px; margin: 0; border-radius: 4%; transition: all 0.4s ease-in-out; width: 70px; }
+.nav-home > .list > .item > .link:hover { color: #666; }
+
+.evidence { background-image: linear-gradient(to bottom, #27f36a26, #27f36a26); color: #222; }
+
+.star > .url > .title { width: auto !important; display: inline; background-image: linear-gradient(#27f36a26, #27f36a26); }
+
+.twitter-tweet { margin: 10px auto; }
+
+.icon { display: inline-block; width: 17px; height: 17px; fill: #000; text-align: center; color: #aaa; margin: 7px auto; }
+
+.caption { position: relative; top: 1rem; left: 0; right: 0; margin: 0 auto; width: 100%; text-align: center; font-size: 1.3rem; font-weight: 300; }
+
+.bigger-image { min-width: 130%; margin: 5rem 0 5rem -15%; }
+@media only screen and (max-width: 400px) { .bigger-image { min-width: 114%; margin: 2rem 0 2rem -7%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .bigger-image { min-width: 114%; margin: 2rem 0 2rem -7%; } }
+
+.breaker { height: 1px; margin: 6rem auto; width: 100%; }
+.breaker:before { content: "• • •"; width: 100%; text-align: center; display: block; color: #aaa; letter-spacing: 4px; position: relative; top: -8px; }
+
+.lost-container { text-align: center; }
+
+.pagination { width: 95%; margin: 3rem auto 0; text-align: center; }
+.pagination > .page_number { display: inline-block; font-size: 1.3rem; }
+.pagination > .previous, .pagination > .next { display: inline-block; font-size: 1.8rem; position: relative; top: 1px; padding: 1px 9px; }
+.pagination > .hidden { visibility: hidden; }
+
+.related { margin: 10rem 0 0rem; }
+.related a { font-weight: 300; }
+
+.share { float: right; width: 40%; display: inline; text-align: right; position: relative; }
+@media only screen and (max-width: 400px) { .share { width: 100%; display: block; top: 0; text-align: left; float: none; margin-top: 5px; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .share { width: 100%; display: block; top: 0; text-align: left; float: none; margin-top: 5px; } }
+.share > .twitter, .share > .facebook, .share > .linkedin { display: inline; vertical-align: middle; font-size: 13px; font-weight: 700; color: #fff; padding: 6px 10px; border-radius: 3px; margin-left: 5px; text-decoration: none; }
+@media only screen and (max-width: 400px) { .share > .twitter, .share > .facebook, .share > .linkedin { margin: 0 5px 10px 0; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .share > .twitter, .share > .facebook, .share > .linkedin { margin: 0 5px 10px 0; } }
+.share > .twitter { background: #4fafed; }
+.share > .facebook { background: #4361b3; }
+.share > .linkedin { background: #0077b5; }
+.share svg { fill: #fff; position: relative; top: 0; margin: 0; margin-right: 4px; display: inherit; }
+
+@media only screen and (min-width: 780px) { .side-by-side { width: 130%; margin: 6rem 0 6rem -15%; } }
+@media only screen and (max-width: 780px) { .side-by-side { width: 100%; margin: 4rem 0; } }
+.side-by-side > .toleft, .side-by-side > .toright { display: inline-block; width: 47.5%; }
+@media only screen and (max-width: 780px) { .side-by-side > .toleft img, .side-by-side > .toright img { text-align: center; display: block; margin: 0 auto; } }
+@media only screen and (min-width: 780px) { .side-by-side > .toleft { margin-right: 2%; } }
+@media only screen and (max-width: 780px) { .side-by-side > .toleft { width: 100%; margin: 0 0 4rem 0; } }
+@media only screen and (min-width: 780px) { .side-by-side > .toright { margin-left: 2%; vertical-align: top; } }
+@media only screen and (max-width: 780px) { .side-by-side > .toright { width: 100%; margin: 0 0 4rem 0; } }
+.side-by-side > .toleft > p, .side-by-side > .toright > p { margin: 0 0 4rem 0; }
+@media only screen and (max-width: 780px) { .side-by-side > .toleft > p, .side-by-side > .toright > p { margin: 0; } }
+
+.social-links > .link { margin: 0; text-decoration: none; position: relative; display: inline-block; height: 35px; width: 35px; color: #000; }
+.social-links > .link:hover > svg { color: #4b0082; }
+.social-links > svg { transition: all ease-in-out 0.2s; }
+
+.spoiler { position: relative; }
+.spoiler:before { content: ""; background-color: #fafae0; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 50; }
+.spoiler:hover:before { display: none; }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper-large">
+        
+            <div class="post">
+        
+
+            
+
+
+
+<nav class="nav">
+    <ul class="list">
+        
+            <li class="item">
+                <a class="link" href="http://localhost:4000/">Home</a>
+            </li>
+        
+
+        
+            
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/blog">Blog</a>
+                </li>
+            
+        
+
+        
+            
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/projects">Projects</a>
+                </li>
+            
+        
+
+        
+            
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/about">About</a>
+                </li>
+            
+        
+
+        
+    </ul>
+</nav>
+
+
+
+
+
+<h1 class="title">数据结构和算法</h1>
+
+<!-- <span class="date">
+    <time datetime="23-12-2022">Friday. December 23, 2022</time>
+     - <span class="reading-time" title="Estimated read time">
+    
+
+    
+        9 mins
+    
+</span>
+
+</span> -->
+
+<span class="date">
+    <time datetime="12-2022">December, 2022</time>
+    
+</span>
+
+
+    <div class="post-tags">
+        
+            <a class="item" href="http://localhost:4000/tags/#c">C++</a>
+        
+    </div>
+
+
+<h2 id="目录">目录</h2>
+
+<ul>
+  <li>
+    <h3 id="1线性结构"><a href="#customname1">1、线性结构</a></h3>
+
+    <ul>
+      <li>
+        <h4 id="11链表"><a href="#customname1_1">1.1、链表</a></h4>
+      </li>
+      <li>
+        <h4 id="12栈"><a href="#customname1_2">1.2、栈</a></h4>
+      </li>
+      <li>
+        <h4 id="13队列"><a href="#customname1_3">1.3、队列</a></h4>
+      </li>
+      <li>
+        <h4 id="14字符串"><a href="#customname1_4">1.4、字符串</a></h4>
+      </li>
+      <li>
+        <h4 id="15数组"><a href="#customname1_5">1.5、数组</a></h4>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="2树型结构"><a href="#customname2">2、树型结构</a></h3>
+
+    <ul>
+      <li>
+        <h4 id="21二叉树"><a href="#customname2_1">2.1、二叉树</a></h4>
+      </li>
+      <li>
+        <h4 id="22多叉树"><a href="#customname2_2">2.2、多叉树</a></h4>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="3图型结构"><a href="#customname3">3、图型结构</a></h3>
+  </li>
+  <li>
+    <h3 id="4算法"><a href="#customname4">4、算法</a></h3>
+
+    <ul>
+      <li>
+        <h4 id="41排序"><a href="#customname1_1">4.1、排序</a></h4>
+      </li>
+      <li>
+        <h4 id="42查找"><a href="#customname1_2">4.2、查找</a></h4>
+      </li>
+      <li>
+        <h4 id="43索引"><a href="#customname1_3">4.3、索引</a></h4>
+      </li>
+      <li>
+        <h4 id="44分治"><a href="#customname1_4">4.4、分治</a></h4>
+      </li>
+      <li>
+        <h4 id="45回溯"><a href="#customname1_5">4.5、回溯</a></h4>
+      </li>
+      <li>
+        <h4 id="46贪心"><a href="#customname1_6">4.6、贪心</a></h4>
+      </li>
+      <li>
+        <h4 id="47动态规划"><a href="#customname1_7">4.7、动态规划</a></h4>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="customname1">1、线性结构</h3>
+
+<ul>
+  <li>
+    <h4 id="customname1_1">1.1、链表</h4>
+
+    <ul>
+      <li>
+        <p>单向链表、双向链表、循环链表</p>
+      </li>
+      <li>
+        <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/SList.cpp#L72">C++实现</a></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="customname1_2">1.2、栈</h4>
+  </li>
+  <li>
+    <h4 id="customname1_3">1.3、队列</h4>
+  </li>
+  <li>
+    <h4 id="customname1_4">1.4、字符串</h4>
+
+    <ul>
+      <li><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/KMP.cpp#L22">KMP算法C++实现</a></li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="customname1_5">1.5、数组</h4>
+  </li>
+</ul>
+
+<h3 id="customname2">2、树型结构</h3>
+
+<ul>
+  <li>
+    <h4 id="customname2_1">2.1、二叉树</h4>
+
+    <ul>
+      <li>
+        <p><strong>一般二叉树</strong></p>
+
+        <ul>
+          <li>
+            <p>特点：子树互不相交、每个节点只有一个父节点</p>
+          </li>
+          <li>
+            <p>斜二叉树：每个父节点都只有一个子节点</p>
+          </li>
+          <li>
+            <p>完美二叉树（满二叉树）：每一个父节点都有两个子节点</p>
+          </li>
+          <li>
+            <p>完全二叉树：完美二叉树的最后一层叶节点从右到左连续的删除一部分，剩下的是完全二叉树。</p>
+          </li>
+          <li>
+            <p>二叉树的遍历：先序、中序、后序、层序</p>
+          </li>
+          <li>
+            <p>只需要知道先、中、后三种遍历顺序中的两种就能唯一确定一棵树，这两种必须包含中序遍历。</p>
+          </li>
+          <li>
+            <p>二叉树的实现：顺序存储实现、链式存储实现</p>
+          </li>
+          <li>
+            <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Binary_Tree/BinaryTree.h#L51">C++实现</a></p>
+
+            <pre><code class="language-C++">  template&lt;class T&gt;
+  class binaryTreeNode
+  {   
+  public:
+                
+      T element;
+      binaryTreeNode&lt;T&gt; *leftChild,*rightChild;
+                
+      binaryTreeNode(){leftChild=rightChild=nullptr;}
+      binaryTreeNode(const T&amp; theElement):element(theElement),leftChild(nullptr),rightChild(nullptr),Height(0){}
+      binaryTreeNode(const T&amp; theElement,binaryTreeNode&lt;T&gt; * theLeftChild,binaryTreeNode&lt;T&gt; *theRightChild)
+      {
+          element = theElement;
+          leftChild = theLeftChild;
+          rightChild = theRightChild;
+      }
+      // AVLNode
+      int Height;
+      binaryTreeNode(const T&amp; theElement,binaryTreeNode&lt;T&gt; * theLeftChild,binaryTreeNode&lt;T&gt; *theRightChild,int H)
+      {
+          element = theElement;
+          leftChild = theLeftChild;
+          rightChild = theRightChild;
+          Height = H;
+      }
+  };  
+
+  template&lt;class E&gt;
+  // class linkedBinaryTree : public binaryTree&lt;binaryTreeNode&lt;E&gt;&gt;
+  class linkedBinaryTree 
+  {
+  private:
+      binaryTreeNode&lt;E&gt; *root;
+      int treeSize;
+      void (linkedBinaryTree&lt;E&gt;::*visit)(binaryTreeNode&lt;E&gt;*t);   // 这里如果声明为static，出的错误还未解决，还不会使用静态泛型函数指针
+      void preOrder(binaryTreeNode&lt;E&gt; *t);
+      void inOrder(binaryTreeNode&lt;E&gt; *t);
+      void postOrder(binaryTreeNode&lt;E&gt; *t);
+      void levelOrder(binaryTreeNode&lt;E&gt; *t);
+      void levelOrder_DFS(binaryTreeNode&lt;E&gt; *t,int level,vector&lt;vector&lt;E&gt;&gt;&amp; res);
+      void dispose(binaryTreeNode&lt;E&gt; *t1){delete t1;t1 = nullptr;}   //不是new出来的不能用delete。因为在postOrder函数中递归传递指针t，如果这里使用同名指针会影响递归（可能是影响了上一层递归的t），即出错
+      void output(binaryTreeNode&lt;E&gt;*t){cout&lt;&lt;t-&gt;element&lt;&lt;' ';}
+      void LeavesOutput(binaryTreeNode&lt;E&gt;*t);//打印叶节点
+      int height(binaryTreeNode&lt;E&gt; *t); 
+                
+  public:
+      linkedBinaryTree(){root=nullptr;treeSize=0;}
+      linkedBinaryTree(const linkedBinaryTree&lt;E&gt; &amp;t);             //复制构造函数
+      linkedBinaryTree(binaryTreeNode&lt;E&gt;* t,int s){root=t;treeSize=s;}
+      ~linkedBinaryTree(){}
+                
+      binaryTreeNode&lt;E&gt; *&amp; getroot(){return root;}
+                
+      // void tese(binaryTreeNode&lt;E&gt;*t){visit=output;(this-&gt;*visit)(t);}
+      string empty()const {return treeSize==0?"true":"false";}
+      int size()const {return treeSize;}
+      void erase(){postOrder(dispose);root = nullptr;treeSize = 0;}
+      void FreeNode(binaryTreeNode&lt;E&gt; *t){delete t;t=nullptr;}
+
+      void preOrder(void(linkedBinaryTree&lt;E&gt;::*theVisit)(binaryTreeNode&lt;E&gt;*))
+          {visit = theVisit;preOrder(root);}
+      void inOrder(void(linkedBinaryTree&lt;E&gt;::*theVisit)(binaryTreeNode&lt;E&gt;*))
+          {visit = theVisit;inOrder(root);}
+      void postOrder(void(linkedBinaryTree&lt;E&gt;::*theVisit)(binaryTreeNode&lt;E&gt;*))
+          {visit = theVisit;postOrder(root);}
+      void levelOrder(void(linkedBinaryTree&lt;E&gt;::*theVisit)(binaryTreeNode&lt;E&gt;*))
+          {visit = theVisit;levelOrder(root);}
+
+      void inOrder_non_recursion();  // 非递归中序遍历
+      void preOrder_non_recursion();  // 非递归先序遍历
+      void postOrder_non_recursion();  // 非递归后序遍历
+      vector&lt;vector&lt;E&gt;&gt; levelOrder_recursion();  // 递归层序遍历
+      void preOrderOutput(){preOrder(output);cout&lt;&lt;endl;} 
+      void inOrderOutput(){inOrder(output);cout&lt;&lt;endl;}
+      void postOrderOutput(){postOrder(output);cout&lt;&lt;endl;}
+      void levelOrderOutput(){levelOrder(output);cout&lt;&lt;endl;}  
+      void PrintLeaves(){LeavesOutput(root);cout&lt;&lt;endl;};
+      int height(){return height(root);}
+
+      binaryTreeNode&lt;E&gt; * CopyTree(const binaryTreeNode&lt;E&gt; *t);
+  };
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>二叉搜索树</strong></p>
+
+        <ul>
+          <li>定义：
+            <ul>
+              <li>是二叉树，可为空或不为空</li>
+              <li>非空左子树的所有键值小于其根结点的键值</li>
+              <li>非空右子树的所有键值大于其根结点的键值</li>
+              <li>左、右子树都是二叉搜索树</li>
+            </ul>
+          </li>
+          <li>功能函数
+            <ul>
+              <li>查找某个元素</li>
+              <li>返回最小元素</li>
+              <li>返回最大元素</li>
+              <li>插入一个元素</li>
+              <li>删除一个元素</li>
+            </ul>
+          </li>
+          <li>性质
+            <ul>
+              <li>二叉搜索树的中序遍历是升序序列（在有相同值时是非递减的）</li>
+            </ul>
+          </li>
+          <li>
+            <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Binary_Tree/Binary_Search_Tree.h#L8">C++实现</a></p>
+
+            <pre><code class="language-C++">  template&lt;class S&gt;
+  class BinarySearchTree : public linkedBinaryTree&lt;S&gt;
+  {
+  private:
+      binaryTreeNode&lt;S&gt; * Find_private(S,binaryTreeNode&lt;S&gt;*);
+      binaryTreeNode&lt;S&gt; * IterFind_private(S,binaryTreeNode&lt;S&gt;*);
+      binaryTreeNode&lt;S&gt; * FindMin_private(binaryTreeNode&lt;S&gt; *);
+      binaryTreeNode&lt;S&gt; * FindMax_private(binaryTreeNode&lt;S&gt; *);
+      binaryTreeNode&lt;S&gt; * insert_private(S,binaryTreeNode&lt;S&gt; *);
+      binaryTreeNode&lt;S&gt; * Delete_private(S,binaryTreeNode&lt;S&gt; *);
+
+  public:
+      // BinarySearchTree();
+      BinarySearchTree(binaryTreeNode&lt;S&gt; *t,int treesize):linkedBinaryTree&lt;S&gt;(t,treesize){}
+                
+      // 查找某个元素
+      binaryTreeNode&lt;S&gt; * Find(S x,bool iter=false){
+          if(iter)return IterFind_private(x,this-&gt;getroot());
+          else return Find_private(x,this-&gt;getroot());
+      }
+      // 查找最大的元素
+      binaryTreeNode&lt;S&gt; * FindMin(){return FindMin_private(this-&gt;getroot());}
+      // 查找最小的元素
+      binaryTreeNode&lt;S&gt; * FindMax(){return FindMax_private(this-&gt;getroot());}
+      // 插入一个元素
+      void insert(S x){this-&gt;getroot() = insert_private(x,this-&gt;getroot());}
+      // 删除一个元素
+      void Delete(S x){this-&gt;getroot() = Delete_private(x,this-&gt;getroot());}
+
+      binaryTreeNode&lt;S&gt; * FindMin_public(binaryTreeNode&lt;S&gt; *t){return FindMin_private(t);}
+      binaryTreeNode&lt;S&gt; * FindMax_public(binaryTreeNode&lt;S&gt; *t){return FindMax_private(t);}
+  };
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>平衡二叉树</strong></p>
+
+        <ul>
+          <li>
+            <p>二叉搜索树存在的问题：插入节点时，节点的插入次序不同，二叉搜索树的深度和平均查找长度也不同。（最坏的情况是退化为斜二叉树）。</p>
+          </li>
+          <li>
+            <p>在二叉搜索树的基础上考虑一个平衡因子，就得到了平衡二叉树<br />
+  平衡因子：左右子树的高度差<br />
+  平衡二叉树：任意结点的平衡因子绝对值小于等于1</p>
+          </li>
+          <li>平衡二叉树的调整（插入和删除节点可能都需要调整）
+            <ul>
+              <li>RR旋转</li>
+              <li>RL旋转</li>
+              <li>LL旋转</li>
+              <li>LR旋转</li>
+            </ul>
+          </li>
+          <li>
+            <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Binary_Tree/Balanced_Binary_Tree.h#L14">C++实现</a></p>
+
+            <pre><code class="language-C++">  template&lt;class B&gt;
+  class BalancedBinaryTree : public linkedBinaryTree&lt;B&gt;
+  {
+  private:
+      binaryTreeNode&lt;B&gt; * FindMin_private(binaryTreeNode&lt;B&gt; *);
+      binaryTreeNode&lt;B&gt; * FindMax_private(binaryTreeNode&lt;B&gt; *);
+      binaryTreeNode&lt;B&gt; * SingleLeftRotation(binaryTreeNode&lt;B&gt; *);
+      binaryTreeNode&lt;B&gt; * DoubleLeftRightRotation(binaryTreeNode&lt;B&gt; *);
+      binaryTreeNode&lt;B&gt; * SingleRightRotation(binaryTreeNode&lt;B&gt; *);
+      binaryTreeNode&lt;B&gt; * DoubleRightLeftRotation(binaryTreeNode&lt;B&gt; *);
+      binaryTreeNode&lt;B&gt; * insert(binaryTreeNode&lt;B&gt; *,B);
+      binaryTreeNode&lt;B&gt; * Delete(binaryTreeNode&lt;B&gt; *,B);
+  public:
+      // BalancedBinaryTree(AVLNode&lt;B&gt;*root,int Treesize):linkedBinaryTree&lt;B&gt;((binaryTreeNode&lt;B&gt;*)root,Treesize){}    // 当节点是结构时可以做强制类型转换
+      BalancedBinaryTree(binaryTreeNode&lt;B&gt;*root,int Treesize):linkedBinaryTree&lt;B&gt;(root,Treesize){}       // 当节点是派生类时，可以不强制转换，指向派生类的指针可以向下转换为指向基类的指针。
+      void insert(B x){this-&gt;getroot() = insert(this-&gt;getroot(),x);}
+      void Delete(B x){this-&gt;getroot() = Delete(this-&gt;getroot(),x);}
+      int getheight(binaryTreeNode&lt;B&gt;*t){if(!t)return 0;else return t-&gt;Height;}
+
+  };
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>堆</strong></p>
+
+        <ul>
+          <li>特点：
+            <ul>
+              <li>结构性：用完全二叉树表示</li>
+              <li>有序性：任一结点的关键字是其子树所有结点的最大值（或最小值）</li>
+            </ul>
+          </li>
+          <li>主要操作：
+            <ul>
+              <li>建立</li>
+              <li>插入</li>
+              <li>删除</li>
+            </ul>
+          </li>
+          <li>
+            <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Binary_Tree/MaxHeap.h#L9">C++实现</a></p>
+
+            <pre><code class="language-C++">  template&lt;class E&gt;
+  class MaxHeap
+  {
+  private:
+      int capacity;   // 堆的最大容量
+      int Size;       // 堆中当前存储的有效元素的个数
+      E *Data;        // 存储堆的数组
+  public:
+      MaxHeap(int MaxSize)
+      {   Data = new E[MaxSize];
+          capacity = MaxSize;
+          Size=0;
+          Data[0] = numeric_limits&lt;int&gt;::max();//哨兵
+      }
+      MaxHeap(vector&lt;E&gt; list)// 利用list中的乱序元素创建堆，并实现最大推排序
+      {   Data = new E[list.size()+50];
+          capacity = list.size()+49;
+          Size=0;
+          Data[0] = numeric_limits&lt;int&gt;::max();//哨兵
+          for(int i=0;i&lt;list.size();i++){
+              Data[i+1] = list[i];
+              Size++;
+          }
+          createHeap();
+      }
+      bool empty(){return Size==0;}
+      bool full(){return Size==capacity;}
+      bool insert(E);
+      void insert_upAdjust(E);
+      bool DeleteMax();
+      void downAdjst(int,int);// O(logn)
+      void upAdjust(int,int);// O(logn)
+      void createHeap()//O(n)，证明见算法导论
+      {
+          for(int i=Size/2;i&gt;=1;--i)//为什么调整是从[size/2,1]，因为完全二叉树的叶子节点数为size/2，因此数组下标[1,size/2]范围内的结点都是非叶子结点。
+              downAdjst(i,Size);// 从倒序开始，是因为，downAdjust函数将i位置的元素替换为i的左右结点中最大的那个，然后如果子树需要调整还会调整子树，size/2节点的子节点必然是叶节点，不需要调整子树
+                              // ,所以从倒序开始，只需要交换父节点和左右子结点中的较大值即可，不需要重复的去调整子树，子树在上一次for结束时必然是平衡的。
+      }
+      void deleteTop()//O(logn)
+      {
+          Data[1]=Data[Size--];// 用最后一个元素覆盖堆顶元素，并让元素个数减1
+          downAdjst(1,Size);// 向下调整堆顶元素
+      }
+      E getMax(){return Data[1];}
+  };
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>哈夫曼树</strong></p>
+
+        <ul>
+          <li>
+            <p>问题：不同的节点连接方式，树的查找效率不同，如何通过改变节点的连接方式来使树的查找效率最高，因此引入哈夫曼树</p>
+          </li>
+          <li>
+            <p>哈夫曼树（最优二叉树）：一棵二叉树按照所有连接方式中带权路径长度最小的连接方式连接得到的树。<br />
+  带权路径长度（WPL）：计算每个叶子节点的权值和根节点到它的路径长度的乘积，最后所有叶子节点求和。</p>
+          </li>
+          <li>构建：
+            <ul>
+              <li>反复选择两个最小的元素，合并，直到只剩下一个元素。</li>
+            </ul>
+          </li>
+          <li>
+            <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Binary_Tree/Huffman_tree.h#L11">C++实现</a></p>
+
+            <pre><code class="language-C++">  template&lt;class H&gt;
+  class HuffmanTree : public binaryTreeNode&lt;H&gt;// 从二叉树节点派生，因为哈夫曼树是一种二叉树
+  {
+  private:
+      void combine(int);
+      // 构建一个最小堆，因为构造哈夫曼树的过程需要反复选择两个最小的元素，合并，直到只剩下一个元素，因此维护一个最小堆，在logn的时间内
+      // 取出最小值
+      MinHeap&lt; pair&lt;H,binaryTreeNode&lt;H&gt;*&gt; &gt;* heap;
+  public:
+      binaryTreeNode&lt;H&gt;* root;// 构造得到的哈夫曼树的根节点
+      HuffmanTree(vector&lt;H&gt; list){// 构造函数，接受一个元素无序的vector，然后用这些元素创建一颗哈夫曼树
+          vector&lt; pair&lt;H,binaryTreeNode&lt;H&gt;*&gt; &gt; temp;
+          for(H i:list)
+              temp.push_back(pair&lt;H,binaryTreeNode&lt;H&gt;*&gt;{i,new binaryTreeNode&lt;H&gt;(i)});
+          static MinHeap&lt; pair&lt;H,binaryTreeNode&lt;H&gt;*&gt; &gt; minheap(temp,make_pair(numeric_limits&lt;int&gt;::min(),nullptr));// 生成最小堆
+          heap = &amp;minheap;
+          combine(list.size());// 使用最小堆来快速的创建哈夫曼树
+      }
+  };
+
+  template&lt;class H&gt;
+  void HuffmanTree&lt;H&gt;::combine(int n){// 反复的选择两个最小的元素，合并，直到只剩下一个元素。
+      for(int i=1;i&lt;n;i++){
+          pair&lt;H,binaryTreeNode&lt;H&gt;*&gt; x = heap-&gt;getMin();heap-&gt;DeleteMin();
+          pair&lt;H,binaryTreeNode&lt;H&gt;*&gt; y = heap-&gt;getMin();heap-&gt;DeleteMin();
+          binaryTreeNode&lt;H&gt;* Z = new binaryTreeNode&lt;H&gt;(0,x.second,y.second);
+          heap-&gt;insert(pair&lt;H,binaryTreeNode&lt;H&gt;*&gt;{0,Z});
+      }
+      root = heap-&gt;getMin().second;
+  }
+</code></pre>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><strong>并查集</strong></p>
+
+        <ul>
+          <li>
+            <p>实现了合并和查找功能的集合</p>
+          </li>
+          <li>
+            <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Binary_Tree/UFS.h#L10">C++实现</a></p>
+
+            <pre><code class="language-C++">  template&lt;class I&gt;
+  class Ufs
+  {
+  public:
+      I* root;
+      Ufs(vector&lt;array&lt;I,2&gt;&gt; list){//利用list来构造一个并查集
+          root = new I[1001]{-1};//数组初始化为-1
+          for(auto x:list)
+              root[x[0]] = x[1];
+      }
+
+      I Find(I);
+      void Union(I,I);
+      void Visualize(int begin,int end){
+          for(int i=begin;i&lt;end;++i)
+              cout&lt;&lt;root[i]&lt;&lt;" ";
+          cout&lt;&lt;endl;
+      }
+                
+  };
+
+  template&lt;class I&gt;
+  I Ufs&lt;I&gt;::Find(I x)//参见浙大慕课
+  {
+      if(root[x] &lt; 0)// 对于同一个集合来说，只存在一个根节点，且将其作为所属集合的标识
+          return x;
+      else
+          return root[x] = Find(root[x]);//实现了路径压缩，把当前查询节点的路径上的所有节点的父亲都指向根节点
+  }
+
+  template&lt;class I&gt;
+  void Ufs&lt;I&gt;::Union(I r1,I r2)
+  {
+      if(root[r2] &lt; root[r1]){
+          root[r2] += root[r1];
+          root[r1] = r2;
+      }
+      else{
+          root[r1] += root[r2];
+          root[r2] = r1;
+      }
+  }
+</code></pre>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="customname2_2">2.2、多叉树</h4>
+  </li>
+</ul>
+
+<h3 id="customname3">3、图型结构</h3>
+
+<ul>
+  <li>
+    <h4 id="概念">概念：</h4>
+    <ul>
+      <li>有向图</li>
+      <li>无向图</li>
+      <li>简单图</li>
+      <li>邻接、依附</li>
+      <li>无向完全图、有向完全图</li>
+      <li>稠密图、稀疏图</li>
+      <li>顶点的度、入度、出度</li>
+      <li>权、网</li>
+      <li>连通、路径、路径长度、回路</li>
+      <li>简单路径、简单回路</li>
+      <li>子图</li>
+      <li>连通图、连通分量</li>
+      <li>强连通图、强连通分量</li>
+      <li>生成树、生成森林</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="表示">表示：</h4>
+    <ul>
+      <li>
+        <p>邻接矩阵：遍历的时间复杂度O(n²)</p>
+      </li>
+      <li>
+        <p>邻接表：遍历的时间复杂度O(n+e)</p>
+      </li>
+      <li>
+        <p>比较：</p>
+        <ul>
+          <li>同：都能存储有向图和无向图，也都可以存储网图</li>
+          <li>异：
+            <ul>
+              <li>空间：
+                <ul>
+                  <li>邻接矩阵O(n²)</li>
+                  <li>邻接表O(n+e)</li>
+                  <li>选择取决于图中边的数目，边多的稠密图用邻接矩阵，边少的稀疏图用邻接表</li>
+                </ul>
+              </li>
+              <li>时间：访问某个节点的所有邻接点
+                <ul>
+                  <li>邻接表O(e/n)</li>
+                  <li>邻接矩阵O(n)</li>
+                </ul>
+              </li>
+              <li>唯一性：
+                <ul>
+                  <li>顶点编号确定后，邻接矩阵是唯一的，DFS和BFS的结果是唯一的；邻接表由于插入的次序，不是唯一的，DFS和BFS结果不唯一。</li>
+                </ul>
+              </li>
+              <li>对应关系：
+                <ul>
+                  <li>邻接表可以看为邻接矩阵中的一行把没有边的位置去掉的结果</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="遍历">遍历：</h4>
+    <ul>
+      <li>深度优先遍历(DFS)：多用于解决连通性问题</li>
+      <li>广度优先遍历(BFS)：多用于解决最短路径问题</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="其他相关算法">其他相关算法：</h4>
+    <ul>
+      <li>最短路径
+        <ul>
+          <li>单源最短路径
+            <ul>
+              <li>Dijkstra</li>
+              <li>BF(Bellman-Ford)</li>
+              <li>SPFA</li>
+            </ul>
+          </li>
+          <li>多源最短路径
+            <ul>
+              <li>Floyd</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>最小生成树
+        <ul>
+          <li>Prim</li>
+          <li>Kruskal</li>
+        </ul>
+      </li>
+      <li>拓扑排序</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="c实现">C++实现</h4>
+
+    <ul>
+      <li>
+        <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Graph/Adjacent_List.h#L46">邻接表C++实现</a></p>
+      </li>
+      <li>
+        <p><a href="https://github.com/yang-yang-o-o/Data-Structures-and-Algorithms/blob/a42fae1296568edcd9b66b953def69c31bdae391/Graph/Adjacent_Matrix.h#L27">邻接矩阵C++实现</a></p>
+      </li>
+    </ul>
+
+    <pre><code class="language-C++">  template&lt;class G&gt;
+  class Graph
+  {
+  private:
+      static const int MaxSize_=10;// 预设的图结点最大个数
+      G vertex[MaxSize_];// 用于存放图中结点的数组
+      int visited[MaxSize_];//={0};// 访问标识数组，和结点数组中相同下标位置的元素为1表示这个结点被访问过，为0没有。
+
+        
+        
+      // array&lt;G,MaxSize_&gt; vertex;
+      int arc[MaxSize_][MaxSize_];// 矩阵，用于表示图中的边
+        
+  public:
+      int VertexNum , arcNum;// 图中结点的数量、边的数量
+      int Dist[MaxSize_];//={-1};// 无权单源最短路径中用于标识到源结点距离的数组，Dist[i]表示下标为i的节点到源结点的距离
+      int Path[MaxSize_];//={-1};// 无权单源最短路径中用于标识到每个结点经过的上一个节点，用于得到最短路径，Path[i]表示从源结点到达下标为i的结点的路径上前一个结点的下标。
+
+      Graph(vector&lt;G&gt;,vector&lt;array&lt;int,3&gt;&gt;,bool directed = false);
+      void initialize(int a[],int val){ // 初始化数组为同一个值
+          for(int i=0;i&lt;MaxSize_;++i)
+              a[i] = val;
+      }
+      void DFS(int);
+      void BFS(int);    
+      void Shootcut_BFS(int);// 最短路径BFS算法
+      void Dijkstra_minheap(int);// 基于最小堆的Dijkstra算法
+      void Dijkstra_linear_search(int); // 基于线性搜素的Dijkstra算法
+      int FindMinDist(){ // 线性搜索最小值算法
+          int v,mindist=INT_MAX;
+          for(int i=0;i&lt;VertexNum;++i)
+              if(visited[i]==0 &amp;&amp; Dist[i]&lt;mindist){// 注意是在所有未访问过的结点中搜索
+                  mindist = Dist[i];
+                  v = i;
+              }
+          return mindist &lt; INT_MAX ? v:-1;// 未找到返回-1
+      }
+
+      bool Bellman_Ford(int);
+      bool SPFA(int);
+
+      bool Floyd(bool visualize=false); // 多源最短路径Floyd算法
+      void OutputPath(int i,int j,int P[][MaxSize_]){// 注意这里传递二维数组参数的技巧
+          if(i==j)return;// 处理特殊情况
+          if(P[i][j]==-1)cout&lt;&lt;j&lt;&lt;" ";// 如果i和j邻接，则直接打印j
+                                      // 由于调用OutputPath之前，就已经过滤掉了不能到达的点对，所以这个i一定能到达j，P[i][j]还是初始值-1的话，说明i到j直接没有插入中介点，最短路径就是i-&gt;j
+                                      // 同时P[i][j]==-1也表示最短路径中i和j直接相邻接
+                                      // 递归终止
+          else{// 如果i和j没有邻接，说明中间有中介点，一个已知的中介点就是P[i][j]，因此就可以采用分治的方法，采用递归分别去i到k、k到j间去打印。分治一直分，一直分到i和k邻接、k和j邻接，然后就可以用上面的if打印
+              OutputPath(i,P[i][j],P);
+              OutputPath(P[i][j],j,P);
+          }
+      }
+      /*
+      Floyd算法打印路径还有另一种方式：
+          初始化时：P[i][j] = j;
+          更新时：  P[i][j] = P[i][k]
+          打印时：
+                  b = P[i][j];
+                  cout&lt;&lt;i;//打印起点
+                  while(b != j){
+                      cout&lt;&lt;"-&gt;"&lt;&lt;b;//打印中间点
+                      b = P[b][j]; // 获取路径上下一个节点
+                  }
+          P[i][j]存储的始终是i到j的路径中离i最近的那个节点，也就是节点i的下一个。
+      */
+
+      // 最小生成树
+      bool Prim_minheap(int);
+      bool Prim_linear_search(int);
+      bool Kruskal();
+
+      bool TopSort();
+  };
+</code></pre>
+  </li>
+</ul>
+
+<h3 id="customname4">4、算法</h3>
+
+<ul>
+  <li>
+    <h4 id="customname1_1">4.1、排序</h4>
+
+    <ul>
+      <li><strong>冒泡排序</strong>
+        <pre><code class="language-C++">  template&lt;class S&gt;
+  void Bubble_Sort(vector&lt;S&gt;&amp; A)
+  {
+      int N = A.size();
+      for(int P=N-1; P&gt;0; --P){// 每次遍历来确定元素A[P]
+          int flag = 0;
+          for(int i=0; i&lt;P; ++i)// 一趟冒泡
+              if(A[i] &gt; A[i+1]){
+                  swap(A[i],A[i+1]);
+                  flag = 1;// 标识当前趟发生了交换
+              }
+          if(flag==0)break;// 如果上一趟没有发生交换，说明已经排好了
+      }
+  }
+</code></pre>
+      </li>
+      <li><strong>插入排序</strong>
+        <pre><code class="language-C++">  template&lt;class S&gt;
+  void Insertion_Sort(vector&lt;S&gt;&amp; A)
+  {// 插入排序，将第i个元素插入到[0,i]中正确的位置上，i属于[1,n-1]
+      for(int P=1; P&lt;A.size(); ++P){
+          S tmp = A[P];// 模下一张牌
+          int i;
+          for(i=P; i&gt;=1 &amp;&amp; A[i-1]&gt;tmp; --i)// 从摸出的这张牌的位置开始往前遍历，不断把大于摸出的这张牌的牌往后移一个位置。
+              A[i] = A[i-1];  // 移出空位
+          A[i] = tmp;// 摸出的牌放到正确的位置
+      }
+  }
+</code></pre>
+      </li>
+      <li><strong>希尔排序</strong>
+        <pre><code class="language-C++">  template&lt;class S&gt;
+  void Shell_Sort(vector&lt;S&gt;&amp; A)
+  {
+  // 希尔排序是插入排序的一种改进，插入排序在小规模数据或者基本有序时很高效
+  // 希尔排序能通过预处理提高了对大规模无序数据的效率
+
+      // 根据待排序列长度选择初始增量
+      int Sedgewick[] = {929,505,209,109,41,19,5,1,0};// 增量数组，这里只使用了一小部分，可以更多
+      int Si;
+      for(Si=0;Sedgewick[Si]&gt;=A.size();Si++);// 初始的增量不能超过待排序列的长度
+
+      // 依据初始增量进行希尔排序
+      for(int D=Sedgewick[Si]; D&gt;0; D=Sedgewick[++Si])// 从大到小枚举每个可用的增量
+          // 对于每个增量D，将待排序列分为D个子序列，
+          // 待排序列[0,1,2,3,...,n]
+          // 第1个子序列[0,D,2D,...,kD]，第2个子序列[1,D+1,2D+1,...,kD+1],...,第D为子序列[D-1,2D-1,3D-1,...,kD-1]
+          // 对于每个子序列，进行插入排序
+          // 这里的做法是，从下标D开始往后遍历待排序列中所有的元素，每个元素属于哪个子序列，就在哪个子序列上进行插入排序
+          for(int P=D; P&lt;A.size(); ++P){
+              S Tmp = A[P];
+              int i;
+              for(i=P; i&gt;=D &amp;&amp; A[i-D]&gt;Tmp; i-=D)  // 这里的终止条件i&gt;=D是因为后面i要减D，防止越界，(i-D)&gt;=0
+                                                  // 从这里 i-=D 就能看出遍历到的每个元素只在其所属的子序列上做插入排序
+                  A[i] = A[i-D];
+              A[i] = Tmp;
+          }
+  }
+</code></pre>
+      </li>
+      <li><strong>堆排序</strong>
+        <pre><code class="language-C++">  template&lt;class S&gt;
+  void PercDown(vector&lt;S&gt;&amp; A,int p,int N)
+  {// 将N个元素的数组中以A[p]为根的子堆调整为最大堆
+      int Parent,Child;
+      S X = A[p]; // 取出根节点存放的值
+      for(Parent = p; (Parent*2+1)&lt;N; Parent=Child){
+          Child = Parent*2 + 1;//得到左孩子的下标
+          if( (Child!=N-1) &amp;&amp; (A[Child]&lt;A[Child+1]))
+              Child++;// 如果右孩子更大，更新为右孩子的下标
+
+          if(X&gt;=A[Child]) // 如果根节点的值已经比他的孩子都大了，就表示找到了合适的位置
+              break;
+          else            // 如果根节点的值比子节点值小，将孩子值赋给父节点，然后for循环中Parent=Child下滤
+              A[Parent] = A[Child]; 
+      }
+      A[Parent] = X;// 将取出的根节点放到上面for循环找到的合适位置
+  }
+
+  template&lt;class S&gt;
+  void Heap_Sort2(vector&lt;S&gt;&amp; A)
+  {// 基于最大堆实现原地排序
+  // 直接在原数组上实现最大堆
+      for(int i=A.size()/2-1; i&gt;=0; i--)//初始化最大堆  A.size()/2-1为最下面的度为2的根节点
+          PercDown(A,i,A.size());
+      for(int i=A.size()-1; i&gt;0; i--){// 将最大堆的堆顶元素换到最后的正确位置上，然后最大堆长度减1，并调整
+          swap(A[0],A[i]);// 将最大堆的堆顶元素A[0]交换到后面正确的位置
+          PercDown(A,0,i);// 这里一开始将A.size()-1作为N，表示元素个数已经减1
+      }
+  }
+</code></pre>
+      </li>
+      <li><strong>归并排序</strong>
+        <pre><code class="language-C++">  template&lt;class S&gt;
+  void Merge(vector&lt;S&gt;&amp; A,vector&lt;S&gt;&amp; TmpA,int L,int R,int RightEnd)
+  {// 合并A中两个相邻有序的子列
+  // 左边子列的下标范围为[L,R-1]，右边子列的下标范围为[R,RightEnd]
+  // TmpA用于临时存放合并后的结果，最后再将结果复制到A中对应位置上
+      int LeftEnd = R-1;
+      int Tmp = L;// TmpA的指针
+      int t = L;
+      int NumElements = RightEnd - L + 1; // 左右子列总的元素个数
+
+      while(L&lt;=LeftEnd &amp;&amp; R&lt;=RightEnd){// 采用三指针策略，将两个有序的子列合并为一个有序的子列
+          if(A[L] &lt;= A[R])
+              TmpA[Tmp++] = A[L++];
+          else
+              TmpA[Tmp++] = A[R++];
+      }
+      // 上面while退出时有三种情况：
+      //  1、L &lt;= LeftEnd，R &gt;  RightEnd
+      //  2、L &gt;  LeftEnd，R &lt;= RightEnd
+      //  3、L &gt;  LeftEnd，R &gt;  RightEnd
+      while(L &lt;= LeftEnd)// 对于第1种情况，将左边子列剩下的元素加入TmpA
+          TmpA[Tmp++] = A[L++];
+      while(R &lt;= RightEnd)// 对于第2种情况，将右边子列剩下的元素加入TmpA
+          TmpA[Tmp++] = A[R++];
+            
+      for(int i=t;i&lt;NumElements+t;++i)// 将合并后的子列复制回A
+          A[i] = TmpA[i];
+  }
+  template&lt;class S&gt;
+  void Msort(vector&lt;S&gt;&amp; A,vector&lt;S&gt;&amp; TmpA,int L,int RightEnd)
+  {// 递归方式归并排序
+  // L、RightEnd初始分别为A的左、右端点下标
+      int Center;
+      if(L &lt; RightEnd){// 递归终止时 L == RightEnd
+          Center = (L+RightEnd)/2;
+          Msort(A,TmpA,L,Center);     // 处理左边
+          Msort(A,TmpA,Center+1,RightEnd);    // 处理右边
+          Merge(A,TmpA,L,Center+1,RightEnd);  // 将左右两边的处理结果合并
+          // 递归到最深层时，L+1 == RightEnd，Center等于L，上面两个Msort都被递归终止条件返回，
+          // 此时调用这个Merge时，L+1 == RightEnd，Center等于L，这个Merge合并的是下标为L和下标为RightEnd的两个元素
+      }
+  }
+  template&lt;class S&gt;
+  void Merge_Sort_recursion(vector&lt;S&gt;&amp; A)
+  {// 递归方式归并排序的外部接口函数
+      if(A.size()==0)return;
+      if(A.size()==1)return;
+      vector&lt;S&gt; TmpA(A.size());
+      Msort(A,TmpA,0,A.size()-1);
+  }
+</code></pre>
+      </li>
+      <li><strong>快速排序</strong>
+        <pre><code class="language-C++">  template&lt;class S&gt;
+  S Median3(vector&lt;S&gt;&amp; A,int Left,int Right)
+  {
+      // 交换，以使A[Left] &lt;= A[Center] &lt;= A[Right]
+      int Center = (Left+Right)/2;
+      if(A[Left] &gt; A[Center])
+          swap(A[Left],A[Center]);
+      if(A[Left] &gt; A[Right])
+          swap(A[Left],A[Right]);
+      if(A[Center] &gt; A[Right])
+          swap(A[Center],A[Right]);
+      // 将基准Pivot = A[Center] 放到右边，以便后面只需处理A[Left+1]到A[Right-2]
+      swap(A[Center],A[Right-1]);
+      // 返回基准Pivot
+      return A[Right-1];
+  }
+  template&lt;class S&gt;
+  void Qsort(vector&lt;S&gt;&amp; A,int Left,int Right)
+  {
+      int Pivot,Cutoff=4,Low,High;
+
+      if(Cutoff &lt;= Right-Left){// 元素足够多，才使用快速排序
+      // 如果只使用快排，不使用插入排序，这个if-else要取消，然后要加递归终止条件，分别在Right-Left == 0,1,2,时处理，也就是分别处理1,2,3个元素的情况
+          Pivot = Median3(A,Left,Right); // 求主元
+          Low = Left;                     
+          High = Right-1;                // 指定双指针的初始值
+          while(1){// 将序列中比主元小的移到主元左边，大的移到右边
+              while(A[++Low] &lt; Pivot);    // 左边找到第一个大于等于Pivot的元素
+              while(A[--High] &gt; Pivot);   // 右边找到第一个小于等于Pivot的元素
+              if(Low &lt; High)              // 如果还没有遍历完毕，交换双指针指向的两个元素
+                  swap(A[Low],A[High]);
+              else                        // 遍历完毕退出
+                  break;
+          }
+          swap(A[Low],A[Right-1]);        // 遍历完毕后Low所指的位置是主元的最终正确的位置，直接交换
+                          // 换Low的另一种解释，Low是比主元大的，换了以后，比主元大的全在右边，小的全在左边才能分治
+                          // 如果一开始选主元时，将主元放到Low+1的位置，那么就要交换High了
+          // 从下面分治的范围可以看出，只有Low没有被分治
+          Qsort(A,Left,Low-1);            // 递归处理交换后的主元的左边元素
+          Qsort(A,Low+1,Right);           // 递归处理交换后的主元的右边元素
+      }
+      else                    // 元素太少，使用插入排序
+          Insertion_Sort(A);  
+  }
+  template&lt;class S&gt;
+  void QuickSort(vector&lt;S&gt;&amp; A)
+  {// 快速排序外部接口
+      Qsort(A,0,A.size()-1);
+  }
+</code></pre>
+      </li>
+      <li>
+        <p><strong>性能比较</strong></p>
+
+        <p><img src="/assets\DataStructures_Algorithms\image_1.png" alt="Markdowm Image" />
+  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/DataStructures_Algorithms\image_1.png) --></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="customname1_2">4.2、查找</h4>
+
+    <ul>
+      <li>线性表：
+        <ul>
+          <li>顺序查找</li>
+          <li>二分查找</li>
+        </ul>
+      </li>
+      <li>树表：
+        <ul>
+          <li>二叉搜索树</li>
+          <li>平衡二叉树</li>
+        </ul>
+      </li>
+      <li>散列表</li>
+    </ul>
+  </li>
+  <li>
+    <h4 id="customname1_3">4.3、索引</h4>
+  </li>
+  <li>
+    <h4 id="customname1_4">4.4、分治</h4>
+  </li>
+  <li>
+    <h4 id="customname1_5">4.5、回溯</h4>
+  </li>
+  <li>
+    <h4 id="customname1_6">4.6、贪心</h4>
+  </li>
+  <li>
+    <h4 id="customname1_7">4.7、动态规划</h4>
+  </li>
+</ul>
+
+
+
+    <div class="blog-navigation">
+        
+            <a class="prev" href="http://localhost:4000/Machine-Learning/">&laquo; Machine Learning</a>
+        
+        
+            <a class="next" href="http://localhost:4000/C++/">C++ &raquo;</a>
+        
+    </div>
+
+
+
+    <div class="related">
+    
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+                    
+                    <h4>Related Posts</h4>
+                    <ul>
+                    
+                    <li class="relatedPost">
+                        <a href="http://localhost:4000/C++/">C++
+                        
+                        </a>
+                    </li>
+                    
+                    
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+        
+        
+            
+                
+            
+        
+    
+    
+        </ul>
+    
+</div>
+
+
+
+<!-- 
+    <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+
+        var disqus_config = function () {
+            this.page.url = 'http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/';
+            this.page.identifier = '/数据结构和算法';
+        };
+        var disqus_shortname = 'yang-yang';
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+ -->
+
+<footer class="footer-main">
+    Yang yang © 2024
+
+    <a class="link" href="http://localhost:4000/feed.xml" target="_blank">
+        <i class="fa-solid fa-rss"></i>
+    </a>
+
+    <!-- <p class="extra">
+        <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a>
+        by
+        <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
+    </p> -->
+</footer>
+
+
+            </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+
