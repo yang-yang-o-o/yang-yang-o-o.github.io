@@ -1,4 +1,332 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-21T10:22:21+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">VSlam</title><link href="http://localhost:4000/VSlam/" rel="alternate" type="text/html" title="VSlam" /><published>2022-12-23T23:38:00+08:00</published><updated>2022-12-23T23:38:00+08:00</updated><id>http://localhost:4000/VSlam</id><content type="html" xml:base="http://localhost:4000/VSlam/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-24T10:03:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;1单目相机&quot;&gt;&lt;a href=&quot;#customname1&quot;&gt;1、单目相机&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;2鱼眼相机&quot;&gt;&lt;a href=&quot;#customname2&quot;&gt;2、鱼眼相机&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;3深度相机&quot;&gt;&lt;a href=&quot;#customname3&quot;&gt;3、深度相机&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;4激光雷达&quot;&gt;&lt;a href=&quot;#customname4&quot;&gt;4、激光雷达&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h3 id=&quot;5imu&quot;&gt;&lt;a href=&quot;#customname5&quot;&gt;5、IMU&lt;/a&gt;&lt;/h3&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;customname1&quot;&gt;1、单目相机&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;成像过程&quot;&gt;成像过程&lt;/h4&gt;
+
+    &lt;p&gt;四种坐标：世界、相机、归一化相机和像素坐标&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_16.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_17.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_18.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;fx和fy的物理意义：归一化平面上一个单位距离，在图像上占多少个像素&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_19.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_20.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_21.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_21.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_22.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_22.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;注意到Z 可能小于1，说明该点位于归一化平面后面，它可能不会在相机平面上成像，实践当中要检查一次。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;畸变矫正过程&quot;&gt;畸变矫正过程&lt;/h4&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_23.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_23.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;customname2&quot;&gt;2、鱼眼相机&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;鱼眼镜头&quot;&gt;鱼眼镜头&lt;/h4&gt;
+
+    &lt;p&gt;个人认为针孔相机模型和鱼眼相机模型区别在于光线传播的不同，前者是直线传播，射线在归一化平面上的交点就是成像点，而后者存在折射，折射后在归一化平面上的成像点比针孔模型成像点更接近z轴，从而使得在成像面尺寸不变的情况下，鱼眼相机模型可以获得更大的fov角度。
+  &lt;img src=&quot;/assets\sensor\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_24.png) --&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_25.png) --&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;投影模型&quot;&gt;投影模型&lt;/h4&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_26.png) --&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_27.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_27.png) --&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;成像过程-1&quot;&gt;成像过程&lt;/h4&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_28.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_28.png) --&gt;&lt;/p&gt;
+
+    &lt;p&gt;这个图一个不合适的地方是，a，b，xd，yd应该标在归一化平面内，且分别为N和M在归一化平面内的坐标。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_29.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_29.png) --&gt;&lt;/p&gt;
+
+    &lt;p&gt;两种猜测，后续有待具体确认，公式 (1) 可能是因为投影模型是fθ，然后再乘上畸变矫正；也可能是这个 (1+…) 是畸变矫正和投影模型的耦合，因为鱼眼投影的折射也可以看成是一种相对于小孔投影的畸变，这样的话，投影模型就可以直接同时和畸变一起在相机标定的过程中被拟合出来。&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_30.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_30.png) --&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;fov对比&quot;&gt;fov对比&lt;/h4&gt;
+
+    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_31.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_31.png) --&gt;&lt;/p&gt;
+
+    &lt;p&gt;假设都在归一化平面内，焦距f等于1，此时纵坐标表示归一化平面内的成像半径，可以看出，对于入射角为90度（垂直于光轴）的光线，小孔投影的成像半径是无穷大，而其他的几种鱼眼模型的成像半径都在2以内，此时fov角为180度。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;参考&quot;&gt;参考&lt;/h4&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;主要参考&lt;/p&gt;
+
+        &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/655174655&quot;&gt;深入洞察OpenCV鱼眼模型之成像投影和畸变表估计系数相互转化-知乎(zhihu.com)&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://blog.csdn.net/qq_44876051/article/details/125835562&quot;&gt;【鱼眼相机模型】鱼眼相机投影模型理解-CSDN博客&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://blog.csdn.net/qq_16137569/article/details/112398976&quot;&gt;鱼眼镜头的成像原理到畸变矫正（完整版）_鱼眼畸变-CSDN博客&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;其他参考&lt;/p&gt;
+
+        &lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/584328948&quot;&gt;环视近场感知系列之鱼眼相机模型-知乎(zhihu.com)&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://zhuanlan.zhihu.com/p/340751380&quot;&gt;鱼眼相机模型-知乎(zhihu.com)&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://zhuanlan.zhihu.com/p/511284263&quot;&gt;一文详解分析鱼眼相机投影成像模型和畸变模型-知乎(zhihu.com)&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://docs.opencv.org/3.4/db/d58/group__calib3d__fisheye.html&quot;&gt;OpenCV:Fisheye_camera_model&lt;/a&gt;&lt;br /&gt;
+  &lt;a href=&quot;https://massive11.github.io/2022/09/12/principle-xiang-ji-cheng-xiang-ji-bian-mo-xing/&quot;&gt;相机成像畸变模型与鱼眼相机模型|Untitled.(massive11.github.io)&lt;/a&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;customname3&quot;&gt;3、深度相机&lt;/h3&gt;
+
+&lt;p&gt;深度相机的工作原理可以通过以下几种常见的技术来实现：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;结构光-structured-light-技术&quot;&gt;结构光 (Structured Light) 技术：&lt;/h4&gt;
+    &lt;p&gt;深度相机通过投射结构化的光源（通常是红外光）到场景上，例如使用一种特殊的光栅或编码模式。当光线与场景中的物体相交时，光线会发生形变。通过观察投影到物体上的形变图案，深度相机可以计算出物体的距离。这种技术常用于基于三角测量原理的深度测量。&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;优点&quot;&gt;优点：&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;高精度&lt;/strong&gt;：近距离(1米内)精度较高，毫米/亚毫米级。测量范围广、对光线和颜色的敏感度低等。主动投影，适合弱光照使用。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;缺点&quot;&gt;缺点：&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;有限的测量范围&lt;/strong&gt;：测量距离和分辨率存在一定的局限性。远距离精度差，随着距离的拉长，精度也随之变差。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;受环境光影响&lt;/strong&gt;：对环境光的干扰较大，室外强光照不宜使用，强光容易干扰投影光。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;对透明物体和反射面的挑战&lt;/strong&gt;：由于结构光深度相机是通过观察光线的反射和形变来计算深度，透明物体或具有高反射性的表面可能会引起测量的困难。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;飞行时间-time-of-flight-tof-技术&quot;&gt;飞行时间 (Time-of-Flight, TOF) 技术：&lt;/h4&gt;
+    &lt;p&gt;深度相机通过发射一个脉冲光源（通常是红外光）并测量光线从相机发射到物体上的反射和返回所需的时间。根据光的速度和返回时间，深度相机可以计算出物体到相机的距离。这种技术利用了光的传播速度和时间测量原理。&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;优点-1&quot;&gt;优点：&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;不依赖光源&lt;/strong&gt;：因为是依靠投射自身光线的技术，所以它不需要任何外部光源来扫描周围环境，即使在光线很少或没有光线的情况下也能正常工作。&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;大范围测量&lt;/strong&gt;：TOF的测量距离较远，不受表面灰度和特征影响，达百米，深度距离计算，不会随距离的变化而变化，稳定在厘米级&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;缺点-1&quot;&gt;缺点：&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;易受环境光、介质、物体表面反射率影响&lt;/strong&gt;：对环境的光强和干扰比较敏感，室外强光照基本不能使用。由于基于飞行时间的技术依赖于发射和接收自身光的反向反射，因此在自然环境中（例如暴露在阳光下）它们可能表现不佳，这是因为其他光源发出的波会干扰相机设备发出的光。类似地，还有其他因素使ToF传感器更难正常工作，如“反光”表面（在不同方向反射光）或角落（产生多次反射）等。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;双目视觉-stereo-vision-技术&quot;&gt;双目视觉 (Stereo Vision) 技术：&lt;/h4&gt;
+    &lt;p&gt;深度相机通过两个相机（左眼和右眼）来模拟人类的双眼视觉。通过观察左右两个相机拍摄到的图像中物体的视差（左右图像中对应点的像素偏移），深度相机可以计算出物体到相机的距离。这种技术基于三角测量原理和立体视觉的概念。&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;优点-2&quot;&gt;优点：&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;成本低&lt;/strong&gt;：不需要结构光、TOF的发射器和接收器，因此结构简单硬件成本低，适合成本敏感的应用场景。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;适应不同的环境&lt;/strong&gt;：因为依靠自然光，可在室内外使用。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;缺点-2&quot;&gt;缺点：&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;有限的测量范围&lt;/strong&gt;：立体视觉深度相机的测量范围通常有限，远离相机或深度变化较大的物体可能无法准确测量。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;依赖纹理和特征&lt;/strong&gt;：立体视觉深度相机对于纹理丰富的物体和有明显特征的场景效果更好，对于纹理缺乏或特征不明显的物体可能测量不准确。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;计算复杂度&lt;/strong&gt;：立体视觉深度相机需要进行立体匹配和深度计算，涉及较复杂的图像处理和计算，对计算资源要求较高。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;customname4&quot;&gt;4、激光雷达&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;原理&quot;&gt;原理&lt;/h4&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;1飞行时间tof探测方法&quot;&gt;1、飞行时间（ToF）探测方法&lt;/h5&gt;
+
+        &lt;p&gt;通过直接计算发射及接收电磁波的时间差测量被测目标的距离；
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_0.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_0.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;h5 id=&quot;2相干探测方法如fmcw&quot;&gt;2、相干探测方法（如：FMCW）&lt;/h5&gt;
+
+        &lt;p&gt;通过测量发射电磁波与返回电磁波的频率变化解调出被测目标的距离及速度；
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_1.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;fov&quot;&gt;FOV&lt;/h4&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;垂直FOV&lt;/strong&gt;：常见的车载激光雷达通常在25°，形状呈扇形；&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;水平FOV&lt;/strong&gt;：常见的机械式激光雷达可以达到360°范围，通常布置于车顶；常见的车载半固态激光雷达通常可以达到120°范围，形状呈扇形，可布置于车身或车顶；&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;种类&quot;&gt;种类&lt;/h4&gt;
+
+    &lt;p&gt;把激光雷达按照扫描方式来分类，目前有机械式激光雷达、半固态激光雷达和固态激光雷达三大类。其中机械式激光雷达最为常用，固态激光雷达为未来业界大力发展方向，半固态激光雷达是机械式和纯固态式的折中方案，属于目前阶段量产装车的主力军。
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_2.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;机械式激光雷达&quot;&gt;机械式激光雷达&lt;/h5&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\0.webp) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\0.webp&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_3.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_4.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;半固态mems式激光雷达&quot;&gt;半固态—MEMS式激光雷达&lt;/h5&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\1.webp) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\1.webp&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\2.webp) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\2.webp&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_5.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;半固态转镜式激光雷达&quot;&gt;半固态—转镜式激光雷达&lt;/h5&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\3.gif) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\3.gif&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_6.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_7.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_8.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;半固态-棱镜式激光雷达&quot;&gt;半固态-棱镜式激光雷达&lt;/h5&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_9.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\4.gif) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\4.gif&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_10.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_11.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;固态-opa激光雷达&quot;&gt;固态-OPA激光雷达&lt;/h5&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\5.webp) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\5.webp&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\6.gif) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\6.gif&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_12.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h5 id=&quot;固态-flash激光雷达&quot;&gt;固态-FLASH激光雷达&lt;/h5&gt;
+
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_13.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_14.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_15.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;参考-1&quot;&gt;参考&lt;/h4&gt;
+
+    &lt;p&gt;https://zhuanlan.zhihu.com/p/602055107&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;customname5&quot;&gt;5、IMU&lt;/h3&gt;
+
+&lt;p&gt;IMU是惯性测量单元（Inertial Measurement Unit）的缩写，它是一种集成了多个惯性传感器的装置，用于测量和跟踪物体的姿态、加速度和角速度等运动参数。IMU通常由以下几个主要惯性传感器组成：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;加速度计（Accelerometer）：
+  加速度计测量物体的加速度，即物体在空间中的线性加速度。它基于质量和力的关系，通过测量物体在三个坐标轴上的加速度来推导出物体的姿态和运动状态。&lt;/li&gt;
+  &lt;li&gt;陀螺仪（Gyroscope）：
+  陀螺仪测量物体的角速度，即物体围绕三个坐标轴旋转的速率。它通过感知角动量定理，测量物体在各个轴向上的角速度，从而提供物体的旋转信息。&lt;/li&gt;
+  &lt;li&gt;磁力计（Magnetometer）：
+  磁力计测量物体周围的磁场强度，用于确定物体的方向和姿态。磁力计通常用于辅助姿态估计，并提供物体相对于地球磁场的定向信息。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;最终输出信息&lt;/strong&gt;：
+    姿态欧拉角、角速度、角加速度、三个坐标轴的线加速度&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="SLAM" /><summary type="html">目录</summary></entry><entry><title type="html">VSlam</title><link href="http://localhost:4000/VSlam/" rel="alternate" type="text/html" title="VSlam" /><published>2022-12-27T23:38:00+08:00</published><updated>2022-12-27T23:38:00+08:00</updated><id>http://localhost:4000/VSlam</id><content type="html" xml:base="http://localhost:4000/VSlam/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -82,8 +410,8 @@
 
 &lt;h3 id=&quot;customname1&quot;&gt;1、SLAM概述&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_1.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_1.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname2&quot;&gt;2、基础知识&lt;/h3&gt;
 
@@ -95,27 +423,27 @@
       &lt;li&gt;
         &lt;h5 id=&quot;欧式变换&quot;&gt;欧式变换&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_1_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_1_1.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_1_1.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_1_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
         &lt;ul&gt;
           &lt;li&gt;
             &lt;p&gt;&lt;strong&gt;旋转矩阵&lt;/strong&gt;&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_2.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_2.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;&lt;strong&gt;旋转向量&lt;/strong&gt;&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_3.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_3.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;&lt;strong&gt;欧拉角&lt;/strong&gt;&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_4.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_4.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;&lt;strong&gt;四元素&lt;/strong&gt;&lt;/p&gt;
@@ -123,30 +451,30 @@
             &lt;ul&gt;
               &lt;li&gt;
                 &lt;p&gt;定义
-  &lt;img src=&quot;/assets\VSlam\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_5.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_5.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;运算
-  &lt;img src=&quot;/assets\VSlam\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_6.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_7.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_6.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_7.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;四元数表示旋转
-  &lt;img src=&quot;/assets\VSlam\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_8.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_8.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;四元数 &amp;lt;—&amp;gt; 旋转向量
-  &lt;img src=&quot;/assets\VSlam\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_9.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_9.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;四元数 &amp;lt;—&amp;gt; 旋转矩阵
-  &lt;img src=&quot;/assets\VSlam\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_10.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_10.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
@@ -156,23 +484,23 @@
         &lt;p&gt;&lt;strong&gt;相似变换&lt;/strong&gt;&lt;/p&gt;
 
         &lt;p&gt;相似变换比欧式变换多了一个自由度，它允许物体进行均匀的缩放，缩放因子 $s$
-  &lt;img src=&quot;/assets\VSlam\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_11.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_11.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;&lt;strong&gt;仿射变换&lt;/strong&gt;&lt;/p&gt;
 
         &lt;p&gt;仿射变换只要求A是一个可逆矩阵，而欧式变换要求是正交矩阵
-  &lt;img src=&quot;/assets\VSlam\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_12.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_12.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;&lt;strong&gt;摄影变换&lt;/strong&gt;
   摄影变换是更一般的变换，在仿射变换基础上增加了 $a^T$ 和 $v$
-  &lt;img src=&quot;/assets\VSlam\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_13.png) --&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_13.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
   $a^T$和𝑣的选择可以引入投影或其他非线性变换。$a^T$影响变换的透视性质，𝑣作为标量缩放因子
-  &lt;img src=&quot;/assets\VSlam\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_14.png) --&gt;&lt;/li&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_14.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -182,8 +510,8 @@
       &lt;li&gt;
         &lt;p&gt;李群&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_15.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_15.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;李代数&lt;/p&gt;
@@ -195,43 +523,43 @@
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;&lt;strong&gt;引出&lt;/strong&gt;
-  &lt;img src=&quot;/assets\VSlam\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_16.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_17.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_18.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_19.png) --&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_16.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_17.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_18.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_19.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
   是否可以这么理解：一个旋转矩阵左乘由他的旋转向量构成的反对称矩阵，就得到了这个旋转矩阵的导数，其中旋转向量：Φ = θα ，θ为旋转向量的旋转角，α为旋转向量的单位旋转轴&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;&lt;strong&gt;定义&lt;/strong&gt;&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_20.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_21.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_21.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_20.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_21.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_21.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;指数映射、对数映射&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_22.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_22.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_22.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_22.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_23.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_23.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_23.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_23.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_24.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_24.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;扰动模型&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_25.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_25.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -246,32 +574,32 @@
           &lt;li&gt;
             &lt;p&gt;成像模型&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_26.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_27.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_27.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_28.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_28.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_29.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_29.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_26.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_27.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_27.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_28.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_28.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_29.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_29.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;畸变&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_30.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_30.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_31.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_31.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_32.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_32.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_30.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_30.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_31.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_31.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_32.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_32.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;双目相机&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_33.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_33.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_33.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_33.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;RGBD相机&lt;/p&gt;
@@ -294,34 +622,34 @@
       &lt;li&gt;
         &lt;p&gt;一阶和二阶梯度法&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_34.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_34.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_34.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_34.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;Gauss-Newton&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_35.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_35.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_36.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_36.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_37.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_37.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_38.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_38.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_39.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_39.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_35.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_35.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_36.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_36.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_37.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_37.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_38.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_38.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_39.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_39.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;Levenberg-Marquadt&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_40.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_40.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_41.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_41.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_42.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_42.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_43.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_43.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_40.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_40.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_41.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_41.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_42.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_42.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_43.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_43.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;Ceres库&lt;/p&gt;
@@ -333,8 +661,8 @@
       &lt;li&gt;
         &lt;p&gt;G2O (General Graphic Optimization)&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_44.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_44.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_44.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_44.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -342,8 +670,8 @@
 
 &lt;h3 id=&quot;customname3&quot;&gt;3、前端/视觉里程计(Visual Odometry, VO)&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_45.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_45.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_45.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_45.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -356,8 +684,8 @@
 
         &lt;p&gt;描述子是按照“外观相似的特征应该有相似的描述子”的原则设计的&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_46.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_46.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_46.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_46.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;2D-2D：对极几何&lt;/p&gt;
@@ -370,84 +698,84 @@
               &lt;li&gt;
                 &lt;p&gt;对极约束&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_51.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_51.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_52.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_52.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_53.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_53.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_54.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_54.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_55.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_55.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_51.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_51.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_52.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_52.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_53.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_53.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_54.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_54.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_55.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_55.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;本质矩阵  E&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_56.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_56.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_57.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_57.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_58.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_58.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_59.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_59.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_60.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_60.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_61.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_61.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_56.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_56.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_57.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_57.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_58.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_58.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_59.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_59.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_60.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_60.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_61.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_61.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;基础矩阵  F&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_62.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_62.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_62.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_62.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;单应矩阵  H&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_63.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_63.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_64.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_64.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_65.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_65.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_66.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_66.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_67.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_67.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_68.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_68.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_63.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_63.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_64.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_64.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_65.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_65.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_66.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_66.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_67.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_67.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_68.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_68.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;讨论&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_69.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_69.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_70.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_70.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_71.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_71.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_72.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_72.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_69.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_69.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_70.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_70.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_71.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_71.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_72.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_72.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;三角测量&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_48.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_48.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_49.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_49.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_50.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_50.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_48.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_48.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_49.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_49.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_50.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_50.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;2D-3D：PnP
-  &lt;img src=&quot;/assets\VSlam\image_47.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_47.png) --&gt;&lt;/li&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_47.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_47.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
       &lt;li&gt;3D-3D：ICP
         &lt;ul&gt;
           &lt;li&gt;根据两组3D点估计运动&lt;/li&gt;
@@ -465,58 +793,58 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_2&quot;&gt;3.2、光流法&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_73.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_73.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_74.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_74.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_75.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_75.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_76.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_76.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_77.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_77.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_73.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_73.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_74.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_74.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_75.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_75.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_76.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_76.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_77.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_77.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_3&quot;&gt;3.3、直接法&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_78.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_78.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_79.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_79.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_80.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_80.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_81.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_81.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_82.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_82.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_83.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_83.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_84.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_84.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_85.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_85.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_86.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_86.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_78.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_78.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_79.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_79.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_80.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_80.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_81.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_81.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_82.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_82.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_83.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_83.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_84.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_84.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_85.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_85.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_86.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_86.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;customname4&quot;&gt;4、后端/非线性优化(Optimization)&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_87.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_87.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_87.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_87.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname4_1&quot;&gt;4.1、基于滤波器&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_88.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_88.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_89.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_89.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_90.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_90.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_91.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_91.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_88.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_88.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_89.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_89.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_90.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_90.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_91.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_91.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname4_2&quot;&gt;4.2、基于非线性优化&lt;/h4&gt;
@@ -525,30 +853,30 @@
       &lt;li&gt;
         &lt;h5 id=&quot;ba&quot;&gt;BA&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_92.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_92.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_93.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_93.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_94.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_94.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_95.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_95.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_96.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_96.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_92.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_92.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_93.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_93.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_94.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_94.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_95.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_95.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_96.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_96.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;位姿图&quot;&gt;位姿图&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_97.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_97.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_98.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_98.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_99.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_99.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_100.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_100.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_101.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_101.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_97.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_97.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_98.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_98.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_99.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_99.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_100.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_100.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_101.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_101.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -556,50 +884,50 @@
 
 &lt;h3 id=&quot;customname5&quot;&gt;5、回环检测(Loop Closing)&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_102.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_102.png) --&gt;
-&lt;img src=&quot;/assets\VSlam\image_103.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_103.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_102.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_102.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_103.png) --&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_103.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname6&quot;&gt;6、建图&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_104.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_104.png) --&gt;
-&lt;img src=&quot;/assets\VSlam\image_105.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_105.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_104.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_104.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_105.png) --&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_105.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname6_1&quot;&gt;6.1、单目稠密重建&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_109.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_109.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_110.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_110.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_111.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_111.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_112.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_112.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_113.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_113.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_114.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_114.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_115.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_115.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_116.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_116.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_117.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_117.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_109.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_109.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_110.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_110.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_111.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_111.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_112.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_112.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_113.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_113.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_114.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_114.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_115.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_115.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_116.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_116.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_117.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_117.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname6_2&quot;&gt;6.2、RGB-D稠密建图&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\VSlam\image_106.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_106.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_107.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_107.png) --&gt;
-  &lt;img src=&quot;/assets\VSlam\image_108.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_108.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_106.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_106.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_107.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_107.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\VSlam\image_108.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_108.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -615,7 +943,7 @@
 
 &lt;ul&gt;
   &lt;li&gt;视觉SLAM十四讲&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="SLAM" /><summary type="html">目录</summary></entry><entry><title type="html">C++</title><link href="http://localhost:4000/C++/" rel="alternate" type="text/html" title="C++" /><published>2022-12-23T23:38:00+08:00</published><updated>2022-12-23T23:38:00+08:00</updated><id>http://localhost:4000/C++</id><content type="html" xml:base="http://localhost:4000/C++/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="SLAM" /><summary type="html">目录</summary></entry><entry><title type="html">C++</title><link href="http://localhost:4000/C++/" rel="alternate" type="text/html" title="C++" /><published>2022-12-26T23:38:00+08:00</published><updated>2022-12-26T23:38:00+08:00</updated><id>http://localhost:4000/C++</id><content type="html" xml:base="http://localhost:4000/C++/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -709,32 +1037,32 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_1&quot;&gt;1.1、变量和基本类型&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_1.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_1.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_2&quot;&gt;1.2、字符串、向量、数组&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_2.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_2.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_3&quot;&gt;1.3、表达式&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_3.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_3.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_4&quot;&gt;1.4、语句&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_4.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_4.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_5&quot;&gt;1.5、函数&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_5.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_5.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -744,23 +1072,23 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_1&quot;&gt;2.1、IO库&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_6.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_6.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_6_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_6_1.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_6_1.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_6_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_2&quot;&gt;2.2、顺序容器&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_7.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_7.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_3&quot;&gt;2.3、关联容器&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_8.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_8.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_4&quot;&gt;2.4、泛型算法&lt;/h4&gt;
@@ -768,8 +1096,8 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_5&quot;&gt;2.5、动态内存&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_9.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_9.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -779,32 +1107,32 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_1&quot;&gt;3.1、类基础&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_10.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_10.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_2&quot;&gt;3.2、拷贝控制&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_11.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_11.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_3&quot;&gt;3.3、运算符重载&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_12.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_12.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_4&quot;&gt;3.4、OOP&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_13.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_13.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_5&quot;&gt;3.5、模板、泛型编程&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_14.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_14.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -814,20 +1142,20 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname4_1&quot;&gt;4.1、标准库特殊设施&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_15.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_15.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname4_2&quot;&gt;4.2、用于大型程序的工具&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_16.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_16.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname4_3&quot;&gt;4.3、特殊工具与技术&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\C++\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_17.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_17.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;44c11customname4_4&quot;&gt;4.4、C++11{#customname4_4}&lt;/h4&gt;
@@ -836,20 +1164,20 @@
       &lt;li&gt;
         &lt;h5 id=&quot;智能指针&quot;&gt;智能指针&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\C++\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_18.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_18.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;移动语义和右值引用&quot;&gt;移动语义和右值引用&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\C++\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_19.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_19.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;类构造函数&quot;&gt;类构造函数&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\C++\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_20.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_20.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;lambda表达式&quot;&gt;lambda表达式&lt;/h5&gt;
@@ -876,7 +1204,7 @@
   &lt;li&gt;
     &lt;h4 id=&quot;c要点pdf&quot;&gt;C++要点.pdf&lt;/h4&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="C++" /><summary type="html">目录</summary></entry><entry><title type="html">数据结构和算法</title><link href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" rel="alternate" type="text/html" title="数据结构和算法" /><published>2022-12-23T23:38:00+08:00</published><updated>2022-12-23T23:38:00+08:00</updated><id>http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95</id><content type="html" xml:base="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="C++" /><summary type="html">目录</summary></entry><entry><title type="html">数据结构和算法</title><link href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/" rel="alternate" type="text/html" title="数据结构和算法" /><published>2022-12-25T23:38:00+08:00</published><updated>2022-12-25T23:38:00+08:00</updated><id>http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95</id><content type="html" xml:base="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1795,8 +2123,8 @@
       &lt;li&gt;
         &lt;p&gt;&lt;strong&gt;性能比较&lt;/strong&gt;&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\DataStructures_Algorithms\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/DataStructures_Algorithms\image_1.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\DataStructures_Algorithms\image_1.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/DataStructures_Algorithms\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -1834,7 +2162,7 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_7&quot;&gt;4.7、动态规划&lt;/h4&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="C++" /><summary type="html">目录</summary></entry><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/Machine-Learning/" rel="alternate" type="text/html" title="Machine Learning" /><published>2022-12-23T23:38:00+08:00</published><updated>2022-12-23T23:38:00+08:00</updated><id>http://localhost:4000/Machine%20Learning</id><content type="html" xml:base="http://localhost:4000/Machine-Learning/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="C++" /><summary type="html">目录</summary></entry><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/Machine-Learning/" rel="alternate" type="text/html" title="Machine Learning" /><published>2022-12-24T23:38:00+08:00</published><updated>2022-12-24T23:38:00+08:00</updated><id>http://localhost:4000/Machine%20Learning</id><content type="html" xml:base="http://localhost:4000/Machine-Learning/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1855,18 +2183,18 @@
 
 &lt;h3 id=&quot;customname1&quot;&gt;1、K-means&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Machine_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_1.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_1.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname2&quot;&gt;2、PCA&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Machine_Learning\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_2.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_2.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname3&quot;&gt;3、SVD&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Machine_Learning\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_3.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_3.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- https://zhuanlan.zhihu.com/p/29846048
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -1913,8 +2241,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\CNN\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_1.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\CNN\image_1.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1925,8 +2253,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\CNN\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_3.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\CNN\image_3.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -1934,8 +2262,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\CNN\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_2.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\CNN\image_2.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname2&quot;&gt;2、目标检测&lt;/h3&gt;
 
@@ -1955,8 +2283,8 @@
       &lt;li&gt;
         &lt;p&gt;交并比&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_4.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_4.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;交并比损失&lt;/p&gt;
@@ -1965,40 +2293,40 @@
           &lt;li&gt;
             &lt;p&gt;IOU loss&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_5.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_5.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;GIOU loss&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_6.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_6.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;DIOU loss&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_7.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_7.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;CIOU loss&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_8.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_8.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;Anchor Boxes&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_9.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_9.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;非极大值抑制&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\CNN\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_10.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_10.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -2080,8 +2408,8 @@
           &lt;li&gt;
             &lt;p&gt;畸变&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_11.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_11.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;图像遮挡&lt;/p&gt;
@@ -2090,44 +2418,44 @@
               &lt;li&gt;
                 &lt;p&gt;随机擦除&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_13.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_13.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;Cutout&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_14.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_14.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;Hide and Seek&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_15.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_15.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;Grid Mask&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_16.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_16.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_16.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;MixUp&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_17.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_17.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_17.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;CutMix&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_18.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_18.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;mosaic&lt;/p&gt;
 
-                &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_19.png) --&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_19.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
               &lt;/li&gt;
               &lt;li&gt;
                 &lt;p&gt;style transfer GAN&lt;/p&gt;
@@ -2139,16 +2467,16 @@
       &lt;li&gt;
         &lt;h5 id=&quot;归一化&quot;&gt;归一化&lt;/h5&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_12.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_12.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_2&quot;&gt;1.2、数据集划分&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_20.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_20.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2162,17 +2490,17 @@
       &lt;li&gt;
         &lt;p&gt;卷积&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_21.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_21.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_21.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_21.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_22.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_22.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_22.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_22.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;BN&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_23.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_23.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_23.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_23.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;激活&lt;/p&gt;
@@ -2184,22 +2512,22 @@
           &lt;li&gt;
             &lt;p&gt;非线性激活&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_24.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_24.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
             &lt;p&gt;dropout&lt;/p&gt;
 
-            &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_25.png) --&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_25.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;池化&lt;/p&gt;
 
-        &lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_26.png) --&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_26.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -2213,23 +2541,23 @@
 
 &lt;h3 id=&quot;customname3&quot;&gt;3、参数设置&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_10.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_10.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname4&quot;&gt;4、损失函数&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_9.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_9.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname5&quot;&gt;5、前向传播&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_8.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_8.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname6&quot;&gt;6、反向传播&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_7.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_7.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname7&quot;&gt;7、梯度下降&lt;/h3&gt;
 
@@ -2239,8 +2567,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_5.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_5.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2248,28 +2576,28 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_6.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_6.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname8&quot;&gt;8、训练中&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_4.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_4.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname9&quot;&gt;9、可视化&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_3.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_3.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname10&quot;&gt;10、评估&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_2.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_2.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname11&quot;&gt;11、算法调整&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\Deep_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_1.png) --&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">traditional_Image_Processing</title><link href="http://localhost:4000/traditional_Image_Processing/" rel="alternate" type="text/html" title="traditional_Image_Processing" /><published>2022-12-21T23:38:00+08:00</published><updated>2022-12-21T23:38:00+08:00</updated><id>http://localhost:4000/traditional_Image_Processing</id><content type="html" xml:base="http://localhost:4000/traditional_Image_Processing/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_1.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">traditional_Image_Processing</title><link href="http://localhost:4000/traditional_Image_Processing/" rel="alternate" type="text/html" title="traditional_Image_Processing" /><published>2022-12-21T23:38:00+08:00</published><updated>2022-12-21T23:38:00+08:00</updated><id>http://localhost:4000/traditional_Image_Processing</id><content type="html" xml:base="http://localhost:4000/traditional_Image_Processing/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2299,8 +2627,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_3.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_3.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2311,8 +2639,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_4.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_4.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- https://www.cnblogs.com/shine-lee/p/10950963.html
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2323,8 +2651,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_5.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_5.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- https://blog.csdn.net/qq_36523492/article/details/109723705
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -2342,13 +2670,13 @@
 
 &lt;h3 id=&quot;customname2&quot;&gt;2、滤波&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_1.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_1.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname3&quot;&gt;3、形态学&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_2.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_2.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname4&quot;&gt;4、图像梯度&lt;/h3&gt;
 
@@ -2358,8 +2686,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_6.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_6.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2367,8 +2695,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_7.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_7.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2376,8 +2704,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_8.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_8.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname5&quot;&gt;5、模版匹配&lt;/h3&gt;
 
@@ -2387,8 +2715,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_9.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_9.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2396,8 +2724,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_10.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_10.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2405,8 +2733,8 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_11.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_11.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2414,222 +2742,5 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\traditional_Image_Processing\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_12.png) --&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">Linux常用指令</title><link href="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="alternate" type="text/html" title="Linux常用指令" /><published>2022-12-20T17:13:00+08:00</published><updated>2022-12-20T17:13:00+08:00</updated><id>http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-20-Linux常用命令.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">Perspective-n-Point 问题</title><link href="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="Perspective-n-Point 问题" /><published>2022-12-18T22:25:00+08:00</published><updated>2022-12-18T22:25:00+08:00</updated><id>http://localhost:4000/Perspective-n-Point%20%E9%97%AE%E9%A2%98</id><content type="html" xml:base="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-18-Perspective-n-Point.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="SLAM" /><summary type="html"></summary></entry><entry><title type="html">Tmux 常用指令</title><link href="http://localhost:4000/Tmux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" rel="alternate" type="text/html" title="Tmux 常用指令" /><published>2022-11-04T22:48:00+08:00</published><updated>2022-11-04T22:48:00+08:00</updated><id>http://localhost:4000/Tmux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/Tmux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">&lt;h3 id=&quot;1tmux简介&quot;&gt;1、Tmux简介&lt;/h3&gt;
-
-&lt;p&gt;Tmux 就是会话与窗口的”解绑/绑定”工具。会话是用户与计算机之间的临时交互，与进程对应。窗口是接收/反馈输入输出的界面，例如一个terminal窗口，可以输入指令和显示指令执行结果。如果会话和窗口绑定了，那么关闭窗口，会话及其对应的进程都将被关闭。反之解绑后，即使窗口被误关闭，会话及其进程依然继续存在运行。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;安装&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# Ubuntu 或 Debian&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;tmux
-
-&lt;span class=&quot;c&quot;&gt;# CentOS 或 Fedora&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;yum &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;tmux
-
-&lt;span class=&quot;c&quot;&gt;# Mac&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;brew &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;tmux
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;启动和退出&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 自动新建一个会话和窗口并进入&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux
-
-&lt;span class=&quot;c&quot;&gt;# 退出当前窗口并删除窗口和会话，或Ctrl+d&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;前缀键（prefix）&lt;/strong&gt;：&lt;/p&gt;
-
-&lt;p&gt;默认前缀键为Ctrl+b，可以修改&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tmux 的一些特点：&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;允许单个terminal中管理和访问多个会话，即可以同时运行和管理多个命令行程序
-在列出的会话中选择一个接入，即会创建一个新的窗口和所选择的会话绑定。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/tmux/tmux-1.png?raw=true&quot; width=&quot;90%&quot; height=&quot;90%&quot; /&gt;
-&lt;/center&gt;
-&lt;ul&gt;
-  &lt;li&gt;允许一个会话同时被多个terminal访问，允许一个会话包含多个窗口。前者可以实现多人实时共享会话，后者可以扩充一个会话的可操作范围&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/tmux/tmux-2.png?raw=true&quot; width=&quot;90%&quot; height=&quot;90%&quot; /&gt;
-&lt;/center&gt;
-&lt;ul&gt;
-  &lt;li&gt;允许一个窗口被任意水平和垂直拆分为多个窗格，每个窗格都可作为一个独立的终端执行指令。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;center&gt;
-&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/tmux/tmux-3.png?raw=true&quot; width=&quot;90%&quot; height=&quot;90%&quot; /&gt;
-&lt;/center&gt;
-
-&lt;h3 id=&quot;2会话session&quot;&gt;2、会话（session）&lt;/h3&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 新建会话&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux new &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &amp;lt;session-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux外使用&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;c&quot;&gt;# tmux外使用，默认名称0、1、2，依次递推&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 分离会话，退出当前 Tmux 窗口，但是会话和里面的进程仍然在后台运行&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux detach &lt;span class=&quot;c&quot;&gt;# tmux内使用&lt;/span&gt;
-  Ctrl+b d &lt;span class=&quot;c&quot;&gt;# tmux内使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 显示所有会话&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;#或者 tmux list-session，tmux外使用&lt;/span&gt;
-  Ctrl+b s  &lt;span class=&quot;c&quot;&gt;# tmux内使用，可以快速切换会话&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 接入会话&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux attach &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;session-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux外使用&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux a &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;session-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux外使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 杀死会话&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux kill-session &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;session-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux外使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 切换会话&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux switch &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;session-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux内使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 重命名会话&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux rename-session &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; 0 &amp;lt;new-name&amp;gt;   &lt;span class=&quot;c&quot;&gt;# 将0号会话重命名。tmux外使用&lt;/span&gt;
-  Ctrl+b &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# tmux内使用&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;3窗口window&quot;&gt;3、窗口（window）&lt;/h3&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 新建窗口&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux new-window &lt;span class=&quot;nt&quot;&gt;-n&lt;/span&gt; &amp;lt;window-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux内使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 切换窗口&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-window&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &amp;lt;window-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux 内使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 重命名窗口&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux rename-window &amp;lt;new-name&amp;gt; &lt;span class=&quot;c&quot;&gt;# tmux 内使用&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 窗口快捷键，tmux内使用&lt;/span&gt;
-  Ctrl+b c：创建一个新窗口，状态栏会显示多个窗口的信息。
-  Ctrl+b p：切换到上一个窗口（按照状态栏上的顺序）。
-  Ctrl+b n：切换到下一个窗口。
-  Ctrl+b &amp;lt;number&amp;gt;：切换到指定编号的窗口，其中的&amp;lt;number&amp;gt;是状态栏上的窗口编号。
-  Ctrl+b w：显示所有窗口的列表，可从中选择进入某个窗口。
-  Ctrl+b ,：重命名当前窗口。
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;4窗格pane&quot;&gt;4、窗格（pane）&lt;/h3&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 划分窗格&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; 划分上下两个窗格
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux split-window &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 快捷键 Ctrl+b &quot; &lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; 划分左右两个窗格
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux split-window &lt;span class=&quot;nt&quot;&gt;-h&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 快捷键 Ctrl+b %&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 移动光标&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 光标切换到上方窗格&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 光标切换到下方窗格&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-L&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 光标切换到左边窗格&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;k&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-pane&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 光标切换到右边窗格&lt;/span&gt;
-
-  Ctrl+b &amp;lt;arrow key&amp;gt; &lt;span class=&quot;c&quot;&gt;# 快捷键&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 交换窗格位置&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; 当前窗格上移（和上一个窗格交换）
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux swap-pane &lt;span class=&quot;nt&quot;&gt;-U&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 快捷键 Ctrl+b {&lt;/span&gt;
-
-&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; 当前窗格下移（和下一个窗格交换）
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux swap-pane &lt;span class=&quot;nt&quot;&gt;-D&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 快捷键 Ctrl+b }&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 窗格快捷键&lt;/span&gt;
-  Ctrl+b Ctrl+o：所有窗格向前移动一个位置，第一个窗格变成最后一个窗格。
-  Ctrl+b Alt+o：所有窗格向后移动一个位置，最后一个窗格变成第一个窗格。
-  Ctrl+b x：关闭当前窗格。
-  Ctrl+b &lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;：将当前窗格拆分为一个独立窗口。
-  Ctrl+b z：当前窗格全屏显示，再使用一次会变回原来大小。
-  Ctrl+b Ctrl+&amp;lt;arrow key&amp;gt;：按箭头方向调整窗格大小。
-  Ctrl+b q：显示窗格编号。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;5其他命令&quot;&gt;5、其他命令&lt;/h3&gt;
-
-&lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# 列出所有快捷键，及其对应的 Tmux 命令&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux list-keys
-
-&lt;span class=&quot;c&quot;&gt;# 列出所有 Tmux 命令及其参数&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux list-commands
-
-&lt;span class=&quot;c&quot;&gt;# 列出当前所有 Tmux 会话的信息，tmux内使用&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux info
-
-&lt;span class=&quot;c&quot;&gt;# 查看Tmux版本&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux &lt;span class=&quot;nt&quot;&gt;-V&lt;/span&gt;
-
-&lt;span class=&quot;c&quot;&gt;# 重新加载当前的 Tmux 配置，tmux外使用&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux source-file ~/.tmux.conf
-
-&lt;span class=&quot;c&quot;&gt;# 鼠标翻页&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; 方式一
-  Ctrl+b &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;: 进入翻页状态，滚动鼠标翻页，q 退出翻页状态。xshell中 &lt;span class=&quot;nb&quot;&gt;shift&lt;/span&gt;+鼠标滚轮 即可直接翻页
-
-  &lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt; 方式二，更改后右键粘贴有问题，复制粘贴需使用 ctrl+shift+c/v
-  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;set-option -g mouse on&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; ~/.tmux.conf &lt;span class=&quot;c&quot;&gt;# &amp;gt;&amp;gt;为追加，&amp;gt;为覆盖&lt;/span&gt;
-  &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tmux source-file ~/.tmux.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;5保存和加载会话&quot;&gt;5、保存和加载会话&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;安装插件：&lt;/p&gt;
-
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;添加配置到~/.tmux.conf文件：&lt;/p&gt;
-
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;tmux-plugins/tpm&apos;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;tmux-plugins/tmux-resurrect&apos;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @plugin &lt;span class=&quot;s1&quot;&gt;&apos;tmux-plugins/tmux-continuum&apos;&lt;/span&gt;
-  ​
-  &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @continuum-save-interval &lt;span class=&quot;s1&quot;&gt;&apos;15&apos;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @continuum-restore &lt;span class=&quot;s1&quot;&gt;&apos;on&apos;&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-g&lt;/span&gt; @resurrect-capture-pane-contents &lt;span class=&quot;s1&quot;&gt;&apos;on&apos;&lt;/span&gt;
-  ​
-  &lt;span class=&quot;c&quot;&gt;# Other config ...&lt;/span&gt;
-  ​
-  run &lt;span class=&quot;nt&quot;&gt;-b&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&apos;~/.tmux/plugins/tpm/tpm&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;重新加载配置文件：&lt;/p&gt;
-
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  tmux &lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; ~/.tmux.conf
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;安装插件：&lt;/p&gt;
-
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c&quot;&gt;# 在tmux内使用快捷键安装插件，安装后可以即可使用保存和加载会话功能&lt;/span&gt;
-  Ctrl+b I
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;保存和加载会话快捷键&lt;/p&gt;
-
-    &lt;div class=&quot;language-shell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c&quot;&gt;# 保存会话&lt;/span&gt;
-  Ctrl+b Ctrl+s
-  &lt;span class=&quot;c&quot;&gt;# 加载会话&lt;/span&gt;
-  Ctrl+b Ctrl+r
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;参考&quot;&gt;参考&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2019/10/tmux.html&quot;&gt;Tmux 使用教程&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/p/146544540&quot;&gt;自动保存Tmux会话&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://blog.csdn.net/hxxjxw/article/details/118275482&quot;&gt;Tmux 启动鼠标翻页&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="Linux" /><summary type="html">1、Tmux简介</summary></entry></feed>
+&lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_12.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">Linux常用指令</title><link href="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="alternate" type="text/html" title="Linux常用指令" /><published>2022-12-20T17:13:00+08:00</published><updated>2022-12-20T17:13:00+08:00</updated><id>http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-20-Linux常用命令.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">Perspective-n-Point 问题</title><link href="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="Perspective-n-Point 问题" /><published>2022-12-18T22:25:00+08:00</published><updated>2022-12-18T22:25:00+08:00</updated><id>http://localhost:4000/Perspective-n-Point%20%E9%97%AE%E9%A2%98</id><content type="html" xml:base="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-18-Perspective-n-Point.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="SLAM" /><summary type="html"></summary></entry></feed>
