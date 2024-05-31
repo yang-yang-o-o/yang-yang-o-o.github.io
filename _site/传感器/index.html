@@ -595,42 +595,42 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
     <h4 id="鱼眼镜头">鱼眼镜头</h4>
 
     <p>个人认为针孔相机模型和鱼眼相机模型区别在于光线传播的不同，前者是直线传播，射线在归一化平面上的交点就是成像点，而后者存在折射，折射后在归一化平面上的成像点比针孔模型成像点更接近z轴，从而使得在成像面尺寸不变的情况下，鱼眼相机模型可以获得更大的fov角度。
-  <img src="/assets\sensor\image_24.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_24.png) --></p>
+  <!-- ![Markdowm Image](/assets\sensor\image_24.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_24.png" alt="Markdowm Image" /></p>
 
-    <p><img src="/assets\sensor\image_25.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_25.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_25.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_25.png" alt="Markdowm Image" /></p>
   </li>
   <li>
     <h4 id="投影模型">投影模型</h4>
 
-    <p><img src="/assets\sensor\image_26.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_26.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_26.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_26.png" alt="Markdowm Image" /></p>
 
-    <p><img src="/assets\sensor\image_27.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_27.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_27.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_27.png" alt="Markdowm Image" /></p>
   </li>
   <li>
     <h4 id="成像过程-1">成像过程</h4>
 
-    <p><img src="/assets\sensor\image_28.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_28.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_28.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_28.png" alt="Markdowm Image" /></p>
 
     <p>这个图一个不合适的地方是，a，b，xd，yd应该标在归一化平面内，且分别为N和M在归一化平面内的坐标。</p>
 
-    <p><img src="/assets\sensor\image_29.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_29.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_29.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_29.png" alt="Markdowm Image" /></p>
 
     <p>两种猜测，后续有待具体确认，公式 (1) 可能是因为投影模型是fθ，然后再乘上畸变矫正；也可能是这个 (1+…) 是畸变矫正和投影模型的耦合，因为鱼眼投影的折射也可以看成是一种相对于小孔投影的畸变，这样的话，投影模型就可以直接同时和畸变一起在相机标定的过程中被拟合出来。</p>
 
-    <p><img src="/assets\sensor\image_30.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_30.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_30.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_30.png" alt="Markdowm Image" /></p>
   </li>
   <li>
     <h4 id="fov对比">fov对比</h4>
 
-    <p><img src="/assets\sensor\image_31.png" alt="Markdowm Image" />
-  <!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_31.png) --></p>
+    <p><!-- ![Markdowm Image](/assets\sensor\image_31.png) -->
+  <img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_31.png" alt="Markdowm Image" /></p>
 
     <p>假设都在归一化平面内，焦距f等于1，此时纵坐标表示归一化平面内的成像半径，可以看出，对于入射角为90度（垂直于光轴）的光线，小孔投影的成像半径是无穷大，而其他的几种鱼眼模型的成像半径都在2以内，此时fov角为180度。</p>
   </li>

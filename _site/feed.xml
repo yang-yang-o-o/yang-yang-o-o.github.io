@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-24T10:03:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-31T09:06:10+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -68,42 +68,42 @@
     &lt;h4 id=&quot;鱼眼镜头&quot;&gt;鱼眼镜头&lt;/h4&gt;
 
     &lt;p&gt;个人认为针孔相机模型和鱼眼相机模型区别在于光线传播的不同，前者是直线传播，射线在归一化平面上的交点就是成像点，而后者存在折射，折射后在归一化平面上的成像点比针孔模型成像点更接近z轴，从而使得在成像面尺寸不变的情况下，鱼眼相机模型可以获得更大的fov角度。
-  &lt;img src=&quot;/assets\sensor\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_24.png) --&gt;&lt;/p&gt;
+  &lt;!-- ![Markdowm Image](/assets\sensor\image_24.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_25.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_25.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;投影模型&quot;&gt;投影模型&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_26.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_26.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_26.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_27.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_27.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_27.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_27.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;成像过程-1&quot;&gt;成像过程&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_28.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_28.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_28.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_28.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;这个图一个不合适的地方是，a，b，xd，yd应该标在归一化平面内，且分别为N和M在归一化平面内的坐标。&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_29.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_29.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_29.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_29.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;两种猜测，后续有待具体确认，公式 (1) 可能是因为投影模型是fθ，然后再乘上畸变矫正；也可能是这个 (1+…) 是畸变矫正和投影模型的耦合，因为鱼眼投影的折射也可以看成是一种相对于小孔投影的畸变，这样的话，投影模型就可以直接同时和畸变一起在相机标定的过程中被拟合出来。&lt;/p&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_30.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_30.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_30.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_30.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;fov对比&quot;&gt;fov对比&lt;/h4&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/assets\sensor\image_31.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-  &lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_31.png) --&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\sensor\image_31.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\sensor\image_31.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
     &lt;p&gt;假设都在归一化平面内，焦距f等于1，此时纵坐标表示归一化平面内的成像半径，可以看出，对于入射角为90度（垂直于光轴）的光线，小孔投影的成像半径是无穷大，而其他的几种鱼眼模型的成像半径都在2以内，此时fov角为180度。&lt;/p&gt;
   &lt;/li&gt;
@@ -1039,6 +1039,73 @@
 
     &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_1.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;自动存储持续性？&lt;/strong&gt;
+  对应的变量称为局部变量，存储在栈中，生命周期为作用域的生命周期。能隐藏同名的全局变量。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;静态存储持续性？&lt;/strong&gt;
+  对应的变量称为静态变量或全局变量，存储在固定的内存块中，生命周期为整个程序的生命周期。
+  &lt;strong&gt;外部链接性、内部链接性、无链接性的区别？&lt;/strong&gt;&lt;br /&gt;
+  在文件中代码块外部声明的变量具有外部链接性，可被其他文件访问。extern 关键字用于声明引用一个其他文件中的外部链接性的变量。在文件中代码块外声明并且加了static 的变量具有内部链接性，只能在当前文件访问，不能被其他文件访问。在代码块内声明并且加了static的变量是无链接性，只能在对应的代码块内访问。&lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;strong&gt;动态存储持续性？&lt;/strong&gt;
+  对应的变量称为动态变量，存在在堆中，生命周期直到delete 释放为止。&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;顶层const 和底层const&lt;/strong&gt;
+  顶层const 表示本身是一个常量，底层const 表示指向的对象是一个常量。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;default 和delete 关键字&lt;/strong&gt;
+  default 关键字用于自定义的构造函数（6 种），将命令编译器创建对应的默认版本。delete 关键字可以用于任何一个成员函数，让编译器不使用这个函数。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;override 和final 关键字&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;override 关键字加在派生类的虚函数后，显式的表明需要去重写基类同名同特征标的虚函数，如果基类没有就报错。&lt;/li&gt;
+          &lt;li&gt;final 关键字加在虚函数后，显式指出之后的派生类不能重写这个虚函数。否则报错。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;函数指针、函数符、lambda 表达式&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;函数指针是指向函数的指针，声明函数时将函数名换为 &lt;strong&gt;*指针名&lt;/strong&gt;即可。&lt;/li&gt;
+          &lt;li&gt;函数符是可以以函数方式与（）结合使用的任意对象，包括函数名、指向函数的指针和重载了（）运算符的类对象。&lt;/li&gt;
+          &lt;li&gt;Lambda 表达式表示一个可调用的代码单元，可以理解为一个匿名的内联函数。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;内联函数&lt;/strong&gt;
+  使用inline 关键字，声明的同时提供定义。在编译过程中，编译器直接将函数调用替换成函数代码，执行时就不需要反复跳转，运行速度快于常规函数，但需要更多的内存。内联函数不能递归。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Lambda 表达式：&lt;/strong&gt;
+  C++引入lambda 表达式的主要目的是参数为函数指针或者函数符的的函数也可以接受类似于函数的表达式作为参数。&lt;strong&gt;一种常见的用法是作为参数传递给STL 函数。&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Lambda 表达式显式捕获和隐式捕获&lt;/strong&gt;
+  显式捕获指在[]中显示的指明需要捕获表达式所在作用域内的某个变量，分为值捕获和引用捕获。隐式捕获在[]中使用=或者&amp;amp;，表明lambda 表达式可以按值或按引用使用作用域内的所有变量。可以混合使用隐式捕获和显式捕获，显式指出的变量按照其对应的方式捕获，其余的变量按照指定的方式隐式捕获。混合使用时，方括号第一个参数必须是隐式捕获。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;C++中的强制类型转换：&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;static_cast：将表达式类型强制转换为目标类型（只有在两者之间可以隐式转换时才能用）。不能去掉表达式的const。&lt;/li&gt;
+          &lt;li&gt;const_cast：将const 类型强制换行为非const 类型。&lt;/li&gt;
+          &lt;li&gt;reinterpret_cast：是一种比特位的重新解释，强制转换得到一个新的值，该值与原始表达式有完全相同的比特位。&lt;/li&gt;
+          &lt;li&gt;dynamic_cast：主要作用是将基类的指针或引用安全的转换成派生类的指针或引用（向下强制转换）。当然可以用于向上转换和同类型的转换，虽然隐式也可以完成这种转换。对于指针：可以安全转换就返回转换后的地址，不能就返回nullptr。对于引用：可以安全转换就返回转换后的引用，不能就引发bad_cast 异常。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;RTTI：&lt;/strong&gt;
+  运行阶段类型识别，用于程序在运行阶段确定对象的类型（如判断基类的指针到底指向了哪种对象）。C++有三种支持RTTI 的元素：dynamic_cast、typeid、type_info。typeid 运算符返回一个指出对象类型的值（type_Info 的引用），type_info 结构存储了有关特定类型的信息。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;纯虚函数和虚函数的区别&lt;/strong&gt;
+  含有纯虚函数的类自定义接口，不提供实现，不能创建对象。含有虚函数的类可以。虚函数可以被直接使用，纯虚函数需要在派生类中定义后才能使用&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;static 关键字：&lt;/strong&gt;
+  在局部作用域内声明的static 变量，内存只被分配一次，下次进入作用域时仍然维持上一次的值。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;const 关键字：&lt;/strong&gt;
+  阻止一个变量被改变、顶层const、底层const、const 形参、const 函数、const 返回值。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;可变参数模板&lt;/strong&gt;
+  class …T：声明一个模板参数包T；T …args：声明一个T 类型的函数参数包args。C++11 使用递归的方式展开参数包。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;转发&lt;/strong&gt;
+  在函数模板中依照参数的类型，将参数传递给模板中调用的另一个函数，通常按照引用传递来提高效率。模板参数可能也是引用类型，因此为了兼容所有左值、右值、左值引用、右值引用作为模板参数，C++11 采用了引用折叠，比如模板参数实例化为右值引用，模板中使用了模板参数的右值引用，那么右值引用的右值引用将被折叠为右值引用。可以使用forword 函数完成左值引用到右值引用的转换。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;迭代器&lt;/strong&gt;
+  指针可以用来遍历存储空间连续的数据结构，但是对于存储空间不连续的，就需要寻找一个行为类似指针的类，来对非数组的数据结构进行遍历。并且方便STL 算法对容器的访问，因此C++引入迭代器。
+        &lt;ul&gt;
+          &lt;li&gt;迭代器提供了对一个容器中对象的访问方法，并且定义了容器中对象的范围。&lt;/li&gt;
+          &lt;li&gt;STL 有5 种迭代器：输入迭代器、输出迭代器、正向迭代器、双向迭代器、随机访问迭代器。&lt;/li&gt;
+          &lt;li&gt;输入迭代器只能读容器信息，不能写容器信息。&lt;/li&gt;
+          &lt;li&gt;输出迭代器可以解引用让程序修改容器值，但不能读取。&lt;/li&gt;
+          &lt;li&gt;正向迭代器只能++，可读取和修改数据。&lt;/li&gt;
+          &lt;li&gt;双向迭代器可++可–，可读取和修改数据。&lt;/li&gt;
+          &lt;li&gt;随机访问迭代器具有双向迭代器的所有特性，还支持随机访问和使用关系运算符比较指向的值。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_2&quot;&gt;1.2、字符串、向量、数组&lt;/h4&gt;
@@ -1063,6 +1130,15 @@
 
     &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_5.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;如何实现函数重载？&lt;/strong&gt;
+  函数名相同而特征标不同；特征标相同：参数数目相同&amp;amp;&amp;amp; 参数类型相同&amp;amp;&amp;amp; 参数的排列顺序相同。类型引用和类型本身视为同一个特征标&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;显示具体化、隐式实例化、显示实例化的区别？&lt;/strong&gt;
+  实例化不需要提供新的模板定义，只是根据具体的类型，用原来的模板定义创建实例。具体化需要根据具体的类型创建新的定义。隐式实例化是根据调用的参数自动推断模板类型，然后根据模板生成对应的函数定义，显示实例化是命令编译器为某种类型创建函数定义，以提高编译和链接的效率。显示具体化是针对某种类型，源模板定义不能实现某些功能，所以人为提供定义来实现。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;decltype 关键字作用？&lt;/strong&gt;
+  用于推断表达式的类型，auto 占位返回类型，然后使用decltype 可实现模板函数后置返回类型&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -1083,12 +1159,22 @@
 
     &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_7.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;vector 是如何增长的&lt;/strong&gt;
+  为了支持快速随机访问，vector 将元素连续存储。每次重新分配内存，需要移动现存的所有元素，为了减少移动的次数，通常会分配比新的空间需求更大的内存空间，以减少移动的频率。resize 改变容器中元素的数目，reserve 调整容器的容量。&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_3&quot;&gt;2.3、关联容器&lt;/h4&gt;
 
     &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_8.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;map 和 unordered_map 的区别？&lt;/strong&gt;
+  键值都必须唯一。map 底层是基于红黑树实现的，map 会按键值自动排序，因此 map 中元素的排列都是有序的，插入和查询时间复杂度是对数级的。unordered_map 底层是基于哈希表实现的，插入和查询时间复杂度是常数级的，但是元素是无序的。&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_4&quot;&gt;2.4、泛型算法&lt;/h4&gt;
@@ -1109,6 +1195,76 @@
 
     &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_10.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;const 成员变量、static 成员变量、static const 成员常量的区别？&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;const 成员变量声明后不能被修改，只能在构造函数中使用成员初始化列表语法来初始化。&lt;/li&gt;
+          &lt;li&gt;static 成员变量定义静态成员变量，被所有对象共享且只有一个，不能在类声明中初始化，因为还没有分配内存，在声明之后使用单独的语句来初始化&lt;/li&gt;
+          &lt;li&gt;static const 用于声明静态成员常量，被所有对象共享且只有一个，不能被更改，可以在类声明中初始化。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;const 成员函数、static 成员函数的区别？&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;const 成员函数内无法修改数据成员，且不能调用非const 成员函数。&lt;/li&gt;
+          &lt;li&gt;static 成员函数独立于对象，不能通过对象调用，只能通过类来调用，函数中只能使用静态成员。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;友元的作用？&lt;/strong&gt;
+  除了公有成员函数外另外一种访问类私有成员的方法，友元不是成员函数。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;隐式类型转换和显示类型转换？&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;如果定义了只接受一个参数的构造函数，那么将可以进行参数类型到类类型的隐式类型转换（赋值、返回、传参）。对这种构造函数使用explicit 关键字，将禁止隐式的类型转换，只能显式转换。&lt;/li&gt;
+          &lt;li&gt;如果要将类对象转换为其他类型，需要使用operator 定义转换函数。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;为什么派生类的构造函数要使用成员初始化列表语法来调用基类的构造函数？&lt;/strong&gt;
+  因为在构造派生类对象时，要先构造派生类对象的基类部分，就需要先调用基类构造函数，但是在进入派生类构造函数之后，派生类就已经被构造，所以需要用成员初始化列表语法调用基类的构造函数，如果没有显示调用，将使用默认的基类构造函数。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;基类指针或者引用指向派生类对象，派生类指针或引用指向基类对象？&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;基类指针和引用可以不显示转换的情况下指向派生类对象，因为从逻辑上说派生类对象也是基类对象，然而只能访问派生类的基类部分。&lt;/li&gt;
+          &lt;li&gt;派生类指针或引用不能指向基类对象，除非基类对象强制转换为派生类对象。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;如何进行深拷贝？&lt;/strong&gt;
+  默认的复制构造函数和复制赋值运算符执行浅拷贝，要执行深拷贝需要自定义复制构造函数和复制赋值运算符来实现。
+        &lt;ul&gt;
+          &lt;li&gt;如果基类使用了new，派生类没有使用new，派生类不需要自定义复制构造和复制赋值，默认的版本会自动调用基类自定义的版本（因为自定义了，编译器不会生成默认了）。&lt;/li&gt;
+          &lt;li&gt;如果基类使用了new，派生类也使用了new，派生类就需要自定义复制构造函数和复制赋值运算符来深拷贝派生类新定义的成员，基类的由基类函数深拷贝。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;为什么在派生类中不能调用基类的析构函数和赋值运算符（感觉没有被继承）？&lt;/strong&gt;
+  实际上是被派生类的析构函数和赋值运算符隐藏了，要在派生类中调用需要使用作用域解析来调用。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;基类对象和派生类对象之间的转换？&lt;/strong&gt;
+  派生类对象可以隐式的转换为基类对象，只获得派生类的基类部分。基类对象转换为派生类对象需要显示转换。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;基类指针或引用和派生类指针或引用之间的转换？&lt;/strong&gt;
+  派生类指针或引用可以隐式转换为基类指针或引用，只能使用派生类的基类部分。基类指针或引用只有在显示转换时才能转换为派生类指针或引用。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;什么是抽象基类？&lt;/strong&gt;
+  包含纯虚函数的类是抽象基类，只定义接口，不能创建对象。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;公有继承、保护继承、私有继承？&lt;/strong&gt;
+  公有继承实现的是is-a 关系，保护继承和私有继承实现的是has-a 关系。三种继承方式基类的私有部分都只能通过基类的接口来访问，可以理解为变为派生类的私有部分。公有继承公有变公有，保护变保护。保护继承公有和保护都变保护。私有继承公有和保护都变私有。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;什么是多态？&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;同一个方法在基类和派生类中表现出不同的行为。&lt;/li&gt;
+          &lt;li&gt;实现多态的两个条件：&lt;strong&gt;使用虚方法&lt;/strong&gt;、&lt;strong&gt;派生类中重写基类的虚方法&lt;/strong&gt;。当通过基类指针或者引用调用一个被派生类重写的虚方法时，会根据指针或者引用指向的对象类型来调用对应方法。如果重写的不是虚方法，那么将根据指针或引用本身的类型来调用。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;多态是如何实现的？&lt;/strong&gt;
+  多态是通过虚函数表来实现的，当某个类定义了虚函数时，编译器会为这个类定义一个虚函数表，这个类的每个对象都将多一个指针，指向虚函数表，虚函数表中存储当前类所有的虚函数名及其对应的地址。调用函数时会在虚函数表中查找函数地址，然后去执行。派生时，派生类也将定义一个虚函数表，如果派生类没有重写基类的虚函数，那么表中的虚函数的地址就是基类的地址，如果派生类重写了某个虚函数，那么表中的这个虚函数对应的地址将变为派生类重写的这个函数的地址。当通过基类指针或者引用调用一个被派生类重写的虚方法时，去指针或引用指向的类型的虚函数表中找到函数的地址去执行。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;为什么构造函数不能是虚函数？&lt;/strong&gt;
+  因为要构造某个类型的对象，一定是调用这个类型的构造函数，而不是动态的选择其他的函数来构造这个函数，所以不需要多态特性，也就不需要设为虚函数。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;为什么析构函数要是虚函数？&lt;/strong&gt;
+  如果一个类作为基类，那么析构函数要是虚函数，这样基类的指针或引用指向派生类对象时，释放对象才能先调用派生类的析构函数，然后调用基类的析构函数，正确的回收内存。&lt;/li&gt;
+      &lt;li&gt;派生类中重写的基类虚方法会覆盖基类中所有同名的虚方法，即使特征标不同（在虚函数表中表现为，所有同名的虚方法地址被设为派生类重写的这个虚方法）。为避免覆盖，应该在派生类中顺便重写其他同名的版本。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;什么是动态联编和静态联编？&lt;/strong&gt;
+  编译器为函数调用找到对应的地址的过程称为联编，对于非虚方法采用静态联编，在编译过程中确定对应的地址。对于虚方法采用动态联编，在运行过程中决定去哪个虚函数表中查找地址。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;派生类访问基类私有成员？&lt;/strong&gt;
+  使用基类的接口、使用using 重新定义访问权限、强制类型转换为基类&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;多重继承中为什么要使用虚基类？&lt;/strong&gt;
+  如果多个基类都是从相同的祖先基类派生得到，那么派生类将会有多个祖先基类部分，这会使得使用多态特性时变得复杂，虚基类技术使得相同的祖先基类只有一个。通过基类从祖先基类派生时加virtual 关键字来实现。&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;类模板的隐式实例化、显式实例化、显式具体化、部分具体化区别？&lt;/strong&gt;
+  隐式实例化、显式实例化、显式具体化和函数模板相同，部分具体化可以给类型参数之一指定具体的类型，并且要提供相应的定义。&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_2&quot;&gt;3.2、拷贝控制&lt;/h4&gt;
@@ -1166,18 +1322,41 @@
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_18.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_18.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+        &lt;p&gt;智能指针的作用是负责自动释放所指向的对象，三种智能指针，shared_ptr、unique_ptr、weak_ptr。&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;shared_ptr 是共享型，允许多个指针指向同一个对象，使用引用计数来记录当前有多少个指针指向同一个对象，在有新指针指向对象时，引用计数加1，但一个指针被销毁时，引用计数减1，当引用计数减到0 时，表示没有指针再指向对象，可以将对象释放。&lt;/li&gt;
+          &lt;li&gt;unique_ptr是独占型，同一时刻独占指向的对象，指针被销毁时，指向的对象自动被释放，不支持普通的拷贝和赋值操作，需要调用.release()放弃控制权。调用.reset(q)释放当前对象，并指向新对象q。&lt;/li&gt;
+          &lt;li&gt;weak_ptr 是一种指向shared_ptr 指向的对象的弱引用，不影响引用计数，weak_ptr 不能直接访问对象，需要先使用.lock()函数检查指向的对象是否存在。&lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;移动语义和右值引用&quot;&gt;移动语义和右值引用&lt;/h5&gt;
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_19.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_19.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;移动语义&lt;/strong&gt;
+  避免移动内存中的数据，只是修改记录，如果谁接管。通过移动构造函数和移动赋值运算符实现，两者的形参都应为右值引用，实参都为右值。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;右值引用&lt;/strong&gt;
+  左值和右值的区别在于是否能获取地址。将右值关联到右值引用导致右值被存储到特定的位置，有了地址。左值引用能更改指向对象，因此左值引用可以指向左值、右值引用，但是不能指向右值。const 左值引用不能改变指向对象，除了可以指向左值、右值引用，也就可以指向右值。右值引用只能指向临时对象。std：：move 函数将左值转换为右值并初始化一个右值引用。&lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;类构造函数&quot;&gt;类构造函数&lt;/h5&gt;
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\C++\image_20.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\C++\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;移动构造函数和移动赋值运算符&lt;/strong&gt;
+  用于实现移动语义，移动构造函数（移动赋值运算符）不会分配任何新内存，它接管源对象的内存。在移动构造函数（移动赋值运算符）中接管后，应该手动将源对象中指向这个内存的指针置为nullptr。默认移动构造函数（移动赋值运算符）不会设置，是危险的&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;复制构造函数和复制赋值运算符&lt;/strong&gt;
+  形参为 const 左值引用。因为 const 左值引用可以指向右值，因此没有移动构造函数和移动赋值运算符时，将调用复制构造函数和复制赋值运算符。只要自定义了复制构造函数和复制赋值运算符（移动构造函数和移动赋值运算符），编译器就不会再提供复制和移动的这 4 种默认函数。&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;委托构造函数和继承构造函数&lt;/strong&gt;
+  在一个构造函数中调用另一个构造函数，称为委托。派生类中可以通过显式声明的形式继承基类自定义的构造函数。&lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;h5 id=&quot;lambda表达式&quot;&gt;lambda表达式&lt;/h5&gt;
