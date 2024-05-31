@@ -549,18 +549,35 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 <!-- ![Markdowm Image](/assets\Machine_Learning\image_1.png) -->
 <p><img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_1.png" alt="Markdowm Image" /></p>
 
+<ul>
+  <li><strong>KNN</strong>
+  计算当前样本和数据库中所有样本的距离，然后将距离排序，取最小的k 个距离对应的数据库样本，分析k 个样本的类别，取类别频率最高的类别作为当前样本的类别。</li>
+  <li><strong>K-means</strong>
+  创建k 个初始聚类中心，每个数据点都分别计算到k 个聚类中心的距离，然后将每个数据点分到距离最近的聚类中心上，得到k 堆，然后计算每堆的均值作为新的聚类中心。然后重复上面的步骤，直到每个样本的类别都不改变。</li>
+</ul>
+
 <h3 id="customname2">2、PCA</h3>
 
 <!-- ![Markdowm Image](/assets\Machine_Learning\image_2.png) -->
 <p><img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_2.png" alt="Markdowm Image" /></p>
+
+<p>当我们用一些特征来表示数据时，特征间可能出现冗余，此时可以通过PCA 将数据的特征降维。以实现用更低维度、更少、更显著的特征来表示数据。通常的做法先将数据归一化为0 均值1 方差，然后求数据的平方和矩阵
+<!-- ![Markdowm Image](/assets\Machine_Learning\image_4.png) -->
+<img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_4.png" alt="Markdowm Image" />
+，对这个矩阵奇异值分解，U 矩阵的列向量是源数据列空间的标准正交基，取前k 个列向量就构成一个子空间，然后数据左乘k 个列向量构成的矩阵，就将源数据投影到了子空间，实现数据的降维。</p>
 
 <h3 id="customname3">3、SVD</h3>
 
 <!-- ![Markdowm Image](/assets\Machine_Learning\image_3.png) -->
 <p><img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_3.png" alt="Markdowm Image" /></p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- https://zhuanlan.zhihu.com/p/29846048
-</code></pre></div></div>
+<ul>
+  <li>只有方阵才能进行特征分解，特征分解将矩阵分解为特征向量张成的矩阵和特征值构成的对角阵的乘积。</li>
+  <li>
+    <p>奇异值分解不要求矩阵为方阵，一个mxn 的矩阵可以分解为mxm 的酉矩阵、mxn 的对角阵、nxn 的酉矩阵三者的乘积。对角阵中对角元为奇异值。共轭转置等于逆矩阵称为酉矩阵。酉矩阵中每个元素都为实数变为正交矩阵。</p>
+  </li>
+  <li>https://zhuanlan.zhihu.com/p/29846048</li>
+</ul>
 
 <h3 id="customname4">4、策略</h3>
 

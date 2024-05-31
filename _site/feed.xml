@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-31T09:06:10+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-31T10:44:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2365,18 +2365,35 @@
 &lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_1.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;KNN&lt;/strong&gt;
+  计算当前样本和数据库中所有样本的距离，然后将距离排序，取最小的k 个距离对应的数据库样本，分析k 个样本的类别，取类别频率最高的类别作为当前样本的类别。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;K-means&lt;/strong&gt;
+  创建k 个初始聚类中心，每个数据点都分别计算到k 个聚类中心的距离，然后将每个数据点分到距离最近的聚类中心上，得到k 堆，然后计算每堆的均值作为新的聚类中心。然后重复上面的步骤，直到每个样本的类别都不改变。&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;customname2&quot;&gt;2、PCA&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_2.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当我们用一些特征来表示数据时，特征间可能出现冗余，此时可以通过PCA 将数据的特征降维。以实现用更低维度、更少、更显著的特征来表示数据。通常的做法先将数据归一化为0 均值1 方差，然后求数据的平方和矩阵
+&lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_4.png) --&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+，对这个矩阵奇异值分解，U 矩阵的列向量是源数据列空间的标准正交基，取前k 个列向量就构成一个子空间，然后数据左乘k 个列向量构成的矩阵，就将源数据投影到了子空间，实现数据的降维。&lt;/p&gt;
 
 &lt;h3 id=&quot;customname3&quot;&gt;3、SVD&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\Machine_Learning\image_3.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Machine_Learning\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- https://zhuanlan.zhihu.com/p/29846048
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;只有方阵才能进行特征分解，特征分解将矩阵分解为特征向量张成的矩阵和特征值构成的对角阵的乘积。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;奇异值分解不要求矩阵为方阵，一个mxn 的矩阵可以分解为mxm 的酉矩阵、mxn 的对角阵、nxn 的酉矩阵三者的乘积。对角阵中对角元为奇异值。共轭转置等于逆矩阵称为酉矩阵。酉矩阵中每个元素都为实数变为正交矩阵。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;https://zhuanlan.zhihu.com/p/29846048&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;customname4&quot;&gt;4、策略&lt;/h3&gt;
 
@@ -2423,10 +2440,17 @@
 &lt;!-- ![Markdowm Image](/assets\CNN\image_1.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;残差结构可以解决梯度消失、梯度爆炸的问题。有用的原因是残差块学习恒等函数非常容易。在学习过程中自动决定使用或者不使用某些层。&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;densenet&quot;&gt;DenseNet&lt;/h4&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;每一层都使用前面所有层的输出。能够充分的利用特征，加强特征的传递。&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;inception&quot;&gt;Inception&lt;/h4&gt;
   &lt;/li&gt;
@@ -2434,6 +2458,8 @@
 
 &lt;!-- ![Markdowm Image](/assets\CNN\image_3.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;多个并行分支（比如不同尺度卷积），在通道上堆叠各分支的输出，让网络自动决定使用哪些分支&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -2443,6 +2469,8 @@
 
 &lt;!-- ![Markdowm Image](/assets\CNN\image_2.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;1x1 卷积相当于全连接层，可以在通道上融合信息，可以实现通道的压缩，压缩通道后就得到了瓶颈层，压缩通道既降低了计算复杂度，又不影响网络的性能。&lt;/p&gt;
 
 &lt;h3 id=&quot;customname2&quot;&gt;2、目标检测&lt;/h3&gt;
 
@@ -2493,6 +2521,26 @@
             &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_8.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;IOU 系列loss&lt;/strong&gt;
+  使用mse 计算坐标损失时，坐标差相同，损失就相同，但是同样的坐标差对于大的bbx 相对误差就很小，对于小的bbx，相对误差就很大。IOU 是一种尺度不变的表示，使用IOU loss 就能解决这个问题。&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;IOU loss：IOU 的负对数。不相交时，IOU loss 不可导；相交面积相同，IOU loss 就相同&lt;/li&gt;
+              &lt;li&gt;GIOU loss：（当目标框完全包裹预测框时，退化为IOU loss）
+  &lt;!-- ![Markdowm Image](/assets\CNN\image_11.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_11.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
+              &lt;li&gt;DIOU loss：同时考虑重叠面积和中心点距离
+  &lt;!-- ![Markdowm Image](/assets\CNN\image_12.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
+              &lt;li&gt;CIOU loss：在DIOU loss 基础上增加考虑长宽比
+  &lt;!-- ![Markdowm Image](/assets\CNN\image_13.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_13.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\CNN\image_14.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  &lt;!-- ![Markdowm Image](/assets\CNN\image_15.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_15.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -2507,6 +2555,30 @@
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\CNN\image_10.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/CNN\image_10.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
       &lt;/li&gt;
+      &lt;li&gt;Faster Rcnn、SSD
+        &lt;ul&gt;
+          &lt;li&gt;Faster Rcnn：特征提取层，比如使用VGG；RPN 网格预测出候选区域；ROI pooling 在特征图的候选区域上提取特征送入全连接层预测候选区域的类别和优化候选框。&lt;/li&gt;
+          &lt;li&gt;SSD：特征提取层提取特征，使用FPN 在不同尺度上输出特征图。每个特征图的每个位置都设置anchor ，然后分两个分支，一个分支卷积得到anchor_num*4，一个分支卷积得到anchor_num*C，然后根据每个类别的预测概率做NMS&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;YOLO 系列
+        &lt;ul&gt;
+          &lt;li&gt;YOLOv1：20%随机裁剪，HSV，网络输出SxSx(2x5+20)，正样本计算坐标损失和置信度损失，负样本计算置信度损失，cell 计算类别损失。损失都采用mse。处理正负样本不均衡：正样本置信度损失时负样本的50 倍，同时只有与任何gt bbx IOU 小于0.5 的设为负样本。&lt;br /&gt;
+  缺点：对小物体预测较差，每个cell 只能预测两个bbx 和一个类别。&lt;/li&gt;
+          &lt;li&gt;YOLOv2：在v1 的基础上加入BN、5 种anchor（使用1-IOU 作为k 均值聚类的距离），宽高预测为基于anchor 的偏移、多尺度训练、Darknet19。网络输出SxSx5x(5+80)。坐标和置信度损失使用mse，类别使用交叉熵&lt;/li&gt;
+          &lt;li&gt;YOLOv3：置信度损失采用逻辑回归、类别损失bce，坐标损失mse，增加了多尺度预测，在三个尺度上预测，9 种anchor，每个尺度分3 个。Darknet53、多尺度训练。&lt;/li&gt;
+          &lt;li&gt;YOLOv4：mosaic 数据增强、DropBlock regularization、Class label smoothing、Mish activation、CSP、CIOU-loss、交叉小批标准化(CmBN)、SPP（用于扩大感受野）、PAN（用于多尺度特征集成）、DIoU-NMS。
+            &lt;ul&gt;
+              &lt;li&gt;CSPDarknet53：CSP 增强CNN 的学习能力&lt;/li&gt;
+              &lt;li&gt;SPP：空间金字塔池化，可以显著增加感受野&lt;/li&gt;
+              &lt;li&gt;PANet：通过上采用之后又下采用来聚合特征。&lt;/li&gt;
+              &lt;li&gt;坐标损失CIOU，置信度损失bce，分类损失bce。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;YOLOv5：mosaic 中增加随机缩放，随机排布；自适应anchor_size；推理时自适应图片缩放。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Pytorch 中的dataSet，dataloader，Sampler&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -2641,6 +2713,17 @@
               &lt;/li&gt;
             &lt;/ul&gt;
           &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;strong&gt;数据增强方式有哪些？&lt;/strong&gt;
+  畸变和图像遮挡。畸变又分为光照畸变和几何畸变，光照畸变比如改变HSV 等，几何畸变比如缩放、仿射变换，裁剪。图像遮挡有随机擦除、cutout、mixup、cutmix、mosaic。&lt;/p&gt;
+            &lt;ul&gt;
+              &lt;li&gt;随机擦除：可以在输入图像上擦除、也可以在特征图上擦除，Dropout（随机失活神经元）、DropConnect（随机失活连接）、DropBlock（在卷积输出的特征图中随机将一个区域置0）&lt;/li&gt;
+              &lt;li&gt;Cutout：随机左上角的一个固定大小的正方形区域置0.&lt;/li&gt;
+              &lt;li&gt;Mixup：直接将两张图像利用α通道混合，拥有两个标签，loss 可以分别计算每个标签的loss，然后安装α加权。&lt;/li&gt;
+              &lt;li&gt;CutMix：从另一张图像上裁剪一个区域贴到当前图像上，在区域中保留原图的bbx。&lt;/li&gt;
+              &lt;li&gt;Mosaic：从4 张图像上裁剪得到4 个区域，然后拼接4 个区域得到一张图像，在区域中保留原图的bbx。好处是一张图像同时混合了4 中上下文信息，在BN 时就能同时考虑4 倍的信息，就能得到近似4 倍batch-size 的BN 效果。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
@@ -2648,6 +2731,11 @@
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_12.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;输入数据为何要归一化、如何归一化？&lt;/strong&gt;
+  当输入数据各个维度上的范围相差很大时，对输入数据归一化为0 均值1 方差，这样能加速收敛&lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -2656,6 +2744,15 @@
 
     &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_20.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_20.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;什么是n 份交叉验证，有什么好处，如何用于模型评估？&lt;/strong&gt;
+        &lt;ul&gt;
+          &lt;li&gt;是一种用于模型选择的策略，将数据集划分为n 份，对于一个模型训练n 次，每次使用其中1份作为验证集、其余n-1 份作为训练集，取n 次训练的平均误差。多个模型时根据平均误差来选择模型。这种策略的好处是可以避免固定划分数据集时的局限性、特殊性。尤其在小规模数据集上能减小过拟合。&lt;/li&gt;
+          &lt;li&gt;将这种策略用于训练集和测试集时，可以进行模型评估，每次用其中1 份作为测试集，n-1 份作为训练集，同一个模型训练n 次，取平均误差作为模型的评估结果。&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2674,12 +2771,59 @@
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_22.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_22.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;传统卷积、Depthwise Convolution 、Pointwise Convolution 、Depthwise Separable Convolution、分组卷积、空洞卷积的具体做法？&lt;/strong&gt;
+            &lt;ul&gt;
+              &lt;li&gt;Depthwise Convolution：对每个通道单独卷积，卷积核个数为输入通道数，卷积前后通道数不变。不能融合不同通道的信息。&lt;/li&gt;
+              &lt;li&gt;Pointwise Convolution：卷积核固定为1x1xC，就是1x1 卷积。&lt;/li&gt;
+              &lt;li&gt;Depthwise Separable Convolution：先进行Depthwise Convolution，然后Pointwise Convolution。&lt;/li&gt;
+              &lt;li&gt;空洞卷积：在卷积核中插入空白数据，目的是增大感受野。&lt;/li&gt;
+              &lt;li&gt;分组卷积：将输入在通道上分为多个组，输出通道也分为多个组，每个组直接单独卷积。每个卷积核的尺寸变为（N/G，K，K），参数量变为原来的1/G。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;在计算机视觉领域，为什么卷积核的尺寸通常为奇数：&lt;/strong&gt;
+  原因有三点：
+            &lt;ul&gt;
+              &lt;li&gt;1、如果是一个偶数，那么same padding 时就只能非对称填充，奇数时直接填充卷积核的单边，更自然对称。&lt;/li&gt;
+              &lt;li&gt;2、奇数的卷积核有一个central pixel 可以方便的确定position。&lt;/li&gt;
+              &lt;li&gt;3、奇数相对于偶数，有中心，对边缘、对线条更加敏感，可以更有效的提取信息。如果使用偶数尺寸的卷积核应该也能得到不错的结果，但是在计算机视觉领域，通常使用奇数尺寸的卷积核。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;卷积的特点？&lt;/strong&gt;
+  参数共享和稀疏连接。
+            &lt;ul&gt;
+              &lt;li&gt;参数共享：卷积核在卷积的过程中，是整张图像共用的，卷积核的参数是在不同的卷积区域之间共享的。&lt;/li&gt;
+              &lt;li&gt;稀疏连接：卷积输出的某个值，只有对应的卷积区域有关，与其他区域无关，当前的值只连接到了这个区域，没有连接到其他区域。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;上采样分为哪几种？&lt;/strong&gt;
+  UNpooling、转置卷积/反卷积；
+            &lt;ul&gt;
+              &lt;li&gt;UNpooling 又分为补0、补邻近值、max UNpooling（补0）&lt;/li&gt;
+              &lt;li&gt;转置卷积/反卷积：卷积核在输出图上滑动，将输入的一个值乘以卷积核得到输出图上的多个值，然后滑动过程中重叠位置相加。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;BN&lt;/p&gt;
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_23.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_23.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;BN 的作用、训练时和推理时BN 的计算细节、BN 参数的维度。&lt;/strong&gt;
+  BN 将卷积输出的尺度调整到统一的区间，减少数据的发散程度，降低网络的学习难度，加速收敛，减弱了前层参数和后层参数的联系，有轻微的正则效果，避免梯度消失和梯度爆炸。&lt;strong&gt;BN 的精髓在于归一化后使用β和γ作为还原参数，用于保留原数据的分布。&lt;/strong&gt;
+            &lt;ul&gt;
+              &lt;li&gt;训练阶段：计算当前batch 上的均值和方差，然后归一化，然后乘γ加β。然后用均值和方差去更新滑动平均值。&lt;/li&gt;
+              &lt;li&gt;推理阶段：使用训练阶段最后的滑动平均值作为均值和方差来归一化，然后用训练得到的γ和β来还原分布。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_27.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_27.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
+              &lt;li&gt;参数维度：均值、方差、γ、β的维度都是卷积输出的通道数目，也就是说是在通道维度上BN。&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
       &lt;/li&gt;
       &lt;li&gt;
         &lt;p&gt;激活&lt;/p&gt;
@@ -2689,9 +2833,9 @@
             &lt;p&gt;线性激活&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
-            &lt;p&gt;非线性激活&lt;/p&gt;
-
-            &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_24.png) --&gt;
+            &lt;p&gt;非线性激活
+  Sigmoid、tanh、Relu、leak relu、maxout
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_24.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_24.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
           &lt;/li&gt;
           &lt;li&gt;
@@ -2699,6 +2843,11 @@
 
             &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_25.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_25.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+            &lt;ul&gt;
+              &lt;li&gt;&lt;strong&gt;Dropout 的作用、训练和推理时的计算细节&lt;/strong&gt;
+  能够消除特征间的相互适应，使模型在不需要所有特征都有时才能决策。训练时以一定的概率置0 一些元素，然后将未被置0 的每个元素都除以概率，保证当前层的期望不变。推理时不使用Dropout。&lt;/li&gt;
+            &lt;/ul&gt;
           &lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
@@ -2728,15 +2877,52 @@
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_9.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_9.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;L1 正则和L2 正则具体做法、为什么L1 正则比L2 正则稀疏？为什么正则项能减小过拟合？&lt;/strong&gt;
+  L1 正则项为网络每个权重求L1 范数（矩阵中每个元素的绝对值之和），然后所有权重求和，损失函数中加入L1 正则项，损失函数对于某个权重的偏导数中就只有λsgn(w)这一项，乘以学习率得到ηλsgn(w)，根据权重的L1 范数的符号决定加减ηλ。无论当前权重的大小，总是加减一个固定的项。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_28.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_28.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  L2 正则项为网络每个权重求L2 范数（每个元素的平方和的平方根），然后所有权重求和，损失函数中加入L2 正则项，损失函数对于某个权重的偏导数中就只有ηλw 这一项，合并到w 中又叫权重衰减
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_29.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_29.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  权重每次乘以一个小于1 的数。因为L1 正则对于权重的影响每次都下降一个固定的值，因此不会保留很多很小的值，而是有很多为0 的值，因此得到的权重w 就稀疏。L2 正则对于权重的影响使得权重每次都乘以一个小于1 的数，当w 本身很小时，下降就变慢，最后不会完全等于0，因此有很多接近于0 的值，没有L1 稀疏。&lt;strong&gt;正则项的本质就是通过减小权重w 来达到简化模型的目的，对于输入数据增加噪声之后，模型输出受影响的减小。&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Softmax+交叉熵损失求导过程？&lt;/strong&gt;
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_30.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_30.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;customname5&quot;&gt;5、前向传播&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_8.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_8.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;滑动平均的优点、如何计算、偏差修正如何做？&lt;/strong&gt;
+  使用滚动变量来求平均值，内存占用小，计算效率高。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_31.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_31.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  近似于前1/（1-β）个数据的平均值。偏差修正：
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_32.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_32.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;customname6&quot;&gt;6、反向传播&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_7.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;标量、向量、矩阵间相互求导规则？&lt;/strong&gt;
+  除了矩阵和行向量之间的导数是前者对于后者的每个元素分别求导，其他的都是前者的每个元素分别对于后者求导。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;为什么会出现梯度消失和梯度爆炸？&lt;/strong&gt;
+  因为当前层对于上一层的导数需要乘以当前层的权重，如果w 被调整到比单位矩阵小，那么对于反向传播的梯度是有缩小的作用，在深层网络中，如果梯度不断被缩小，就会出现梯度消失问题，如果w 被调整到比单位矩阵大，对于梯度有放大作用，就会出现梯度爆炸的问题。激活函数有时也会影响梯度，比如sigmoid 函数饱和时，梯度很小，最终如果w 也缩小梯度，那么就会出现梯度消失。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;如何解决梯度消失和梯度爆炸？&lt;/strong&gt;
+  正确选择激活函数、使用残差结构、使用BN&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;customname7&quot;&gt;7、梯度下降&lt;/h3&gt;
 
@@ -2751,6 +2937,10 @@
 
 &lt;ul&gt;
   &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;为什么梯度的反方向是loss 下降最快的方向？&lt;/strong&gt;
+  因为将损失函数在当前位置一阶泰勒展开，保留一阶项，一阶项是增量向量和梯度向量的点乘，等于模长的乘积乘以夹角的余弦值，当增量向量和梯度向量反向时，点乘最小，损失函数最小，此时增量向量的方向就是负梯度方向。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;h4 id=&quot;常用方法&quot;&gt;常用方法&lt;/h4&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
@@ -2758,10 +2948,47 @@
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_6.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SGD、GD、mini-batch SGD 的区别？&lt;/strong&gt;
+  mini-batch 既能加快收敛速度，所需要的硬件内存又不会过大。如果不考虑硬件，肯定是GD收敛速度最快。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;SGDM、Adagrad、RMSProp、ADAM 各自具体的做法和优缺点？&lt;/strong&gt;
+  SGDM 在SGD 的基础上用梯度的滑动平均值来代替梯度，引入之前梯度的影响，能加快收敛速度。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_33.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_33.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  Adagrad 累加梯度的平方，然后学习率除以其根植，以此来自适应调整学习率。当之前的梯度大时，分母大，学习率变小；当之前的梯度小时，分母小，学习率变大。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_34.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_34.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  RMSProp 在Adagrad 的基础上将梯度平方的累加和改为梯度平方的滑动平均值。也实现自适应调整学习率，但是很远的梯度就考虑得很少。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_35.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_35.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  ADAM 使用梯度平方的滑动平均来自适应调整学习率，同时使用梯度的滑动平均值作为梯度。并且使用偏差修正。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_36.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_36.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;优化函数为什么不用sgd 而用adam，什么时候应该使用sgd，什么时候使用adam？&lt;/strong&gt;
+  &lt;strong&gt;ADAM 的收敛速度比SGDM 快，但是收敛效果没有SGDM 好&lt;/strong&gt;，因为ADMD 中使用一定窗口内梯度平方的滑动平均来自适应的调整学习率，如果数据发生巨变，那么学习率就时大时小，引起学习率震荡，导致模型最终收敛效果变差，如果最终的全局最优点是一个平坦的极值点，那么ADAM 会在收敛后尝试跳出，使得最终的收敛效果变差。前期梯度平方滑动平均小，学习率大，ADAM 收敛更快，ADAM 更倾向于收敛到sharp minimum，因为这种极值点附近的梯度大，进来时梯度平方的滑动平均大，学习率小，然后收敛于此处。如果处于平坦的极值点，梯度的平方小，学习率大，算法尝试跳出平坦的极值点。平坦的极值点通常训练集和测试集分布更接近，SGDM 的泛化能力强一些，ADAM 最终收敛的泛化能力差一些。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;customname8&quot;&gt;8、训练中&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_4.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Warm-up 作用？&lt;/strong&gt;
+  在训练初期EMA 不稳定，此时让学习率小一些，待EMA 稳定以后，再选择预先设置的学习率进行训练&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Early-stopping 作用？&lt;/strong&gt;
+  有降低过拟合的作用，但是提早停止，代价函数的优化就停止了，偏差就不再下降。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Learning rate decay 作用&lt;/strong&gt;
+  在初期设置较大的学习率，然后逐渐减小学习率能加快训练速度。可以根据公式衰减，可以根据epoch 衰减，可以按照指定的离散值衰减。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Shuffling 作用&lt;/strong&gt;
+  避免模型从数据顺序中学习到偏见&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;customname9&quot;&gt;9、可视化&lt;/h3&gt;
 
@@ -2773,10 +3000,32 @@
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_2.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;准确率、召回率、F1 分数？&lt;/strong&gt;
+  True positive ：positive 表示当前预测为正样本，True 表示预测对了，标签也是正样本。
+  &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_37.png) --&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_37.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  F1 分数介于0-1 直接，越高越好。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;偏差、方差和欠拟合、过拟合的关系？&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;customname11&quot;&gt;11、算法调整&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\Deep_Learning\image_1.png) --&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">traditional_Image_Processing</title><link href="http://localhost:4000/traditional_Image_Processing/" rel="alternate" type="text/html" title="traditional_Image_Processing" /><published>2022-12-21T23:38:00+08:00</published><updated>2022-12-21T23:38:00+08:00</updated><id>http://localhost:4000/traditional_Image_Processing</id><content type="html" xml:base="http://localhost:4000/traditional_Image_Processing/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/Deep_Learning\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;高偏差怎么调？&lt;/strong&gt;
+  数据原因（特征不够）、网络结构原因（网络结构过于简单，使用更复杂的模型或者Boosting）、参数设置原因（学习率过小或过大）、损失函数原因（本身不收敛）、训练过程原因（训练次数太少，还没有收敛）&lt;br /&gt;
+  Boosting：将训练集分为多个子集，每个子集都训练一个简单的模型，最后加权所有模型。无论怎么的输入，总有一个模型能预测很好，最终加权输出也很好。&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;高方差怎么调？&lt;/strong&gt;
+  数据原因（训练集和测试集分布差异大，用了过多不相关的特征。）、网络结构原因（网络结构过于复杂。简化结构、正则化、Dropout、BN、bagging）、训练过程原因（训练时间过长。early stopping）通常训练集和测试集分布差异大的原因是训练集太小。&lt;br /&gt;
+  Bagging：训练多个模型，然后预测时平均多个模型预测的结果。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">traditional_Image_Processing</title><link href="http://localhost:4000/traditional_Image_Processing/" rel="alternate" type="text/html" title="traditional_Image_Processing" /><published>2022-12-21T23:38:00+08:00</published><updated>2022-12-21T23:38:00+08:00</updated><id>http://localhost:4000/traditional_Image_Processing</id><content type="html" xml:base="http://localhost:4000/traditional_Image_Processing/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
