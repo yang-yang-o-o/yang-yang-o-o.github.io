@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-31T10:44:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-04T01:34:20+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -413,6 +413,9 @@
 &lt;!-- ![Markdowm Image](/assets\VSlam\image_1.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_118.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_118.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;customname2&quot;&gt;2、基础知识&lt;/h3&gt;
 
 &lt;ul&gt;
@@ -503,6 +506,12 @@
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_14.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_119.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_119.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_2&quot;&gt;2.2、李群李代数&lt;/h4&gt;
 
@@ -563,6 +572,12 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_120.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_120.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_3&quot;&gt;2.3、相机模型&lt;/h4&gt;
 
@@ -615,6 +630,12 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_121.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_121.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname2_4&quot;&gt;2.4、非线性优化&lt;/h4&gt;
 
@@ -662,11 +683,21 @@
         &lt;p&gt;G2O (General Graphic Optimization)&lt;/p&gt;
 
         &lt;p&gt;&lt;!-- ![Markdowm Image](/assets\VSlam\image_44.png) --&gt;
-  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_44.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+  &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_44.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+  结合图论和非线性优化，节点表示优化变量，边表示误差项。可以利用图的结构来更好的优化。&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_122.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_122.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_123.png) --&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_123.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_124.png) --&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_124.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_125.png) --&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_125.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname3&quot;&gt;3、前端/视觉里程计(Visual Odometry, VO)&lt;/h3&gt;
 
@@ -790,6 +821,12 @@
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_126.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_126.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_2&quot;&gt;3.2、光流法&lt;/h4&gt;
 
@@ -804,6 +841,12 @@
   &lt;!-- ![Markdowm Image](/assets\VSlam\image_77.png) --&gt;
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_77.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_127.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_127.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
   &lt;li&gt;
     &lt;h4 id=&quot;customname3_3&quot;&gt;3.3、直接法&lt;/h4&gt;
 
@@ -827,6 +870,9 @@
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_86.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_128.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_128.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname4&quot;&gt;4、后端/非线性优化(Optimization)&lt;/h3&gt;
 
@@ -882,12 +928,18 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_129.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_129.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
 &lt;h3 id=&quot;customname5&quot;&gt;5、回环检测(Loop Closing)&lt;/h3&gt;
 
 &lt;!-- ![Markdowm Image](/assets\VSlam\image_102.png) --&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_102.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
 &lt;!-- ![Markdowm Image](/assets\VSlam\image_103.png) --&gt;
 &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_103.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_130.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_130.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customname6&quot;&gt;6、建图&lt;/h3&gt;
 
@@ -930,6 +982,9 @@
   &lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_108.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\VSlam\image_131.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\VSlam\image_131.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;其他资料&quot;&gt;其他资料&lt;/h3&gt;
 
@@ -2341,7 +2396,10 @@
   &lt;li&gt;
     &lt;h4 id=&quot;customname1_7&quot;&gt;4.7、动态规划&lt;/h4&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="C++" /><summary type="html">目录</summary></entry><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/Machine-Learning/" rel="alternate" type="text/html" title="Machine Learning" /><published>2022-12-24T23:38:00+08:00</published><updated>2022-12-24T23:38:00+08:00</updated><id>http://localhost:4000/Machine%20Learning</id><content type="html" xml:base="http://localhost:4000/Machine-Learning/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+&lt;/ul&gt;
+
+&lt;!-- ![Markdowm Image](/assets\DataStructures_Algorithms\image_2.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/DataStructures_Algorithms\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="C++" /><summary type="html">目录</summary></entry><entry><title type="html">Machine Learning</title><link href="http://localhost:4000/Machine-Learning/" rel="alternate" type="text/html" title="Machine Learning" /><published>2022-12-24T23:38:00+08:00</published><updated>2022-12-24T23:38:00+08:00</updated><id>http://localhost:4000/Machine%20Learning</id><content type="html" xml:base="http://localhost:4000/Machine-Learning/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
