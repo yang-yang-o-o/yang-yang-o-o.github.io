@@ -1,4 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-08T22:33:30+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-09T21:48:55+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">DexCap：斯坦福李飞飞团队泡茶机器人</title><link href="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="alternate" type="text/html" title="DexCap：斯坦福李飞飞团队泡茶机器人" /><published>2022-12-29T22:48:00+08:00</published><updated>2022-12-29T22:48:00+08:00</updated><id>http://localhost:4000/DexCap:%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA</id><content type="html" xml:base="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/">&lt;h3 id=&quot;1contribution&quot;&gt;1、contribution&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;扩展Fcos，提出了一个通用单目3D目标检测框架Fcos3d&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2网络结构&quot;&gt;2、网络结构&lt;/h3&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/fcos3d/Fcos3d_network.png?raw=true&quot; width=&quot;90%&quot; height=&quot;90%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;h3 id=&quot;3训练和推理&quot;&gt;3、训练和推理&lt;/h3&gt;
+
+&lt;h4 id=&quot;--前向推理结果output张量&quot;&gt;- 前向推理结果output张量&lt;/h4&gt;
+
+&lt;p&gt;网络输入HxWxC的图像，经过一个backbone和FPN，输出5个level的feature map，分别为【8、16、32、64、128】倍降采样，5个level的feature map 先后经过同一个Head(共享权重)，最终输出三个张量：分别为HxWxC（大类加细分类）、HxWx1（Centerness）、HxWx11（Offset，Depth，Size，Rotation，Dir.Class，Velocity），即feature map上每个点只产生一个预测。在共享权重的Head中，Centerness和box分支共享同一个x4的卷积层，然后各自接自己的小head输出。Class分支单独使用一个x4卷积然后接一个小head输出。&lt;/p&gt;
+
+&lt;p&gt;在不同的特征层之间共享HEAD（共享权重），为了适应不同的feature level需要回归的不同大小范围，在处理模型输出时，不使用标准的exp(x)，而是使用带有可训练标量si的exp(si*x)来为feature level i自动调整指数函数的基数。&lt;/p&gt;
+
+&lt;h4 id=&quot;--如何根据标签生成target张量&quot;&gt;- 如何根据标签生成target张量&lt;/h4&gt;
+
+&lt;p&gt;如果feature map 上的一个位置P(x,y)映射回输入图像为位置p(s/2+xs,s/2+ys)，通过位置P(x,y)的预测结果（C+1+11）可以解析出预测3D框，其中Offset是预测的3D框的中心3D点在图像上的投影2d点相对于位置p的Δx和Δy，而Depth是预测的3D框的中心3D点在相机坐标系下的深度，根据位置p(s/2+xs,s/2+ys)、Offset和Depth就可以求出预测的3D框的3D中心点在相机坐标系下的坐标值，而预测3D框的长宽高从Size解析得到，朝向从Rotation和Dir.Class解析得到。&lt;/p&gt;
+
+&lt;p&gt;feature map 上的每一个位置P(x,y)都解析出预测的3Dbox后，将target 3Dbox的八个角点都投影回输入图像上，然后求八个投影点的最小外接矩形，用这个最小外接矩形来计算fcos中的L&lt;em&gt;，T&lt;/em&gt;，R&lt;em&gt;，B&lt;/em&gt;，然后根据fcos中的 max(L&lt;em&gt;，t&lt;/em&gt;，r&lt;em&gt;，b&lt;/em&gt;) &amp;gt; mi 和 max(L&lt;em&gt;，t&lt;/em&gt;，r&lt;em&gt;，b&lt;/em&gt;) &amp;lt; mi-1 来将每个target 3Dbox分配到某一个feature level上，因此实际上在fcos3d方法中，没有用到2D的标签框。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;确定正负样本：&lt;/strong&gt; target 3Dbox 分配完成后，每个feature level分配到一些target 3Dbox，对于每个feature level，如果其上的某个位置P_o(x,y)解析出的3Dbox的3D中心点与任何一个target 3Dbox的3D中心点之间的距离都大于阈值（论文中取1.5m），那么这个位置P_o(x,y)被作为负样本。如果某些位置P_i(x,y)解析出的3Dbox的3D中心点与其中一个target 3Dbox的3D中心点之间的距离小于阈值，那么这些位置P_i(x,y)将被作为正样本。&lt;/p&gt;
+
+&lt;p&gt;如果一个位置P(x,y)预测的3D中心点的投影点落在了多个target 3Dbox的2d投影框内，就将中心点最接近3D中心点投影点的2d投影框对应的target 3Dbox分配给位置P(x,y)来预测。&lt;/p&gt;
+
+&lt;p&gt;最终按照上述的步骤依次处理完每个feature level，每个target 3Dbox都被分配给一个位置P(x,y)来预测，负责预测target 3Dbox的位置P(x,y)被作为正样本，其他位置被作为负样本。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;类别的GT可以直接根据target 3Dbox的类别来设置&lt;/li&gt;
+  &lt;li&gt;Centerness的GT：将target 3Dbox的3D中心点投影回输入图像，然后以投影点为中心构建二维高斯分布，Centerness的GT值就是负责预测这个target 3Dbox的位置P(x,y)的投影位置p(s/2+xs,s/2+ys)处的高斯分布值。&lt;/li&gt;
+  &lt;li&gt;回归值的GT：将target 3Dbox的3D中心点投影回输入图像，相对于位置p(s/2+xs,s/2+ys)可得到Δ，然后除以宽高后映射到feature map上作为Offset的GT值；对于Depth的GT值dp，由target 3Dbox的3D中心点的z坐标dg乘以s和常数c得到，fx和fy分别相机x和y方向的焦距，dp的物理意义是物体真实宽高和归一化平面内所占像素的比值，因为 x_c/u_x = dg/1, x_c/(fx*u_x) = dg/fx, 真实宽/归一化平面内x方向像素个数 = dg/fx，x_c和u_x分别为真实的宽和归一化平面内的宽。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/fcos3d/Fcos3d_depth.png?raw=true&quot; width=&quot;90%&quot; height=&quot;90%&quot; /&gt;
+&lt;/center&gt;
+
+&lt;p&gt;对于Size、Rotation、Dir.Class的GT值，可直接从target 3Dbox获取。&lt;/p&gt;
+
+&lt;h4 id=&quot;--如何根据output张量和target张量来计算loss&quot;&gt;- 如何根据output张量和target张量来计算loss&lt;/h4&gt;
+
+&lt;p&gt;对于正样本计算类别损失、Centerness损失和回归损失；对于负样本只计算类别损失&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;类别损失采用focal loss，属性分类损失采用softmax classification loss&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Centerness损失采用 BCE loss&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;回归损失使用smooth L1 loss，其中Dir.Class损失使用softmax classification loss&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;--推理时如何从output张量中解析出最终的检测结果&quot;&gt;- 推理时如何从output张量中解析出最终的检测结果&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;预测的Centerness乘到类别概率上作为置信度做NMS&lt;/li&gt;
+  &lt;li&gt;根据预测的Offset（Δx和Δy）结合位置p(s/2+xs,s/2+ys)得到x和y的图像坐标，结合内参和预测的Depth得到预测3Dbox的3D中心点（相机坐标系下），根据预测的Size得到3Dbox的长宽高，根据预测的Rotation和Dir.Class得到3Dbox的朝向角&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;参考&quot;&gt;参考&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;https://arxiv.org/abs/1904.01355&lt;/li&gt;
+  &lt;li&gt;https://github.com/open-mmlab/mmdetection3d&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="blog" /><category term="robot learning" /><summary type="html">1、contribution</summary></entry><entry><title type="html">传感器</title><link href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/" rel="alternate" type="text/html" title="传感器" /><published>2022-12-28T23:38:00+08:00</published><updated>2022-12-28T23:38:00+08:00</updated><id>http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8</id><content type="html" xml:base="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -3229,4 +3301,4 @@
 &lt;/ul&gt;
 
 &lt;!-- ![Markdowm Image](/assets\traditional_Image_Processing\image_12.png) --&gt;
-&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">Linux常用指令</title><link href="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="alternate" type="text/html" title="Linux常用指令" /><published>2022-12-20T17:13:00+08:00</published><updated>2022-12-20T17:13:00+08:00</updated><id>http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-20-Linux常用命令.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="Linux" /><summary type="html"></summary></entry><entry><title type="html">Perspective-n-Point 问题</title><link href="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/" rel="alternate" type="text/html" title="Perspective-n-Point 问题" /><published>2022-12-18T22:25:00+08:00</published><updated>2022-12-18T22:25:00+08:00</updated><id>http://localhost:4000/Perspective-n-Point%20%E9%97%AE%E9%A2%98</id><content type="html" xml:base="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-18-Perspective-n-Point.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="SLAM" /><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/traditional_Image_Processing\image_12.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="CV" /><summary type="html">目录</summary></entry><entry><title type="html">Linux常用指令</title><link href="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" rel="alternate" type="text/html" title="Linux常用指令" /><published>2022-12-20T17:13:00+08:00</published><updated>2022-12-20T17:13:00+08:00</updated><id>http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4</id><content type="html" xml:base="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/2022-12-20-Linux常用命令.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><category term="Linux" /><summary type="html"></summary></entry></feed>

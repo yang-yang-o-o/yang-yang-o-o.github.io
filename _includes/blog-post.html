@@ -1,6 +1,23 @@
+<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+  <ul class="list">
+    <!-- <li><a href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li> -->
+    <li class="item"><a class="link" href="{{ '/tags' | prepend: site.baseurl }}">Tags</a></li>
+    <!-- <h3 class="title">Tags</h3> -->
+    <!-- <h3 class="item">Tags</h3> -->
+  </ul>
+</nav>
+
 <div class="item {% if post.star %}star{% endif %}">
     <a class="url" href="{{ site.url }}{{ post.url }}">
         <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
         <h3 class="title">{{ post.title }}</h3>
     </a>
+    <!-- <p>
+        {% if post.excerpt_separator %}
+          {{ post.excerpt | strip_html }}
+        {% else %}
+          {{ post.content | strip_html | truncatewords: 30 }}
+          {{ post.description}}
+        {% endif %}
+      </p> -->
 </div>
