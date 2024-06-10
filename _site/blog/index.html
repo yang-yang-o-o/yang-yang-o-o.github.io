@@ -564,12 +564,48 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-        <aside class="date"><time datetime="29-12-2022">Dec 29 2022</time></aside>
+        <!-- <aside class="date"><time datetime="30-12-2022">Dec 30 2022</time></aside> -->
         <h3 class="title">DexCap：斯坦福李飞飞团队泡茶机器人</h3>
     </a>
     <!-- <p>
         
-          1、contribution 扩展Fcos，提出了一个通用单目3D目标检测框架Fcos3d 2、网络结构 3、训练和推理 - 前向推理结果output张量 网络输入HxWxC的图像，经过一个backbone和FPN，输出5个level的feature map，分别为【8、16、32、64、128】倍降采样，5个level的feature map 先后经过同一个Head(共享权重)，最终输出三个张量：分别为HxWxC（大类加细分类）、HxWx1（Centerness）、HxWx11（Offset，Depth，Size，Rotation，Dir.Class，Velocity），即feature map上每个点只产生一个预测。在共享权重的Head中，Centerness和box分支共享同一个x4的卷积层，然后各自接自己的小head输出。Class分支单独使用一个x4卷积然后接一个小head输出。 在不同的特征层之间共享HEAD（共享权重），为了适应不同的feature level需要回归的不同大小范围，在处理模型输出时，不使用标准的exp(x)，而是使用带有可训练标量si的exp(si*x)来为feature level i自动调整指数函数的基数。 - 如何根据标签生成target张量 如果feature map 上的一个位置P(x,y)映射回输入图像为位置p(s/2+xs,s/2+ys)，通过位置P(x,y)的预测结果（C+1+11）可以解析出预测3D框，其中Offset是预测的3D框的中心3D点在图像上的投影2d点相对于位置p的Δx和Δy，而Depth是预测的3D框的中心3D点在相机坐标系下的深度，根据位置p(s/2+xs,s/2+ys)、Offset和Depth就可以求出预测的3D框的3D中心点在相机坐标系下的坐标值，而预测3D框的长宽高从Size解析得到，朝向从Rotation和Dir.Class解析得到。 feature map 上的每一个位置P(x,y)都解析出预测的3Dbox后，将target 3Dbox的八个角点都投影回输入图像上，然后求八个投影点的最小外接矩形，用这个最小外接矩形来计算fcos中的L，T，R，B，然后根据fcos中的 max(L，t，r，b) &gt; mi 和 max(L，t，r，b) &lt;...
+           项目地址    论文地址 1、Contribution DEXCAP: 一种新型便携式人体手部动作捕捉系统，能够实时跟踪手腕和手指的运动，实现灵巧的操作任务。 DEXIL: 一个模仿学习框架，利用手部动作捕捉数据和点云观察，直接学习灵巧的操作技能。 Human-in-the-Loop Correction: 采用DEXCAP的校正机制，显著提高机器人在复杂任务中的性能。 2、DEXCAP 为了捕获适合训练灵巧机器人策略的细粒度手部运动数据，DEXCAP设计了四个关键目标： 追踪手指运动：使用EMF(electromagnetic field)手套 跟踪6DoF手腕姿态：开发了一种基于SLAM算法的6自由度手腕跟踪系统，如Fig. 2(c)所示。该系统使用Intel Realsense T265摄像头，安装在每只手套的背面。它将来自两个鱼眼摄像头的图像和IMU传感器信号结合起来，使用SLAM算法构建环境地图，从而实现对手腕6自由度姿势的一致跟踪。 记录三维观测和校准：在数据采集开始时，所有跟踪摄像机都放置在机架槽中，保证了摄像机帧之间的恒定变换。然后，我们从架子上取下跟踪摄像头，把它们插到每只手套上的摄像头槽里。这样，我们就可以很容易地将手部姿态跟踪结果通过恒定的初始变换转化为胸部相机的观察帧。 系统的可移植性：我们将为构建者开放代码和指导视频，以及一系列硬件选项。DEXCAP的总成本控制在4000美元的预算之内。 对于机器人设置，只使用激光雷达相机，不需要手腕相机。 3、DEXIL &amp; Human-in-the-Loop Correction 3.1、Data re-targeting 将DEXCAP数据重新定位到机器人实施体的动作和观察空间 部署了一种IK算法，确保DEXCAP数据中机器人指尖和人类指尖之间的对齐，计算中排除小指...
+          
+        
+      </p> -->
+</div>
+
+				
+			
+		
+			
+				
+					<nav class="nav">
+  <ul class="list">
+    <!-- <li><a href="/tags">Tags</a></li> -->
+    <li class="item"><a class="link" href="/tags">Tags</a></li>
+    <!-- <h3 class="title">Tags</h3> -->
+    <!-- <h3 class="item">Tags</h3> -->
+  </ul>
+</nav>
+
+<div class="item ">
+    <a class="url" href="http://localhost:4000/UMI-%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%88%B7%E7%9B%98%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+        <!-- <aside class="date"><time datetime="29-12-2022">Dec 29 2022</time></aside> -->
+        <h3 class="title">UMI：斯坦福刷盘机器人</h3>
+    </a>
+    <!-- <p>
+        
+          1、contribution
+
+参考
+
+
+  https://umi-gripper.github.io/
+  https://umi-gripper.github.io/umi.pdf
+  https://blog.csdn.net/v_JULY_v/article/details/135515947
+
+
           
         
       </p> -->
@@ -591,7 +627,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/%E4%BC%A0%E6%84%9F%E5%99%A8/">
-        <aside class="date"><time datetime="28-12-2022">Dec 28 2022</time></aside>
+        <!-- <aside class="date"><time datetime="28-12-2022">Dec 28 2022</time></aside> -->
         <h3 class="title">传感器</h3>
     </a>
     <!-- <p>
@@ -618,7 +654,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/VSlam/">
-        <aside class="date"><time datetime="27-12-2022">Dec 27 2022</time></aside>
+        <!-- <aside class="date"><time datetime="27-12-2022">Dec 27 2022</time></aside> -->
         <h3 class="title">VSlam</h3>
     </a>
     <!-- <p>
@@ -645,7 +681,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/C++/">
-        <aside class="date"><time datetime="26-12-2022">Dec 26 2022</time></aside>
+        <!-- <aside class="date"><time datetime="26-12-2022">Dec 26 2022</time></aside> -->
         <h3 class="title">C++</h3>
     </a>
     <!-- <p>
@@ -672,7 +708,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95/">
-        <aside class="date"><time datetime="25-12-2022">Dec 25 2022</time></aside>
+        <!-- <aside class="date"><time datetime="25-12-2022">Dec 25 2022</time></aside> -->
         <h3 class="title">数据结构和算法</h3>
     </a>
     <!-- <p>
@@ -699,7 +735,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Machine-Learning/">
-        <aside class="date"><time datetime="24-12-2022">Dec 24 2022</time></aside>
+        <!-- <aside class="date"><time datetime="24-12-2022">Dec 24 2022</time></aside> -->
         <h3 class="title">Machine Learning</h3>
     </a>
     <!-- <p>
@@ -726,7 +762,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/CNN/">
-        <aside class="date"><time datetime="23-12-2022">Dec 23 2022</time></aside>
+        <!-- <aside class="date"><time datetime="23-12-2022">Dec 23 2022</time></aside> -->
         <h3 class="title">CNN</h3>
     </a>
     <!-- <p>
@@ -753,7 +789,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Deep-Learning/">
-        <aside class="date"><time datetime="22-12-2022">Dec 22 2022</time></aside>
+        <!-- <aside class="date"><time datetime="22-12-2022">Dec 22 2022</time></aside> -->
         <h3 class="title">Deep Learning</h3>
     </a>
     <!-- <p>
@@ -780,7 +816,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/traditional_Image_Processing/">
-        <aside class="date"><time datetime="21-12-2022">Dec 21 2022</time></aside>
+        <!-- <aside class="date"><time datetime="21-12-2022">Dec 21 2022</time></aside> -->
         <h3 class="title">traditional_Image_Processing</h3>
     </a>
     <!-- <p>
@@ -807,7 +843,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-        <aside class="date"><time datetime="20-12-2022">Dec 20 2022</time></aside>
+        <!-- <aside class="date"><time datetime="20-12-2022">Dec 20 2022</time></aside> -->
         <h3 class="title">Linux常用指令</h3>
     </a>
     <!-- <p>
@@ -835,7 +871,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Perspective-n-Point-%E9%97%AE%E9%A2%98/">
-        <aside class="date"><time datetime="18-12-2022">Dec 18 2022</time></aside>
+        <!-- <aside class="date"><time datetime="18-12-2022">Dec 18 2022</time></aside> -->
         <h3 class="title">Perspective-n-Point 问题</h3>
     </a>
     <!-- <p>
@@ -863,7 +899,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Tmux%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/">
-        <aside class="date"><time datetime="04-11-2022">Nov 04 2022</time></aside>
+        <!-- <aside class="date"><time datetime="04-11-2022">Nov 04 2022</time></aside> -->
         <h3 class="title">Tmux 常用指令</h3>
     </a>
     <!-- <p>
@@ -890,7 +926,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Fcos3d/">
-        <aside class="date"><time datetime="03-11-2022">Nov 03 2022</time></aside>
+        <!-- <aside class="date"><time datetime="03-11-2022">Nov 03 2022</time></aside> -->
         <h3 class="title">Fcos3d论文阅读</h3>
     </a>
     <!-- <p>
@@ -917,7 +953,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/Fcos/">
-        <aside class="date"><time datetime="24-10-2022">Oct 24 2022</time></aside>
+        <!-- <aside class="date"><time datetime="24-10-2022">Oct 24 2022</time></aside> -->
         <h3 class="title">Fcos论文阅读</h3>
     </a>
     <!-- <p>
@@ -944,7 +980,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/%E4%BA%8C%E5%88%86%E5%9B%BE%E5%8C%B9%E9%85%8D/">
-        <aside class="date"><time datetime="16-10-2022">Oct 16 2022</time></aside>
+        <!-- <aside class="date"><time datetime="16-10-2022">Oct 16 2022</time></aside> -->
         <h3 class="title">二分图匹配</h3>
     </a>
     <!-- <p>
@@ -971,7 +1007,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2/">
-        <aside class="date"><time datetime="11-09-2022">Sep 11 2022</time></aside>
+        <!-- <aside class="date"><time datetime="11-09-2022">Sep 11 2022</time></aside> -->
         <h3 class="title">卡尔曼滤波</h3>
     </a>
     <!-- <p>
@@ -999,7 +1035,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/git/">
-        <aside class="date"><time datetime="26-02-2022">Feb 26 2022</time></aside>
+        <!-- <aside class="date"><time datetime="26-02-2022">Feb 26 2022</time></aside> -->
         <h3 class="title">git 常用指令</h3>
     </a>
     <!-- <p>
@@ -1026,7 +1062,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/%E7%90%83%E9%9D%A2%E5%9D%87%E5%8C%80%E8%A7%86%E7%82%B9%E7%94%9F%E6%88%90/">
-        <aside class="date"><time datetime="24-02-2022">Feb 24 2022</time></aside>
+        <!-- <aside class="date"><time datetime="24-02-2022">Feb 24 2022</time></aside> -->
         <h3 class="title">一种球面均匀采样点生成方法</h3>
     </a>
     <!-- <p>
@@ -1059,7 +1095,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 <div class="item ">
     <a class="url" href="http://localhost:4000/%E5%8F%8C%E8%B6%B3%E6%9C%BA%E5%99%A8%E4%BA%BA/">
-        <aside class="date"><time datetime="01-06-2019">Jun 01 2019</time></aside>
+        <!-- <aside class="date"><time datetime="01-06-2019">Jun 01 2019</time></aside> -->
         <h3 class="title">双足机器人</h3>
     </a>
     <!-- <p>
