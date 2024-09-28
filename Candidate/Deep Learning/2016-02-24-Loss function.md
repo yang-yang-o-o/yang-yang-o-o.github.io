@@ -11,6 +11,18 @@ category: blog
 # description: Markdown summary with different options
 ---
 
+### MSE loss
+
+$$
+\mathrm{MSE}=\frac{1}{n} \sum_{i=1}^n\left(y_i-\hat{y}_i\right)^2
+$$
+
+### CE loss
+
+$$
+\mathrm{CE}=-\frac{1}{n} \sum_{i=1}^n \sum_{j=1}^C y_{i j} \log \left(\hat{y}_{i j}\right)
+$$
+
 ### BCE loss
 
 $$
