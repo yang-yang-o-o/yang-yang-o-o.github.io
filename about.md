@@ -1,6 +1,6 @@
 ---
 title: About
-layout: page
+layout: base
 ---
 <!-- ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}) -->
 
@@ -25,7 +25,7 @@ layout: page
 
 <p style="text-indent: 3em;"><strong>B.S in Mechanical Engineering</strong></p>
 
----
+<!-- --- -->
 <!-- <ul class="Experience-list">
     <p style="text-indent: 4em;"><strong><li>dsafsdf</li></strong></p>
     <p ><font size="4"><strong>2019.9 - 2022.6 </strong></font></p>
@@ -54,7 +54,7 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
 
-<h2>Skills</h2>
+<!-- <h2>Skills</h2>
 
 <ul class="Skills-list">
  <li><strong>Monocular / Binocular stereo vision</strong></li>
@@ -64,17 +64,17 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
  <li><strong>Deep Learning (Monocular 6D pose estimation, 2D/3D object Detection)</strong></li>
  <li><strong>Image processing</strong></li>
  <li><strong>Linux</strong></li>
-</ul>
+</ul> -->
 
----
+<!-- --- -->
 
-<h2>Contacts</h2>
+<!-- <h2>Contacts</h2> -->
 <!-- * ### Email: yang-yang@cqu.edu.cn -->
 <!-- * ### Phone: (+86) 13308362646 -->
-<ul class="Contacts-list">
+<!-- <ul class="Contacts-list">
  <li><strong><font size="4">Email: yang-yang@alu.cqu.edu.cn</font></strong></li>
  <li><strong><font size="4">Phone: (+86) 13308362646</font></strong></li>
-</ul>
+</ul> -->
 <!-- <ul>
  <li><a href="https://github.com/">Lorem Lorem</a></li>
  <li><a href="https://github.com/">Ipsum Dolor</a></li>

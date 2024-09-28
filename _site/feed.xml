@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-10T14:16:54+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Yang yang</title><entry><title type="html">DexCap：斯坦福李飞飞团队泡茶机器人</title><link href="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="alternate" type="text/html" title="DexCap：斯坦福李飞飞团队泡茶机器人" /><published>2022-12-30T22:48:00+08:00</published><updated>2022-12-30T22:48:00+08:00</updated><id>http://localhost:4000/DexCap:%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA</id><content type="html" xml:base="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/">&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_7.png) --&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-09-29T00:01:03+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">杨  炀</title><entry><title type="html">DexCap：斯坦福李飞飞团队泡茶机器人</title><link href="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="alternate" type="text/html" title="DexCap：斯坦福李飞飞团队泡茶机器人" /><published>2022-12-30T22:48:00+08:00</published><updated>2022-12-30T22:48:00+08:00</updated><id>http://localhost:4000/DexCap:%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA</id><content type="html" xml:base="http://localhost:4000/DexCap-%E6%96%AF%E5%9D%A6%E7%A6%8F%E6%9D%8E%E9%A3%9E%E9%A3%9E%E5%9B%A2%E9%98%9F%E6%B3%A1%E8%8C%B6%E6%9C%BA%E5%99%A8%E4%BA%BA/">&lt;!-- ![Markdowm Image](/assets\DexCap\image_7.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_7.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt; &lt;a href=&quot;https://dex-cap.github.io/&quot;&gt;&lt;strong&gt;项目地址&lt;/strong&gt;&lt;/a&gt;    &lt;a href=&quot;https://dex-cap.github.io/assets/DexCap_paper.pdf&quot;&gt;&lt;strong&gt;论文地址&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
@@ -11,13 +11,13 @@
   &lt;li&gt;Human-in-the-Loop Correction: 采用DEXCAP的校正机制，显著提高机器人在复杂任务中的性能。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_1.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\DexCap\image_1.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_1.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;2dexcap&quot;&gt;2、DEXCAP&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_3.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\DexCap\image_3.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_3.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;为了捕获适合训练灵巧机器人策略的细粒度手部运动数据，DEXCAP设计了四个关键目标：&lt;/p&gt;
 
@@ -36,15 +36,15 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_4.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\DexCap\image_4.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_4.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;对于机器人设置，只使用激光雷达相机，不需要手腕相机。&lt;/p&gt;
 
 &lt;h2 id=&quot;3dexil--human-in-the-loop-correction&quot;&gt;3、DEXIL &amp;amp; Human-in-the-Loop Correction&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_2.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\DexCap\image_2.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_2.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;31data-re-targeting&quot;&gt;3.1、Data re-targeting&lt;/h3&gt;
 
@@ -62,12 +62,12 @@
 
 &lt;h3 id=&quot;32point-cloud-based-diffusion-policy&quot;&gt;3.2、Point cloud-based Diffusion Policy&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_5.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\DexCap\image_5.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_5.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;使用重新定位的数据训练基于点云的扩散策略&lt;a href=&quot;#73&quot;&gt;[73]&lt;/a&gt;&lt;a href=&quot;#30&quot;&gt;[30]&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Policy model π 使用 Diffusion Policy&lt;a href=&quot;#13&quot;&gt;[13]&lt;/a&gt;学习得到
+  &lt;li&gt;Policy model π 使用 Diffusion Policy&lt;a href=&quot;#13&quot;&gt;[13]&lt;/a&gt;&lt;a href=&quot;#74&quot;&gt;[74]&lt;/a&gt;学习得到
     &lt;ul&gt;
       &lt;li&gt;模型输入为 $o_t$（场景点云和颜色信息$R^{Kx6}$）和 $s_t$（机器人的状态，$s_t=(p_t,J_t)$，机械臂末端位姿 $p_t=[R_t,T_t]$，手指关节位姿 $J_t$）&lt;/li&gt;
       &lt;li&gt;输出生成的机械臂运动 $a_{[t:t+d]}$，即运动轨迹($a_t$,$a_{t+1}$,…,$a_{t+d}$)，而 $a_t=s_{t+1}$&lt;/li&gt;
@@ -77,8 +77,8 @@
 
 &lt;h3 id=&quot;33human-in-the-loop-correction&quot;&gt;3.3、Human-in-the-loop correction&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets\DexCap\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;
-&lt;!-- ![Markdowm Image](https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_6.png) --&gt;&lt;/p&gt;
+&lt;!-- ![Markdowm Image](/assets\DexCap\image_6.png) --&gt;
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\DexCap\image_6.png&quot; alt=&quot;Markdowm Image&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -125,6 +125,11 @@ pretrain the policy. Hierarchical policy architectures like &lt;a href=&quot;#78
 &lt;div id=&quot;73&quot;&gt;&lt;/div&gt;
 &lt;ul&gt;
   &lt;li&gt;[73] &lt;a href=&quot;https://arxiv.org/pdf/1503.03585&quot;&gt;Jascha Sohl-Dickstein, Eric Weiss, Niru Maheswaranathan, and Surya Ganguli. Deep unsupervised learning using nonequilibrium thermodynamics. In International conference on machine learning, pages 2256–2265. PMLR, 2015.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;74&quot;&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;[74] &lt;a href=&quot;https://arxiv.org/abs/2010.02502&quot;&gt;Jiaming Song, Chenlin Meng, and Stefano Ermon. Denoising diffusion implicit models. arXiv preprint arXiv:2010.02502, 2020.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div id=&quot;78&quot;&gt;&lt;/div&gt;

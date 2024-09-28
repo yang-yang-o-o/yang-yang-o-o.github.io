@@ -13,9 +13,21 @@
         </a>
     {% endif %} -->
 
+    {% if site.note %}
+        <a class="link" data-title="github.com/{{ site.github }}" href="{{ site.url }}/blog" rel="noopener">
+            <i class="fa-regular fa-clipboard"></i>
+        </a>
+    {% endif %}
+
     {% if site.twitter %}
         <a class="link" data-title="twitter.com/{{ site.twitter }}" href="https://yangyang14.top/Reading/" target="_blank" rel="noopener">
             <i class="fa-brands fa-twitter"></i>
+        </a>
+    {% endif %}
+
+    {% if site.reading %}
+        <a class="link" data-title="twitter.com/{{ site.twitter }}" href="https://yangyang14.top/Reading/" rel="noopener">
+            <i class="fa-solid fa-book"></i>
         </a>
     {% endif %}
 
@@ -47,5 +59,11 @@
         <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}"  rel="noopener">
             <i class="fa-regular fa-envelope"></i>
         </a>
+    {% endif %}
+
+    {% if site.about %}
+    <a class="link" data-title="github.com/{{ site.github }}" href="{{ site.url }}/about" rel="noopener">
+        <i class="fa-solid fa-address-card"></i>
+    </a>
     {% endif %}
 </div>

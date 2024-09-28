@@ -1,6 +1,8 @@
 # main text of home
-title: Yang yang 
-# bio: A Person who travels the world eating noodles
+# title: Yang yang 
+title: 杨  炀
+# bio: |
+#   Chongqing University → SenseTime
 
 # twitter summary info
 # description: A blog about technology and stuff related
@@ -36,7 +38,9 @@ disqus:
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-twitter: mytwitter
+note: mynote
+reading: myreading
+# twitter: mytwitter
 instagram: 61.4101792
 # linkedin: mylinkedin
 github: yang-yang-o-o
@@ -71,11 +75,11 @@ pagination:
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+projects: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: true
+blog: false
 
 # do you want to show the "read time" of the posts?
 read-time: true
