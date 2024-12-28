@@ -3,6 +3,10 @@ title: About
 layout: page
 ---
 
+# <center> Publications
+
+---
+
 <div style="line-height: 1.2; display: flex; flex-direction: column; gap: 16px;">
 
    <ul style="margin: 0; padding-left: 20px;">
