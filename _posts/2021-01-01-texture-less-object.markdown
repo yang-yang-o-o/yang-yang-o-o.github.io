@@ -2,7 +2,7 @@
 title: "Texture-less object 6D pose estimation for Robotic Assembly"
 layout: post
 date: 2021-01-01 --:--
-tag: 6D pose
+tag: 6D object pose
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: false
 projects: true

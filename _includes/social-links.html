@@ -44,8 +44,14 @@
     {% endif %}
 
     {% if site.email %}
-        <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}"  rel="noopener">
+        <a class="link" data-title="{{ site.email }}" href="mailto:{{ site.email }}" target="_blank" rel="noopener">
             <i class="fa-regular fa-envelope"></i>
         </a>
+    {% endif %}
+
+    {% if site.google_scholar %}
+    <a class="link" data-title="facebook.com/{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-google-scholar"></i>
+    </a>
     {% endif %}
 </div>

@@ -1,7 +1,6 @@
 # main text of home
-title: Yang yang 
-# bio: A Person who travels the world eating noodles
-
+title: Yang Yang 
+bio: I am currently the Embodied Intelligence Algorithm Engineer of <a href="https://agibot.com/" target="_blank">AgiBot</a>. Previously, I worked at <a href="https://www.sensetime.com/en" target="_blank">SenseTime</a>. I received my M.S. in MEE from Chongqing University.
 # twitter summary info
 # description: A blog about technology and stuff related
 
@@ -20,7 +19,7 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-url: https://yang-yang-o-o.github.io
+# url: https://yang-yang-o-o.github.io
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -29,33 +28,34 @@ permalink: /:title/
 # analytics-google: 'UA-MYANALYTICS'
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: yang-yang # enter this from your disqus account
-  # shortname:  # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+# disqus:
+#   shortname: yang-yang # enter this from your disqus account
+#   # shortname:  # enter this from your disqus account
+#   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
-twitter: mytwitter
-instagram: 61.4101792
+# twitter: mytwitter
+# instagram: 61.4101792
 # linkedin: mylinkedin
 github: yang-yang-o-o
 # email: 614101792@qq.com
 email: yang-yang@alu.cqu.edu.cn
+# google_scholar: 待添加
 
-authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
-    external-image: false
-    picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+# authors:
+#   johndoe:
+#     name: John Doe
+#     bio: A Man who travels the world eating noodles
+#     external-image: false
+#     picture: assets/images/profile.jpg
+#     twitter: johndoe
+#   jamesfoster:
+#     name: James Foster
+#     bio: A Man who develops software with coffee
+#     external-image: false
+#     picture: assets/images/james.jpg
+#     twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -78,16 +78,16 @@ about: true
 blog: true
 
 # do you want to show the "read time" of the posts?
-read-time: true
+read-time: false
 
 # do you want to show the "tags" inside the posts?
 show-tags: true
 
 # related posts inside a post?
-related: true
+related: false
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [blog]
+post-advance-links: []
 
 # show author block at the end of a post ?
 show-author: true

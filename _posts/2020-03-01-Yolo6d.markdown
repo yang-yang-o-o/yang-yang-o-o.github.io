@@ -2,7 +2,7 @@
 title: "6D object pose estimation based on YOLO6d"
 layout: post
 date: 2020-03-01 --:--
-tag: 6D pose
+tag: 6D object pose
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: false
 projects: true

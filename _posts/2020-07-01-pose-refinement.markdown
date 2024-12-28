@@ -2,7 +2,7 @@
 title: "A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation"
 layout: post
 date: 2020-07-01 --:--
-tag: 6D pose
+tag: 6D object pose
 image: https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png
 headerImage: false
 projects: true

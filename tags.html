@@ -2,7 +2,28 @@
 layout: page
 title: Tags
 ---
-<section class="list">
+<section class="list center-tags">
+    <style>
+        /* 仅对 .center-tags 的内容生效 */
+        .center-tags {
+            text-align: center; /* 标签整体居中 */
+        }
+
+        .center-tags .item {
+            display: inline-block; /* 标签水平排列 */
+            margin: 10px; /* 调整标签间距 */
+            padding: 5px 10px; /* 添加内边距 */
+            border: 1px solid #ddd; /* 可选，边框样式 */
+            border-radius: 5px; /* 可选，圆角效果 */
+            text-decoration: none; /* 移除链接的下划线 */
+            color: #333; /* 文字颜色 */
+        }
+
+        .center-tags .title {
+            text-align: center; /* 标题居中 */
+        }
+    </style>
+
     <h1 class="title">Tags</h1>
 
     {% assign tags_list = site.tags %}
@@ -16,15 +37,13 @@ title: Tags
             <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
         {% endfor %}
     {% endif %}
-
-    {% assign tags_list = nil %}
 </section>
 
 <hr>
 
 <section class="tag-list">
     {% for tag in site.tags  %}
-    <h2 class="title" id="{{ tag[0] | slugify }}">#{{ tag[0] }}</h2>
+    <h2 class="title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
 
     <ul class="list">
         {% assign pages_list = tag[1] %}
