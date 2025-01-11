@@ -9,24 +9,19 @@
     <meta name=author content="Yang Yang">
 
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation | Yang Yang</title>
+<title>Variational Autoencoder | Yang Yang</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation" />
-<meta name="author" content="yang yang" />
+<meta property="og:title" content="Variational Autoencoder" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a simple and minimalist template for Jekyll for those who likes to eat noodles." />
-<meta property="og:description" content="This is a simple and minimalist template for Jekyll for those who likes to eat noodles." />
-<link rel="canonical" href="http://localhost:4000/pose-refinement/" />
-<meta property="og:url" content="http://localhost:4000/pose-refinement/" />
+<link rel="canonical" href="http://localhost:4000/Variational-Autoencoder/" />
+<meta property="og:url" content="http://localhost:4000/Variational-Autoencoder/" />
 <meta property="og:site_name" content="Yang Yang" />
-<meta property="og:image" content="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-07-01T00:00:00+08:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" />
-<meta property="twitter:title" content="A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation" />
+<meta property="article:published_time" content="2022-12-18T22:25:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Variational Autoencoder" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yang yang"},"dateModified":"2020-07-01T00:00:00+08:00","datePublished":"2020-07-01T00:00:00+08:00","description":"This is a simple and minimalist template for Jekyll for those who likes to eat noodles.","headline":"A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation","image":"https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/pose-refinement/"},"url":"http://localhost:4000/pose-refinement/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-18T22:25:00+08:00","datePublished":"2022-12-18T22:25:00+08:00","headline":"Variational Autoencoder","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Variational-Autoencoder/"},"url":"http://localhost:4000/Variational-Autoencoder/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -52,7 +47,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/pose-refinement/">
+    <link rel="canonical" href="http://localhost:4000/Variational-Autoencoder/">
     <link rel="alternate" type="application/rss+xml" title="Yang Yang" href="http://localhost:4000/feed.xml" />
 
     <script src="https://kit.fontawesome.com/d9b09040a7.js" crossorigin="anonymous"></script>
@@ -501,124 +496,29 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 
 
-<h1 class="title">A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation</h1>
+<h1 class="title">Variational Autoencoder</h1>
 
 <!-- <span class="date">
-    <time datetime="01-07-2020">Wednesday. July 01, 2020</time>
+    <time datetime="18-12-2022">Sunday. December 18, 2022</time>
     
 </span> -->
 
 <!-- <span class="date">
-    <time datetime="07-2020">July, 2020</time>
+    <time datetime="12-2022">December, 2022</time>
     
 </span> -->
 
 
     <div class="post-tags">
         
-            <a class="item" href="http://localhost:4000/tags/#6d-object-pose">6D object pose</a>
+            <a class="item" href="http://localhost:4000/tags/#dl">DL</a>
         
     </div>
 
 
-<!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
+<p><img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets\Blog\VAE\2022-12-19-Variational_Autoencoder.png" alt="Variational Autoencoder" style="display: block; margin: auto; width: 90%;" /></p>
 
-Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. -->
-
-<h3 id="1-video-demo">1. Video Demo</h3>
-<iframe src="https://player.bilibili.com/player.html?aid=689871603&amp;bvid=BV1o24y1f7NQ&amp;cid=883264732&amp;page=1&amp;high_quality=1&amp;danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" high_quality="1"></iframe>
-
-<h4 id="-link-a-patch-based-real-time-6d-object-pose-refinement-method-for-robotic-manipulation">     Link: <a href="https://www.bilibili.com/video/BV1o24y1f7NQ/?share_source=copy_web&amp;vd_source=926e5fb00a879a3a9c35633c5af54c69">A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation</a></h4>
-
-<h4 id="the-above-video-shows-the-test-results-of-our-pose-refinement-method-in-the-test-environment-and-the-open-environment-where-the-initial-refined-and-ground-truth-3d-bounding-box-are-shown-in-orange-blue-and-green-respectively">  The above video shows the test results of our pose refinement method in the test environment and the open environment, where the initial, refined and Ground-Truth 3D Bounding Box are shown in orange, blue and green, respectively.</h4>
-<hr />
-<h3 id="2-image-demo">2. Image Demo</h3>
-
-<!-- <embed src="Figure_21.pdf"
- type="application/pdf"  width="800px" height="2400px">
-
-<iframe src="Figure_21.pdf"
- width="800px" height="2400px"></iframe>
-
-<object data="Figure_21.pdf"
- type="application/pdf" width="800px" height="2400px"></object> -->
-
-<p><img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/Figure_21.jpg" alt="Markdowm Image" /></p>
-<figcaption class="caption">Fig. 1. Pose refinement visualization on test data.</figcaption>
-
-<h4 id="the-fig1-shows-the-pose-refinement-visualization-of-our-method-where-the-refined-and-ground-truth-3d-bounding-box-are-shown-in-blue-and-green-respectively">  The Fig.1 shows the Pose refinement visualization of our method, where the refined and Ground-Truth 3D Bounding Box are shown in blue and green, respectively.</h4>
-
-<center>
-<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/111.png?raw=true" width="60%" height="60%" />
-</center>
-
-<!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/111.png?raw=true){: class="center-image" } -->
-<figcaption class="caption">Fig. 2. Robotic manipulation platform of Eye-in-Hand.</figcaption>
-
-<p><img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/Figure_12.jpg?raw=true" alt="Markdowm Image" /></p>
-<figcaption class="caption">Fig. 3. The pose estimation results visualization of Eye-in-Hand.</figcaption>
-
-<h4 id="as-shown-in-fig-3-we-fix-the-relative-pose-between-the-calibration-board-and-the-object-to-evaluate-the-pose-refinement-accuracy-under-various-camera-view-points">  As shown in Fig. 3, we fix the relative pose between the calibration board and the object to evaluate the pose refinement accuracy under various camera view-points.</h4>
-
-<hr />
-<!-- What has inside?
-
-- Gulp
-- BrowserSync
-- Stylus
-- SVG
-- No JS
-- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F) -->
-<h3 id="3-key-inside">3. Key-inside</h3>
-
-<ul>
-  <li>Siamese neural network</li>
-  <li>Image patch matching</li>
-  <li>PnP algorithm</li>
-  <li>Opencv</li>
-  <li>Pinhole camera model</li>
-  <li>Rigid Object 6D pose description</li>
-</ul>
-
-<hr />
-
-<h3 id="4-method">4. Method</h3>
-
-<p><img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/127.jpg?raw=true" alt="Markdowm Image" /></p>
-
-<hr />
-
-<h3 id="5-contrast">5. Contrast</h3>
-
-<center>
-<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/128.png?raw=true" width="100%" height="100%" />
-</center>
-
-<center>
-<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/129.png?raw=true" width="60%" height="60%" />
-</center>
-
-<h5 id="yolo6d-cvpr-2018-b-tekin-s-n-sinha-and-p-fua-real-time-seamless-single-shot-6d-object-pose-prediction-in-proceedings-of-the-ieee-conference-on-computer-vision-and-pattern-recognition-2018-pp-292301">YOLO6D (CVPR 2018): B. Tekin, S. N. Sinha, and P. Fua, “Real-time seamless single shot 6d object pose prediction,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp. 292–301</h5>
-
-<h5 id="cullnet-iccvw-2019-k-gupta-l-petersson-and-r-hartley-cullnet-calibrated-and-pose-aware-confidence-scores-for-object-pose-estimation-in-proceedings-of-the-ieeecvf-international-conference-on-computer-vision-workshops-2019-pp-00">CullNet (ICCVW 2019): K. Gupta, L. Petersson, and R. Hartley, “Cullnet: Calibrated and pose aware confidence scores for object pose estimation,” in Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops, 2019, pp. 0–0</h5>
-
-<h5 id="pvnet-cvpr-2019-s-peng-y-liu-q-huang-x-zhou-and-h-bao-pvnet-pixel-wise-voting-network-for-6dof-pose-estimation-in-proceedings-of-the-ieeecvf-conference-on-computer-vision-and-pattern-recognition-2019-pp-45614570">PVNet (CVPR 2019): S. Peng, Y. Liu, Q. Huang, X. Zhou, and H. Bao, “Pvnet: Pixel-wise voting network for 6dof pose estimation,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 4561–4570</h5>
-
-<hr />
-<!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
-If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->
-<h3 id="6-paper">6. Paper</h3>
-
-<ul>
-  <li>
-    <h4 id="a-patch-based-real-time-6d-object-pose-refinement-method-for-robotic-manipulation-password-yang"><a href="https://pan.baidu.com/s/1se1wJLHhyGKLw54SS35zAQ">A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation</a>, password: yang</h4>
-  </li>
-  <li>
-    <h4 id="code-come-soon">code come soon.</h4>
-  </li>
-</ul>
-
-<hr />
+<!-- <img src="..\assets\Blog\VAE\2022-12-19-Variational_Autoencoder.png" alt="Denoising Diffusion Implicit Models" style="display: block; margin: auto; width: 90%;"> -->
 
 
 

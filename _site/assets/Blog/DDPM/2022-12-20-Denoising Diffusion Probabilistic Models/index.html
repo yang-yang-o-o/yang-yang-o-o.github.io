@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=author content="Yang Yang">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Denoising Diffusion Implicit Models | Yang Yang</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="Denoising Diffusion Implicit Models" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/assets/Blog/DDPM/2022-12-20-Denoising%20Diffusion%20Probabilistic%20Models/" />
+<meta property="og:url" content="http://localhost:4000/assets/Blog/DDPM/2022-12-20-Denoising%20Diffusion%20Probabilistic%20Models/" />
+<meta property="og:site_name" content="Yang Yang" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-18T22:25:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Denoising Diffusion Implicit Models" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-18T22:25:00+08:00","datePublished":"2022-12-18T22:25:00+08:00","headline":"Denoising Diffusion Implicit Models","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/assets/Blog/DDPM/2022-12-20-Denoising%20Diffusion%20Probabilistic%20Models/"},"url":"http://localhost:4000/assets/Blog/DDPM/2022-12-20-Denoising%20Diffusion%20Probabilistic%20Models/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/images/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="http://localhost:4000/assets/images/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+
+    <link rel="canonical" href="http://localhost:4000/assets/Blog/DDPM/2022-12-20-Denoising%20Diffusion%20Probabilistic%20Models/">
+    <link rel="alternate" type="application/rss+xml" title="Yang Yang" href="http://localhost:4000/feed.xml" />
+
+    <script src="https://kit.fontawesome.com/d9b09040a7.js" crossorigin="anonymous"></script>
+
+    <style>
+    
+    
+
+    @charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
+html { line-height: 1.15; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers. */
+body { margin: 0; }
+
+/** Render the `main` element consistently in IE. */
+main { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** Remove the gray background on active links in IE 10. */
+a { background-color: transparent; }
+
+/** 1. Remove the bottom border in Chrome 57- 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Remove the border on images inside links in IE 10. */
+img { border-style: none; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers. 2. Remove the margin in Firefox and Safari. */
+button, input, optgroup, select, textarea { font-family: inherit; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+button, select { /* 1 */ text-transform: none; }
+
+/** Correct the inability to style clickable types in iOS and Safari. */
+button, [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; }
+
+/** Remove the inner border and padding in Firefox. */
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Correct the padding in Firefox. */
+fieldset { padding: 0.35em 0.75em 0.625em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+progress { vertical-align: baseline; }
+
+/** Remove the default vertical scrollbar in IE 10+. */
+textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10. 2. Remove the padding in IE 10. */
+[type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+[type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding in Chrome and Safari on macOS. */
+[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+details { display: block; }
+
+/* Add the correct display in all browsers. */
+summary { display: list-item; }
+
+/* Misc ========================================================================== */
+/** Add the correct display in IE 10+. */
+template { display: none; }
+
+/** Add the correct display in IE 10. */
+[hidden] { display: none; }
+
+.highlight .c { color: #999988; font-style: italic; }
+.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .k { font-weight: bold; }
+.highlight .o { font-weight: bold; }
+.highlight .cm { color: #999988; font-style: italic; }
+.highlight .cp { color: #999999; font-weight: bold; }
+.highlight .c1 { color: #999988; font-style: italic; }
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic; }
+.highlight .gd { color: #000000; background-color: #ffdddd; }
+.highlight .gd .x { color: #000000; background-color: #ffaaaa; }
+.highlight .ge { font-style: italic; }
+.highlight .gr { color: #aa0000; }
+.highlight .gh { color: #999999; }
+.highlight .gi { color: #000000; background-color: #ddffdd; }
+.highlight .gi .x { color: #000000; background-color: #aaffaa; }
+.highlight .go { color: #888888; }
+.highlight .gp { color: #555555; }
+.highlight .gs { font-weight: bold; }
+.highlight .gu { color: #800080; font-weight: bold; }
+.highlight .gt { color: #aa0000; }
+.highlight .kc { font-weight: bold; }
+.highlight .kd { font-weight: bold; }
+.highlight .kn { font-weight: bold; }
+.highlight .kp { font-weight: bold; }
+.highlight .kr { font-weight: bold; }
+.highlight .kt { color: #445588; font-weight: bold; }
+.highlight .m { color: #009999; }
+.highlight .s { color: #dd1144; }
+.highlight .n { color: #333333; }
+.highlight .na { color: teal; }
+.highlight .nb { color: #0086b3; }
+.highlight .nc { color: #445588; font-weight: bold; }
+.highlight .no { color: teal; }
+.highlight .ni { color: purple; }
+.highlight .ne { color: #990000; font-weight: bold; }
+.highlight .nf { color: #990000; font-weight: bold; }
+.highlight .nn { color: #555555; }
+.highlight .nt { color: navy; }
+.highlight .nv { color: teal; }
+.highlight .ow { font-weight: bold; }
+.highlight .w { color: #bbbbbb; }
+.highlight .mf { color: #009999; }
+.highlight .mh { color: #009999; }
+.highlight .mi { color: #009999; }
+.highlight .mo { color: #009999; }
+.highlight .sb { color: #dd1144; }
+.highlight .sc { color: #dd1144; }
+.highlight .sd { color: #dd1144; }
+.highlight .s2 { color: #dd1144; }
+.highlight .se { color: #dd1144; }
+.highlight .sh { color: #dd1144; }
+.highlight .si { color: #dd1144; }
+.highlight .sx { color: #dd1144; }
+.highlight .sr { color: #009926; }
+.highlight .s1 { color: #dd1144; }
+.highlight .ss { color: #990073; }
+.highlight .bp { color: #999999; }
+.highlight .vc { color: teal; }
+.highlight .vg { color: teal; }
+.highlight .vi { color: teal; }
+.highlight .il { color: #009999; }
+.highlight .gc { color: #999; background-color: #EAF2F5; }
+
+body, html { font-size: 62.5%; }
+
+body { font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif; color: #666; background: #fff; }
+
+h1, h2, h3, h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #222; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+h1 { font-size: 3rem; letter-spacing: -1px; color: #222; font-weight: 700; }
+
+h2 { font-size: 2.2rem; }
+
+h3 { font-size: 2rem; }
+
+h4 { font-size: 1.6rem; }
+
+a { color: #4b0082; text-decoration: underline; font-weight: 300; }
+
+p { line-height: 1.7; color: #666; font-weight: 300; margin-bottom: 20px; letter-spacing: 0.4px; }
+@media only screen and (max-width: 400px) { p { letter-spacing: 0.2px; } }
+
+strong { font-weight: 400; color: #000; }
+
+ul li, ol li { line-height: 2.4rem; font-weight: 300; color: #666; }
+
+img, pre, iframe { max-width: 100%; }
+
+img, pre { border-radius: 4px; }
+
+figcaption { position: relative; top: -20px; left: 0; right: 0; margin: 0 auto; width: 100%; text-align: center; font-size: 1.3rem; color: #aaa; font-weight: 300; }
+@media only screen and (max-width: 400px) { figcaption { font-size: 1.2rem; } }
+
+blockquote { padding-left: 15px; border-left: 3px solid #eee; }
+
+hr { border: none; height: 1px; margin: 40px auto; background: #eee; width: 100%; }
+
+figure.highlight { width: 100%; margin: 0; }
+
+code { padding: 2px 3px; font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace; font-size: 12px; vertical-align: middle; background: #eee; border-radius: 2px; }
+
+pre > code, tt { padding: 1px 0; font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace; font-size: 12px; line-height: 20px; background: #fff; border-radius: 2px; }
+
+pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10px; font-family: "Consolas", Liberation Mono, Menlo, Courier, monospace; font-size: 1.2rem; line-height: 2rem; overflow: auto; background: #fff; border: 1px solid #ededed; border-radius: 2px; }
+
+.wrapper-normal, .wrapper-large { height: 100%; width: 96%; margin: 0 auto; }
+@media only screen and (max-width: 400px) { .wrapper-normal, .wrapper-large { width: 88%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .wrapper-normal, .wrapper-large { width: 88%; } }
+
+.wrapper-normal { max-width: 560px; }
+
+.wrapper-large { max-width: 810px; }
+
+/* general helpers */
+.text-center { text-align: center; }
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+
+.clearfix:after { clear: both; }
+
+/* animations */
+.animated { animation: fade-in-down 0.6s; animation-delay: 0.3s; animation-fill-mode: both; }
+
+@keyframes fade-in-down { 0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); } }
+.home, .blog, .projects { margin-top: 125px; }
+.home > .list, .blog > .list, .projects > .list { border-top: 1px solid #ededed; margin-top: 30px; padding-top: 40px; position: relative; }
+.home > .list:before, .blog > .list:before, .projects > .list:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #fff; box-shadow: #fff 0 0 0 5px; border-radius: 3px; }
+
+.home > .list > .item, .blog > .list > .item, .projects > .list > .item { display: block; width: 95%; margin: 0 auto; }
+.home > .list > .item > .url, .blog > .list > .item > .url, .projects > .list > .item > .url { width: 100%; display: block; padding: 20px 0; text-decoration: none; }
+.home > .list > .item > .url > .title, .blog > .list > .item > .url > .title, .projects > .list > .item > .url > .title { margin: 0; width: 75%; font-weight: 500; transition: all ease-in-out 0.2s; }
+.home > .list > .item:hover > .url > .title, .blog > .list > .item:hover > .url > .title, .projects > .list > .item:hover > .url > .title { color: #4b0082; }
+.home > .list aside, .blog > .list aside, .projects > .list aside { position: relative; top: 2px; margin: 0; width: 25%; float: right; font-weight: 300; color: #aaa; text-align: right; transition: all ease-in-out 0.2s; }
+.home > .list .item:hover .url aside, .blog > .list .item:hover .url aside, .projects > .list .item:hover .url aside { color: #666; }
+
+.blog > .list > .item > .url > .title, .projects > .list > .item > .url > .title { display: inline; }
+.blog > .list > .item > .url > .emoji, .projects > .list > .item > .url > .emoji { display: inline; position: relative; top: -4px; margin-right: 10px; }
+
+.page { margin-top: 125px; }
+.page > h1 { text-align: center; margin-bottom: 6rem; }
+
+.about img { width: 50%; margin: 0 auto; display: block; }
+
+.post { margin-top: 125px; }
+.post > .title { text-align: center; margin-bottom: 3rem; }
+.post > .date, .post > .post-tags { color: #aaa; font-weight: 300; font-size: 1.4rem; text-transform: uppercase; text-align: center; display: block; margin-bottom: 6rem; letter-spacing: 1px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.post > .date { margin-bottom: 2rem; }
+.post > .post-tags > .item { padding: 2px 8px; border-radius: 3px; font-size: 1.1rem; background: #ededed; color: #666; letter-spacing: 1px; margin: 3px 1px; text-decoration: none; display: inline-block; }
+.post > h2, .post > h3, .post > h4 { margin-top: 40px; }
+.post > h2 a, .post > h3 a, .post > h4 a { text-decoration: none; }
+.post > .title-image { max-height: 120px; display: block; margin: 0 auto; }
+.post > .blog-navigation { font-size: 1.4rem; display: block; width: auto; overflow: hidden; }
+.post > .blog-navigation a { display: block; width: 50%; float: left; margin: 1em 0; }
+.post > .blog-navigation .next { text-align: right; }
+
+.tags { margin-top: 125px; }
+.tags > .list { border-top: 1px solid #ededed; margin-top: 30px; padding-top: 40px; position: relative; }
+.tags > .list:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #fff; box-shadow: #fff 0 0 0 5px; border-radius: 3px; }
+
+.tags > .list > .item { font-weight: 300; text-transform: uppercase; text-align: center; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; padding: 3px 9px; border-radius: 3px; font-size: 1.3rem; background: #ededed; color: #666; letter-spacing: 1px; margin: 0 0.5rem 1rem; text-decoration: none; display: inline-block; }
+
+.tag-list > .list { padding: 0; }
+.tag-list > .list > .item { display: block; width: 80%; margin: 0 10%; }
+.tag-list > .list > .item > .url { width: 100%; height: 100%; display: block; padding: 20px 0; text-decoration: none; }
+.tag-list > .list > .item > .url > .title { margin: 0; width: 75%; font-weight: 400; transition: all ease-in-out 0.2s; font-size: 1.6rem; }
+.tag-list > .list > .item:hover > .url > .title { color: #4b0082; }
+.tag-list > .list aside { position: relative; top: 2px; margin: 0; width: 25%; float: right; font-weight: 300; color: #aaa; text-align: right; transition: all ease-in-out 0.2s; font-size: 1.6rem; }
+.tag-list > .list .item:hover .url aside { color: #666; }
+
+.author { padding: 3rem 0; border-bottom: 1px solid #ededed; border-top: 1px solid #ededed; max-width: 100%; margin: 4rem auto 0; }
+.author > .toleft > .selfie { width: 90%; border-radius: 100%; }
+.author > .toright > .name, .author > .toright > .bio { width: 60%; display: inline-block; }
+.author > .toright > .name { font-size: 1.5rem; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 500; margin: 6px 0 0; }
+@media only screen and (max-width: 400px) { .author > .toright > .name { width: 100%; display: block; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toright > .name { width: 100%; display: block; } }
+.author > .toright > .bio { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300; color: #aaa; font-size: 1.3rem; text-align: justify; line-height: 1.5; margin: 0; }
+@media only screen and (max-width: 400px) { .author > .toright > .bio { width: 100%; display: block; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toright > .bio { width: 100%; display: block; } }
+.author > .toleft { width: 10%; display: inline-block; }
+@media only screen and (max-width: 400px) { .author > .toleft { width: 20%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toleft { width: 20%; } }
+.author > .toright { width: 89%; display: inline-block; vertical-align: top; }
+@media only screen and (max-width: 400px) { .author > .toright { width: 78%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .author > .toright { width: 78%; } }
+
+.no-disqus { border-bottom: none; padding-bottom: 0; }
+
+.disqus { margin: 0 auto; max-width: 100%; padding: 40px 0; }
+
+.footer-main { border-top: 1px solid #ededed; padding: 40px 0; margin: 40px 0 0; font-size: 1.3rem; color: #aaa; font-weight: 300; text-align: center; position: relative; }
+.footer-main:before { display: block; content: " "; width: 7px; height: 7px; border: #ededed 1px solid; position: absolute; top: -5px; left: 50%; margin-left: -5px; background: #fff; box-shadow: #fff 0 0 0 5px; border-radius: 3px; }
+.footer-main > .copyright { padding-left: 10px; }
+.footer-main > .link { display: inline; vertical-align: middle; }
+.footer-main > .link > .icon { width: 15px !important; fill: #aaa !important; transition: ease-in-out all 0.3s; position: relative; display: inherit; top: -2px; margin: 0; left: 2px; }
+.footer-main > .link > .icon:hover { fill: #4b0082 !important; }
+.footer-main > .extra { color: #aaa; margin-top: 0; font-weight: 300; }
+.footer-main > .extra > .link { color: #222; text-decoration: none; border-bottom: 1px solid transparent; transition: ease-in-out all 0.3s; padding-bottom: 1px; font-weight: 300; }
+.footer-main > .extra > .link:hover { border-color: #aaa; }
+
+.header-home { display: block; margin: 0 auto; text-align: center; position: relative; z-index: 99; }
+.header-home > .link > .selfie { width: 125px; height: 125px; margin-bottom: 25px; border-radius: 100%; transition: all 0.2s; opacity: 1; }
+.header-home > .link > .selfie:hover { box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.18), 0 0px 12px 0 rgba(0, 0, 0, 0.15); opacity: 0.8; }
+.header-home > .title { font-size: 4rem; margin: 0 0 13px; }
+.header-home > .description { font-size: 1.85rem; font-weight: 300; font-style: normal; color: #aaa; width: 80%; margin: 0 auto 30px; }
+.header-home > .description a { font-weight: 200; }
+
+.nav > .list, .nav-home > .list { list-style: none; margin: 0; padding: 0 13px 0; }
+.nav > .list > .item, .nav-home > .list > .item { display: inline-block; }
+.nav > .list > .item > .link, .nav-home > .list > .item > .link { display: inline-block; font-weight: 300; font-size: 1.4rem; padding: 20px 10px; text-decoration: none; }
+
+.nav { position: absolute; right: 0; top: 0; }
+.nav > .list { padding: 0 13px 0; }
+.nav > .list > .item > .link { font-size: 1.4rem; padding: 20px 10px; }
+
+.nav-home { margin-top: 40px; text-align: center; }
+.nav-home > .list { padding: 0; }
+.nav-home > .list > .item > .link { font-size: 2rem; padding: 7px 15px; margin: 0; border-radius: 4%; transition: all 0.4s ease-in-out; width: 100px; }
+.nav-home > .list > .item > .link:hover { color: #666; }
+
+.evidence { background-image: linear-gradient(to bottom, #27f36a26, #27f36a26); color: #222; }
+
+.star > .url > .title { width: auto !important; display: inline; background-image: linear-gradient(#27f36a26, #27f36a26); }
+
+.twitter-tweet { margin: 10px auto; }
+
+.icon { display: inline-block; width: 17px; height: 17px; fill: #000; text-align: center; color: #aaa; margin: 7px auto; }
+
+.caption { position: relative; top: 1rem; left: 0; right: 0; margin: 0 auto; width: 100%; text-align: center; font-size: 1.3rem; font-weight: 300; }
+
+.bigger-image { min-width: 130%; margin: 5rem 0 5rem -15%; }
+@media only screen and (max-width: 400px) { .bigger-image { min-width: 114%; margin: 2rem 0 2rem -7%; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .bigger-image { min-width: 114%; margin: 2rem 0 2rem -7%; } }
+
+.breaker { height: 1px; margin: 6rem auto; width: 100%; }
+.breaker:before { content: "• • •"; width: 100%; text-align: center; display: block; color: #aaa; letter-spacing: 4px; position: relative; top: -8px; }
+
+.lost-container { text-align: center; }
+
+.pagination { width: 95%; margin: 3rem auto 0; text-align: center; }
+.pagination > .page_number { display: inline-block; font-size: 1.3rem; }
+.pagination > .previous, .pagination > .next { display: inline-block; font-size: 1.8rem; position: relative; top: 1px; padding: 1px 9px; }
+.pagination > .hidden { visibility: hidden; }
+
+.related { margin: 10rem 0 0rem; }
+.related a { font-weight: 300; }
+
+.share { float: right; width: 40%; display: inline; text-align: right; position: relative; }
+@media only screen and (max-width: 400px) { .share { width: 100%; display: block; top: 0; text-align: left; float: none; margin-top: 5px; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .share { width: 100%; display: block; top: 0; text-align: left; float: none; margin-top: 5px; } }
+.share > .twitter, .share > .facebook, .share > .linkedin { display: inline; vertical-align: middle; font-size: 13px; font-weight: 700; color: #fff; padding: 6px 10px; border-radius: 3px; margin-left: 5px; text-decoration: none; }
+@media only screen and (max-width: 400px) { .share > .twitter, .share > .facebook, .share > .linkedin { margin: 0 5px 10px 0; } }
+@media only screen and (min-width: 400px) and (max-width: 1050px) { .share > .twitter, .share > .facebook, .share > .linkedin { margin: 0 5px 10px 0; } }
+.share > .twitter { background: #4fafed; }
+.share > .facebook { background: #4361b3; }
+.share > .linkedin { background: #0077b5; }
+.share svg { fill: #fff; position: relative; top: 0; margin: 0; margin-right: 4px; display: inherit; }
+
+@media only screen and (min-width: 780px) { .side-by-side { width: 130%; margin: 6rem 0 6rem -15%; } }
+@media only screen and (max-width: 780px) { .side-by-side { width: 100%; margin: 4rem 0; } }
+.side-by-side > .toleft, .side-by-side > .toright { display: inline-block; width: 47.5%; }
+@media only screen and (max-width: 780px) { .side-by-side > .toleft img, .side-by-side > .toright img { text-align: center; display: block; margin: 0 auto; } }
+@media only screen and (min-width: 780px) { .side-by-side > .toleft { margin-right: 2%; } }
+@media only screen and (max-width: 780px) { .side-by-side > .toleft { width: 100%; margin: 0 0 4rem 0; } }
+@media only screen and (min-width: 780px) { .side-by-side > .toright { margin-left: 2%; vertical-align: top; } }
+@media only screen and (max-width: 780px) { .side-by-side > .toright { width: 100%; margin: 0 0 4rem 0; } }
+.side-by-side > .toleft > p, .side-by-side > .toright > p { margin: 0 0 4rem 0; }
+@media only screen and (max-width: 780px) { .side-by-side > .toleft > p, .side-by-side > .toright > p { margin: 0; } }
+
+.social-links > .link { margin: 0; text-decoration: none; position: relative; display: inline-block; height: 35px; width: 35px; color: #000; }
+.social-links > .link:hover > svg { color: #4b0082; }
+.social-links > svg { transition: all ease-in-out 0.2s; }
+
+.spoiler { position: relative; }
+.spoiler:before { content: ""; background-color: #fafae0; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 50; }
+.spoiler:hover:before { display: none; }
+
+    </style>
+
+</head>
+<body>
+    <div class="wrapper-large">
+        
+            <div class="post">
+        
+
+            
+
+
+
+<nav class="nav">
+    <ul class="list">
+        
+            <li class="item">
+                <a class="link" href="http://localhost:4000/">Home</a>
+            </li>
+        
+
+        
+            
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/blog">Blog</a>
+                </li>
+            
+        
+
+        
+            
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/about">Publication</a>
+                </li>
+            
+        
+
+        
+            
+                <li class="item">
+                    <a class="link" href="http://localhost:4000/projects">Project</a>
+                </li>
+            
+        
+
+        
+    </ul>
+</nav>
+
+
+
+
+
+<h1 class="title">Denoising Diffusion Implicit Models</h1>
+
+<!-- <span class="date">
+    <time datetime="18-12-2022">Sunday. December 18, 2022</time>
+    
+</span> -->
+
+<!-- <span class="date">
+    <time datetime="12-2022">December, 2022</time>
+    
+</span> -->
+
+
+    <div class="post-tags">
+        
+    </div>
+
+
+<h2 id="ddpm-denoising-diffusion-implicit-models">DDPM (Denoising Diffusion Implicit Models)</h2>
+
+<p>目前所采用的扩散模型大都是来自于2020年的工作DDPM<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>，DDPM对之前的扩散模型DULNT<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>进行了简化，并通过变分推断（variational inference）来进行建模，这主要是因为扩散模型也是一个隐变量模型（latent variable model），相比VAE这样的隐变量模型，扩散模型的隐变量是和原始数据是同维度的，而且推理过程（即扩散过程）往往是固定的。</p>
+
+<p><img src="image-5.png" alt="CVAE (Conditional Variational Autoencoder)" style="display: block; margin: auto; width: 90%;" /></p>
+
+<p>具体而言，去噪扩散概率模型DDPM，结合了扩散过程和去噪自编码器的思想，包括两个过程：前向的扩散过程，逐步向数据添加噪声，直到数据变为纯噪声；反向过程，通过去噪从纯噪声逐步生成数据。两个过程都是一个参数化的马尔科夫链（Markov chain），其中反向过程可以用来生成数据，最终建模求解的就是反向过程。</p>
+
+<h3 id="前向扩散过程">前向扩散过程</h3>
+
+<p>扩散过程是指的对数据逐渐增加高斯噪音直至数据变成随机噪音的过程。对于原始数据 $\mathbf{x}_0∼q(\mathbf{x}_0)$ ，经过如下的 $T$ 步增加噪声的迭代，最终变成随机噪声 ${\mathbf{x}_T} \sim \mathcal{N}(0, I)$：</p>
+
+\[q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}\right)=\mathcal{N}\left(\mathbf{x}_t ; \sqrt{1-\beta_t} \mathbf{x}_{t-1}, \beta_t \mathbf{I}\right)\]
+
+<p>这里的 $\left{\beta_t\right}_{t=1}^T$ 为每一步所采用的方差，介于 $0~1$ 之间。对于扩散模型，我们往往称不同 step 的方差设定为 variance schedule 或者 noise schedule，通常情况下，越后面的 step 会采用更大的方差，即满足 $\beta_1&lt;\beta_2&lt;\cdots&lt;\beta_T$。在一个设计好的 variance schedule 下，如果扩散步数 $T$ 足够大，那么最终得到的 $\mathbf{x}_T$ 就完全丢失了原始数据而变成了一个随机噪音。 扩散过程的每一步都生成一个带噪音的数据 $\mathbf{x}_t$，整个扩散过程也就是一个马尔卡夫链：</p>
+
+\[q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)=\prod_{t=1}^T q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}\right)\]
+
+<p>由于扩散过程是预先固定的，即采用一个预先定义好的variance schedule，比如DDPM就采用一个线性的variance schedule。基于预定义的variance schedule，我们就可以直接基于原始数据 $\mathbf{x}_0$ 来对任意 $t$ 步的 $\mathbf{x}_t$ 进行采样：</p>
+
+\[\mathbf{x}_t \sim q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)\]
+
+<p>定义 $\alpha_t=1-\beta_t$ 和 $\bar{\alpha}<em>t=\prod</em>{i=1}^t \alpha_i$，通过和VAE类似的重参数技巧，有</p>
+
+\[\begin{aligned}
+\mathbf{x}_t &amp; =\sqrt{\alpha_t} \mathbf{x}_{t-1}+\sqrt{1-\alpha_t} \epsilon_{t-1} \\
+&amp; =\sqrt{\alpha_t}\left(\sqrt{\alpha_{t-1}} \mathbf{x}_{t-2}+\sqrt{1-\alpha_{t-1}} \epsilon_{t-2}\right)+\sqrt{1-\alpha_t} \epsilon_{t-1} \\
+&amp; =\sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2}+\sqrt{\sqrt{\alpha_t-\alpha_t \alpha_{t-1}}^2+\sqrt{1-\alpha_t}^2} \bar{\epsilon}_{t-2} \\
+&amp; =\sqrt{\alpha_t \alpha_{t-1}} \mathbf{x}_{t-2}+\sqrt{1-\alpha_t \alpha_{t-1}} \bar{\epsilon}_{t-2} \\
+&amp; =\cdots \\
+&amp; =\sqrt{\bar{\alpha}_t} \mathbf{x}_0+\sqrt{1-\bar{\alpha}_t} \epsilon
+\end{aligned}\]
+
+<p>其中，</p>
+
+<ul>
+  <li>$\epsilon_{t-1}, \epsilon_{t-2}, \cdots \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$</li>
+  <li>$\bar{\epsilon}<em>{t-2}$ 是两个高斯分布 $\epsilon</em>{t-1}$ 和 $\epsilon_{t-2}$ 的融合，因为两个方差不同的高斯分布 $\mathcal{N}\left(\mathbf{0}, \sigma_1^2 \mathbf{I}\right)$ 和 $\mathcal{N}\left(\mathbf{0}, \sigma_2^2 \mathbf{I}\right)$ 相加将得到一个新的高斯分布 $\mathcal{N}\left(\mathbf{0},\left(\sigma_1^2+\sigma_2^2\right) \mathbf{I}\right)$</li>
+</ul>
+
+<p>反重参数化后，可以得到</p>
+
+\[q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)=\mathcal{N}\left(\mathbf{x}_t ; \sqrt{\bar{\alpha}_t} \mathbf{x}_0,\left(1-\bar{\alpha}_t\right) \mathbf{I}\right)\]
+
+<p>可以看到，$\mathbf{x}_t$ 其实可以看成是原始数据 $\mathbf{x}_0$ 和随机噪声 $\epsilon$ 的线性组合，而 $\sqrt{\bar{\alpha}_t}$  和 $\sqrt{1-\bar{\alpha}_t}$ 为组合系数，它们的平方和等于1，我们也可以称两者分别为 signal_rate 和 noise_rate （见https://keras.io/examples/generative/ddim/#diffusion-schedule 和 <a href="https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2107.00630">Variational Diffusion Models</a>），更近一步地，我们可以基于 $\bar{\alpha}_t$ 而不是 $\beta_t$ 来定义 noise schedule，（见 <a href="https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2102.09672">Improved Denoising Diffusion Probabilistic Models</a> 所设计的 cosine schedule），因为这样处理更直接，比如我们直接将 $\bar{\alpha}_T$ 设定为一个接近0的值，那么就可以保证最终得到的 $\mathbf{x}_T$ 近似为一个随机噪音。</p>
+
+<h3 id="反向过程">反向过程</h3>
+
+<p>反向过程是一个逐渐去噪，然后生成数据的过程，当我们知道反向过程每一步的真实分布 $q\left(\mathbf{x}<em>{t-1} \mid \mathbf{x}_t\right)$，那么从一个随机噪声 $\mathbf{x}_T \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$ 开始，逐渐去噪就能生成一个真实的新样本。分布 $q\left(\mathbf{x}</em>{t-1} \mid \mathbf{x}_t\right)$ 需要用神经网络来估计，反向过程也可以定义为一个马尔科夫链：</p>
+
+\[p_\theta\left(\mathbf{x}_{0: T}\right)=p\left(\mathbf{x}_T\right) \prod_{t=1}^T p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right) \quad p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)=\mathcal{N}\left(\mathbf{x}_{t-1} ; \boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right), \mathbf{\Sigma}_\theta\left(\mathbf{x}_t, t\right)\right)\]
+
+<p>其中，</p>
+
+<ul>
+  <li>$p\left(\mathbf{x}_T\right)=\mathcal{N}\left(\mathbf{x}_T ; \mathbf{0}, \mathbf{I}\right)$</li>
+  <li>$p_\theta\left(\mathbf{x}<em>{t-1} \mid \mathbf{x}_t\right)$ 为参数化的高斯分布，它们的均值和方差由训练网络 $\boldsymbol{\mu}</em>\theta\left(\mathbf{x}<em>t, t\right)$ 和 $\mathbf{\Sigma}</em>\theta\left(\mathbf{x}_t, t\right)$ 给出，扩散模型的训练就是要得到这些参数化的高斯分布，它们构成了最终的生成模型。</li>
+</ul>
+
+<p>虽然分布 $q\left(\mathbf{x}<em>{t-1} \mid \mathbf{x}_t\right)$ 是不可被直接处理的，但是加上条件 $\mathbf{x}</em>{0}$ 后，它的后验分布 $q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t,\mathbf{x}_0\right)$ 却是可以处理的，</p>
+
+\[q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)=\mathcal{N}\left(\mathbf{x}_{t-1} ; \tilde{\mu}\left(\mathbf{x}_t, \mathbf{x}_0\right),\tilde{\beta}_{t}\mathbf{I}\right)\]
+
+<p>根据贝叶斯公式，有：</p>
+
+\[q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)=q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}, \mathbf{x}_0\right) \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_0\right)}{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}\]
+
+<p>由扩散过程的马尔科夫链特性，可得：$q\left(\mathbf{x}<em>t \mid \mathbf{x}</em>{t-1}, \mathbf{x}<em>0\right)=q\left(\mathbf{x}_t \mid \mathbf{x}</em>{t-1}\right)=\mathcal{N}\left(\mathbf{x}<em>t ; \sqrt{1-\beta_t} \mathbf{x}</em>{t-1}, \beta_t \mathbf{I}\right)$（这里的条件 $\mathbf{x}_0$ 是无关的），由前面的扩散特征可知：</p>
+
+\[q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_0\right)=\mathcal{N}\left(\mathbf{x}_{t-1} ; \sqrt{\bar{\alpha}_{t-1}} \mathbf{x}_0,\left(1-\bar{\alpha}_{t-1}\right) \mathbf{I}\right) \\
+q\left(\mathbf{x}_{t} \mid \mathbf{x}_0\right)=\mathcal{N}\left(\mathbf{x}_t ; \sqrt{\bar{\alpha}_t} \mathbf{x}_0,\left(1-\bar{\alpha}_t\right) \mathbf{I}\right)\]
+
+<p>所以，我们有：</p>
+
+\[\begin{aligned}
+q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)
+&amp; = q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}, \mathbf{x}_0\right) \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_0\right)}{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)} \\
+&amp; \propto \exp \left(-\frac{1}{2}\left(\frac{\left(\mathbf{x}_t-\sqrt{\alpha_t} \mathbf{x}_{t-1}\right)^2}{\beta_t}+\frac{\left(\mathbf{x}_{t-1}-\sqrt{\bar\alpha_{t-1}} \mathbf{x}_0\right)^2}{1-\bar{\alpha}_{t-1}}-\frac{\left(\mathbf{x}_t-\sqrt{\bar{\alpha}_t} \mathbf{x}_0\right)^2}{1-\bar{\alpha}_t}\right)\right) \\
+&amp; =\exp \left(-\frac{1}{2}\left(\frac{\mathbf{x}_t^2-2 \sqrt{\alpha_t} \mathbf{x}_t \mathbf{x}_{t-1}+\alpha_t \mathbf{x}_{t-1}^2}{\beta_t}+\frac{\mathbf{x}_{t-1}^2-2 \sqrt{\bar{\alpha}_{t-1}} \mathbf{x}_0 \mathbf{x}_{t-1}+\bar{\alpha}_{t-1} \mathbf{x}_0^2}{1-\bar{\alpha}_{t-1}}-\right.\right.\left.\left.\frac{\left(\mathbf{x}_t-\sqrt{\bar{\alpha}_t} \mathbf{x}_0\right)^2}{1-\bar{\alpha}_t}\right)\right) \\
+&amp; =\exp \left(-\frac{1}{2}\left(\left(\frac{\alpha_t}{\beta_t}+\frac{1}{1-\bar{\alpha}_{t-1}}\right) \mathbf{x}_{t-1}^2-\left(\frac{2 \sqrt{\alpha_t}}{\beta_t} \mathbf{x}_t+\frac{2 \sqrt{\bar{\alpha}_{t-1}}}{1-\bar{\alpha}_{t-1}} \mathbf{x}_0\right) \mathbf{x}_{t-1}+C\left(\mathbf{x}_t, \mathbf{x}_0\right)\right)\right)
+\end{aligned}\]
+
+<p>这里的 $C\left(\mathbf{x}<em>t, \mathbf{x}_0\right)$ 是一个和 $\mathbf{x}</em>{t-1}$ 无关的部分，可以省略，根据高斯分布的概率密度函数定义和上述结果（配平方），我们可以得到后验分布 $q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)$ 的均值和方差：</p>
+
+\[\tilde{\beta}_t=1 /\left(\frac{\alpha_t}{\beta_t}+\frac{1}{1-\bar{\alpha}_{t-1}}\right)=1 /\left(\frac{\alpha_t-\bar{\alpha}_t+\beta_t}{\beta_t\left(1-\bar{\alpha}_{t-1}\right)}\right)=\frac{1-\bar{\alpha}_{t-1}}{1-\bar{\alpha}_t} \cdot \beta_t\]
+
+\[\begin{aligned}
+\tilde{\boldsymbol{\mu}}_t\left(\mathbf{x}_t, \mathbf{x}_0\right) &amp; =\left(\frac{\sqrt{\alpha_t}}{\beta_t} \mathbf{x}_t+\frac{\sqrt{\bar{\alpha}_{t-1}}}{1-\bar{\alpha}_{t-1}} \mathbf{x}_0\right) /\left(\frac{\alpha_t}{\beta_t}+\frac{1}{1-\bar{\alpha}_{t-1}}\right) \\
+&amp; =\left(\frac{\sqrt{\alpha_t}}{\beta_t} \mathbf{x}_t+\frac{\sqrt{\bar{\alpha}_{t-1}}}{1-\bar{\alpha}_{t-1}} \mathbf{x}_0\right) \frac{1-\bar{\alpha}_{t-1}}{1-\bar{\alpha}_t} \cdot \beta_t \\
+&amp; =\frac{\sqrt{\alpha_t}\left(1-\bar{\alpha}_{t-1}\right)}{1-\bar{\alpha}_t} \mathbf{x}_t+\frac{\sqrt{\bar{\alpha}_{t-1}} \beta_t}{1-\bar{\alpha}_t} \mathbf{x}_0
+\end{aligned}\]
+
+<p>可以看到方差是一个定量（扩散过程参数固定），而均值是一个依赖 $\mathbf{x}_0$ 和 $\mathbf{x}_t$ 的函数。这个分布将会被用于推导扩散模型的优化目标。</p>
+
+<h3 id="优化目标">优化目标</h3>
+
+<p>由于扩散模型也是隐变量模型，我们可以基于变分推断来得到<a href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Evidence_lower_bound">variational lower bound</a>（VLB，又称ELBO）作为最大化优化目标，这里有：</p>
+
+\[\begin{aligned}
+\log p_\theta\left(\mathbf{x}_0\right) &amp; =\log \int p_\theta\left(\mathbf{x}_{0: T}\right) d \mathbf{x}_{1: T} \\
+&amp; =\log \int \frac{p_\theta\left(\mathbf{x}_{0: T}\right) q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)} d \mathbf{x}_{1: T} \\
+&amp; \geq \mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[\log \frac{p_\theta\left(\mathbf{x}_{0: T}\right)}{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\right]
+\end{aligned}\]
+
+<p>这里最后一步是利用了<a href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Jensen%2527s_inequality">Jensen’s inequality</a>（不采用这个不等式的推导见博客<a href="https://link.zhihu.com/?target=https%3A//lilianweng.github.io/posts/2021-07-11-diffusion-models/">What are Diffusion Models?</a>），对于网络训练来说，其训练目标为VLB取负：</p>
+
+\[L=-L_{\mathrm{VLB}}=\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[-\log \frac{p_\theta\left(\mathbf{x}_{0 ; T}\right)}{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\right]=\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[\log \frac{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{0: T}\right)}\right]\]
+
+<p>我们近一步对训练目标进行分解可得：</p>
+
+\[\begin{aligned}
+&amp; L=\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[\log \frac{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{0: T}\right)}\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_1, T \mid \mathbf{x}_0\right)}\left[\log \frac{\prod_{t=1}^T q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}\right)}{p_\theta\left(\mathbf{x}_T\right) \prod_{t=1}^T p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[-\log p_\theta\left(\mathbf{x}_T\right)+\sum_{t=1}^T \log \frac{q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[-\log p_\theta\left(\mathbf{x}_T\right)+\sum_{t=2}^T \log \frac{q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}+\log \frac{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)}\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[-\log p_\theta\left(\mathbf{x}_T\right)+\sum_{t=2}^T \log \frac{q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}+\log \frac{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)}\right] \quad ; use \; q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}, \mathbf{x}_0\right)=q\left(\mathbf{x}_t \mid \mathbf{x}_{t-1}\right) \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1 T} \mid \mathbf{x}_0\right)}\left[-\log p_\theta\left(\mathbf{x}_T\right)+\sum_{t=2}^T \log \left(\frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)} \cdot \frac{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_0\right)}\right)+\log \frac{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)}\right] \quad ;use \; Bayes' \; Rule \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[-\log p_\theta\left(\mathbf{x}_T\right)+\sum_{t=2}^T \log \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}+\sum_{t=2}^T \log \frac{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_0\right)}+\log \frac{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)}\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1, T} \mid \mathbf{x}_0\right)}\left[-\log p_\theta\left(\mathbf{x}_T\right)+\sum_{t=2}^T \log \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}+\log \frac{q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)}{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}+\log \frac{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)}\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_{1: T} \mid \mathbf{x}_0\right)}\left[\log \frac{q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_T\right)}+\sum_{t=2}^T \log \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}-\log p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)}\left[\log \frac{q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_T\right)}\right]+\red{\sum_{t=2}^T \mathbb{E}_{q\left(\mathbf{x}_t, \mathbf{x}_{t-1} \mid \mathbf{x}_0\right)}\left[\log \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}\right]}-\mathbb{E}_{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}\left[\log p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)\right] \\
+&amp; =\mathbb{E}_{q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)}\left[\log \frac{q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_T\right)}\right]+\red{\sum_{t=2}^T \mathbb{E}_{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}\left[q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right) \log \frac{q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)}{p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)}\right]}-\mathbb{E}_{q\left(\mathbf{x}_1 \mid \mathbf{x}_0\right)}\left[\log p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)\right] \\
+&amp; =\underbrace{D_{\mathrm{KL}}\left(q\left(\mathbf{x}_T \mid \mathbf{x}_0\right) \| p_\theta\left(\mathbf{x}_T\right)\right)}_{L_T}+\sum_{t=2}^T \underbrace{\mathbb{E}_{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}\left[D_{\mathrm{KL}}\left(q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right) \| p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)\right)\right]}_{L_{t-1}}-\underbrace{\mathbb{E}_{q\left(\mathbf{x}_{\mathbf{1}} \mid \mathbf{x}_0\right)} \log p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)}_{L_0}
+\end{aligned}\]
+
+<p>其中，红色部分的推导为：</p>
+
+\[\begin{aligned}
+&amp; \mathbb{E}_{q\left(x_t, x_{t-1} \mid x_0\right)} {\left[\log \frac{q\left(x_{t-1} \mid x_t, x_0\right)}{p_\theta\left(x_{t-1} \mid x_t\right)}\right]=\sum_{x_t} \sum_{x_{t-1}} q\left(x_t, x_{t-1} \mid x_0\right) \log \frac{q\left(x_{t-1} \mid x_t, x_0\right)}{p_\theta\left(x_{t-1} \mid x_t\right)} } \\
+&amp;= \sum_{x_t} \sum_{x_{t-1}} q\left(x_t \mid x_0\right) q\left(x_{t-1} \mid x_t, x_0\right) \log \frac{q\left(x_{t-1} \mid x_t, x_0\right)}{p_\theta\left(x_{t-1} \mid x_t\right)} \\
+&amp;= \sum_{x_t} q\left(x_t \mid x_0\right) \sum_{x_{t-1}} q\left(x_{t-1} \mid x_t, x_0\right) \log \frac{q\left(x_{t-1} \mid x_t, x_0\right)}{p_\theta\left(x_{t-1} \mid x_t\right)} \\
+&amp;= \mathbb{E}_{q\left(x_t \mid x_0\right)}\left[\sum_{x_{t-1}} q\left(x_{t-1} \mid x_t, x_0\right) \log \frac{q\left(x_{t-1} \mid x_t, x_0\right)}{p_\theta\left(x_{t-1} \mid x_t\right)}\right] \\
+&amp;=\mathbb{E}_{q\left(x_t \mid x_0\right)}\left[D_{K L}\left(q\left(x_{t-1} \mid x_t, x_0\right) \| p_\theta\left(x_{t-1} \mid x_t\right)\right)\right]
+\end{aligned}\]
+
+<p>可以看到最终的优化目标共包含 $T+1$ 项，其中 $L_0$ 可以看成是原始数据重建，优化的是负对数似然，$L_0$ 可以用估计的 $\mathcal{N}\left(\mathbf{x}<em>0 ; \boldsymbol{\mu}</em>\theta\left(\mathbf{x}<em>1, 1\right), \boldsymbol{\Sigma}</em>\theta\left(\mathbf{x}_1, 1\right)\right)$ 来构建一个离散化的decoder来计算（见DDPM论文3.3部分）：</p>
+
+\[\begin{aligned}
+&amp; p_\theta\left(\mathbf{x}_0 \mid \mathbf{x}_1\right)=\prod_{i=1}^D \int_{\delta_{-}\left(x_0^i\right)}^{\delta_{+}\left(x_0^i\right)} \mathcal{N}\left(x_0 ; \mu_\theta^i\left(x_1, 1\right), \Sigma_\theta^i\left(x_1, 1\right)\right) d x \\
+&amp; \delta_{+}(x)= \begin{cases}\infty &amp; \text { if } x=1 \\
+x+\frac{1}{255} &amp; \text { if } x&lt;1\end{cases} \\
+&amp; \delta_{+}(x)= \begin{cases}-\infty &amp; \text { if } x=-1 \\
+x-\frac{1}{255} &amp; \text { if } x&gt;-1\end{cases}
+\end{aligned}\]
+
+<p>在DDPM中，会将原始图像的像素值从[0, 255]范围归一化到[-1, 1]，像素值属于离散化值，这样不同的像素值之间的间隔其实就是2/255，我们可以计算高斯分布落在以ground truth为中心且范围大小为2/255时的概率积分即CDF，具体实现见https://github.com/hojonathanho/diffusion/blob/master/diffusion_tf/utils.py#L116-L133 （不过后面我们的简化版优化目标并不会计算这个对数似然）。</p>
+
+<p>而 $L_T$ 计算的是最后得到的噪音的分布和先验分布的KL散度，这个KL散度没有训练参数，近似为0，因为先验 $p\left(\mathbf{x}<em>T\right)=\mathcal{N}(\mathbf{0}, \mathbf{I})$ 而扩散过程最后得到的随机噪音 $q\left(\mathbf{x}_T \mid \mathbf{x}_0\right)$ 也近似为 $\mathcal{N}(\mathbf{0}, \mathbf{I})$；而 $L</em>{t-1}$ 则是计算的是估计分布 $p_\theta\left(\mathbf{x}<em>{t-1} \mid \mathbf{x}_t\right)$ 和真实后验分布 $q\left(\mathbf{x}</em>{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)$ 的KL散度，这里希望我们估计的去噪过程和依赖真实数据的去噪过程近似一致。</p>
+
+<p>之所以前面我们将 $p_\theta\left(\mathbf{x}<em>{t-1} \mid \mathbf{x}_t\right)$ 定义为一个用网络参数化的高斯分布 $\mathcal{N}\left(\mathbf{x}</em>{t-1} ; \boldsymbol{\mu}<em>\theta\left(\mathbf{x}_t, t\right), \boldsymbol{\Sigma}</em>\theta\left(\mathbf{x}<em>t, t\right)\right)$，是因为要匹配的后验分布 $q\left(\mathbf{x}</em>{t-1} \mid \mathbf{x}<em>t, \mathbf{x}_0\right)$ 也是一个高斯分布。对于训练目标 $L_0$ 和 $L</em>{t-1}$ 来说，都是希望得到训练好的网络 $\mu_\theta\left(\mathbf{x}<em>t, t\right)$ 和 $\boldsymbol{\Sigma}</em>\theta\left(\mathbf{x}<em>t, t\right)$ （对于 $L_0$，$t=1$）。DDPM对 $p</em>\theta\left(\mathbf{x}<em>{t-1} \mid \mathbf{x}_t\right)$ 做了近一步简化，采用固定的方差：$\boldsymbol{\Sigma}</em>\theta\left(\mathbf{x}_t, t\right)=\sigma_t^2 \mathbf{I}$，这里的 $\sigma_t^2$ 可以设定为 $\beta_t$ 或者 $\tilde{\beta}_t$（这其实是两个极端，分别是上限和下限，也可以采用可训练的方差，见论文<a href="https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2102.09672">Improved Denoising Diffusion Probabilistic Models</a> 和 <a href="https://link.zhihu.com/?target=https%3A//arxiv.org/abs/2201.06503">Analytic-DPM: an Analytic Estimate of the Optimal Reverse Variance in Diffusion Probabilistic Models</a>）。这里假定 $\sigma_t^2=\tilde{\beta}_t$，那么：</p>
+
+\[q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right)=\mathcal{N}\left(\mathbf{x}_{t-1} ; \tilde{\boldsymbol{\mu}}\left(\mathbf{x}_t, \mathbf{x}_0\right), \sigma_t^2 \mathbf{I}\right) p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)=\mathcal{N}\left(\mathbf{x}_{t-1} ; \boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right), \sigma_t^2 \mathbf{I}\right)\]
+
+<p>对于两个高斯分布的KL散度，其计算公式为：</p>
+
+\[\mathrm{KL}\left(p_1 \| p_2\right)=\frac{1}{2}\left(\operatorname{tr}\left(\boldsymbol{\Sigma}_2^{-1} \boldsymbol{\Sigma}_1\right)+\left(\boldsymbol{\mu}_{\mathbf{2}}-\boldsymbol{\mu}_1\right)^{\top} \boldsymbol{\Sigma}_2^{-1}\left(\boldsymbol{\mu}_{\mathbf{2}}-\boldsymbol{\mu}_1\right)-n+\log \frac{\operatorname{det}\left(\boldsymbol{\Sigma}_{\mathbf{2}}\right)}{\operatorname{det}\left(\boldsymbol{\Sigma}_{\mathbf{1}}\right)}\right)\]
+
+<p>那么就有：</p>
+
+\[\begin{aligned}
+D_{\mathrm{KL}}\left(q\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t, \mathbf{x}_0\right) \| p_\theta\left(\mathbf{x}_{t-1} \mid \mathbf{x}_t\right)\right) &amp; =D_{\mathrm{KL}}\left(\mathcal{N}\left(\mathbf{x}_{t-1} ; \tilde{\boldsymbol{\mu}}\left(\mathbf{x}_t, \mathbf{x}_0\right), \sigma_t^2 \mathbf{I}\right) \| \mathcal{N}\left(\mathbf{x}_{t-1} ; \boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right), \sigma_t^2 \mathbf{I}\right)\right) \\
+&amp; =\frac{1}{2}\left(n+\frac{1}{\sigma_t^2}\left\|\tilde{\boldsymbol{\mu}}_t\left(\mathbf{x}_t, \mathbf{x}_0\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right)\right\|^2-n+\log 1\right) \\
+&amp; =\frac{1}{2 \sigma_t^2}\left\|\tilde{\boldsymbol{\mu}}_t\left(\mathbf{x}_t, \mathbf{x}_0\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right)\right\|^2
+\end{aligned}\]
+
+<p>那么优化目标 $L_{t-1}$ 即为：</p>
+
+\[L_{t-1}=\mathbb{E}_{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}\left[\frac{1}{2 \sigma_t^2}\left\|\tilde{\boldsymbol{\mu}}_t\left(\mathbf{x}_t, \mathbf{x}_0\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right)\right\|^2\right]\]
+
+<p>从上述公式来看，我们是希望网络学习到的均值 $\boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right)$ 和后验分布的均值 $\tilde{\boldsymbol{\mu}}\left(\mathbf{x}_t, \mathbf{x}_0\right)$ 一致。不过DDPM发现预测均值并不是最好的选择。根据前面得到的扩散过程的特性，我们有：</p>
+
+\[\mathbf{x}_{\mathrm{t}}\left(\mathbf{x}_0, \epsilon\right)=\sqrt{\bar{\alpha}_t} \mathbf{x}_0+\sqrt{1-\bar{\alpha}_t} \epsilon \quad \text { where } \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})\]
+
+<p>将这个公式带入上述优化目标（注意这里的损失我们加上了对 $x_0$ 的数学期望），可以得到：</p>
+
+\[\begin{aligned}
+L_{t-1} &amp; =\mathbb{E}_{\mathbf{x}_0}\left(\mathbb{E}_{q\left(\mathbf{x}_t \mid \mathbf{x}_0\right)}\left[\frac{1}{2 \sigma_t^2}\left\|\tilde{\boldsymbol{\mu}}_t\left(\mathbf{x}_t, \mathbf{x}_0\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_t, t\right)\right\|^2\right]\right) \\
+&amp; =\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\frac{1}{2 \sigma_t^2}\left\|\tilde{\boldsymbol{\mu}}_t\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_0, \epsilon\right), \frac{1}{\sqrt{\bar{\alpha}_t}}\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_{\mathbf{0}}, \epsilon\right)-\sqrt{1-\bar{\alpha}_t} \epsilon\right)\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_0, \epsilon\right), t\right)\right\|^2\right] \\
+&amp; =\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\frac{1}{2 \sigma_t^2}\left\|\left(\frac{\sqrt{\alpha_t}\left(1-\bar{\alpha}_{t-1}\right)}{1-\bar{\alpha}_t} \mathbf{x}_t\left(\mathbf{x}_{\mathbf{0}}, \epsilon\right)+\frac{\sqrt{\bar{\alpha}_{t-1}} \beta_t}{1-\bar{\alpha}_t} \frac{1}{\sqrt{\bar{\alpha}_t}}\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_0, \epsilon\right)-\sqrt{1-\bar{\alpha}_t} \epsilon\right)\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_0, \epsilon\right), t\right)\right\|^2\right] \\
+&amp; =\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\frac{1}{2 \sigma_t^2}\left\|\frac{1}{\sqrt{\alpha_t}}\left(\mathbf{x}_t\left(\mathbf{x}_0, \epsilon\right)-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_0, \epsilon\right), t\right)\right\|^2\right]
+\end{aligned}\]
+
+<p>近一步地，我们对 $\boldsymbol{\mu}<em>\theta\left(\mathbf{x}</em>{\mathbf{t}}\left(\mathbf{x}_{\mathbf{0}}, \epsilon\right), t\right)$ 也进行重参数化，变成：</p>
+
+\[\boldsymbol{\mu}_\theta\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_0, \epsilon\right), t\right)=\frac{1}{\sqrt{\alpha_t}}\left(\mathbf{x}_t\left(\mathbf{x}_0, \epsilon\right)-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon_\theta\left(\mathbf{x}_t\left(\mathbf{x}_0, \epsilon\right), t\right)\right)\]
+
+<p>这里的 $\epsilon_\theta$ 是一个基于神经网络的拟合函数，这意味着我们由原来的预测均值而换成预测噪音 $\epsilon$。我们将上述等式带入优化目标，可以得到：</p>
+
+\[\begin{aligned}
+L_{t-1} &amp; =\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\frac{1}{2 \sigma_t^2}\left\|\frac{1}{\sqrt{\alpha_t}}\left(\mathbf{x}_t\left(\mathbf{x}_{\mathbf{0}}, \epsilon\right)-\frac{\beta_t}{\sqrt{1-\bar{\alpha}_t}} \epsilon\right)-\boldsymbol{\mu}_\theta\left(\mathbf{x}_{\mathbf{t}}\left(\mathbf{x}_{\mathbf{0}}, \epsilon\right), t\right)\right\|^2\right] \\
+&amp; =\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\frac{\beta_t^2}{2 \sigma_t^2 \alpha_t\left(1-\bar{\alpha}_t\right)}\left\|\epsilon-\epsilon_\theta\left(\mathbf{x}_t\left(\mathbf{x}_0, \epsilon\right), t\right)\right\|^2\right] \\
+&amp; =\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\frac{\beta_t^2}{2 \sigma_t^2 \alpha_t\left(1-\bar{\alpha}_t\right)}\left\|\epsilon-\epsilon_\theta\left(\sqrt{\bar{\alpha}_t} \mathbf{x}_0+\sqrt{1-\bar{\alpha}_t} \epsilon, t\right)\right\|^2\right]
+\end{aligned}\]
+
+<p>DDPM近一步对上述目标进行了简化，即去掉了权重系数，变成了：</p>
+
+\[L_{t-1}^{\text {simple }}=\mathbb{E}_{\mathbf{x}_0, \epsilon \sim \mathcal{N}(\mathbf{0}, \mathbf{I})}\left[\left\|\epsilon-\epsilon_\theta\left(\sqrt{\bar{\alpha}_t} \mathbf{x}_0+\sqrt{1-\bar{\alpha}_t} \epsilon, t\right)\right\|^2\right]\]
+
+<p>这里的 $t$ 在[1, T]范围内取值（如前所述，其中取1时对应 $L_0$）。由于去掉了不同 $t$ 的权重系数，所以这个简化的目标其实是VLB优化目标进行了reweight。从DDPM的对比实验结果来看，预测噪音比预测均值效果要好，采用简化版本的优化目标比VLB目标效果要好。</p>
+
+<p>虽然扩散模型背后的推导比较复杂，但是我们最终得到的优化目标非常简单，就是让网络预测的噪音和真实的噪音一致。DDPM的训练过程也非常简单，如下图所示：随机选择一个训练样本-&gt;从1-T随机抽样一个t-&gt;随机产生噪音-计算当前所产生的带噪音数据（红色框所示）-&gt;输入网络预测噪音-&gt;计算产生的噪音和预测的噪音的L2损失-&gt;计算梯度并更新网络。</p>
+
+<p><img src="image-6.png" alt="CVAE (Conditional Variational Autoencoder)" style="display: block; margin: auto; width: 90%;" /></p>
+
+<p>一旦训练完成，其采样过程也非常简单，如上所示：我们从一个随机噪音开始，并用训练好的网络预测噪音，然后计算条件分布的均值（红色框部分），然后用均值加标准差乘以一个随机噪音，直至 t=0 完成新样本的生成（最后一步不加噪音）。不过实际的代码实现和上述过程略有区别（见 https://github.com/hojonathanho/diffusion/issues/5 ） ：先基于预测的噪音生成 $\mathbf{x}_0$，并进行了clip处理（ 范围[-1, 1]，原始数据归一化到这个范围 ），然后再计算均值。我个人的理解这应该算是一种约束，既然模型预测的是噪音，那么我们也希望用预测噪音重构处理的原始数据也应该满足范围要求。</p>
+
+<h3 id="小结">小结</h3>
+
+<p>扩散和去噪过程都是马尔科夫链，其中扩散过程是预先固定的，而去噪过程是需要模型学习的，根据扩散过程可以反向的求去噪过程的一个参数化后验分布，通过变分推断近似后验分布，训练过程最大化变分下界，主要的损失项是去噪过程后验分布的KL散度，进一步可转化为对噪声模型的拟合。训练后可以得到一个噪声预测模型，预测从上一步到当前步所添加的噪声，得到了添加的噪声，相反的减去所添加的噪声即能逐步从随机噪声生成数据。知道了哪些是噪声，也就等于知道了哪些是非噪声，这些非噪声与数据本质特征相关。</p>
+
+<p>DDPM和VAE一样，具备生成能力的关键在于在最终的嵌入上引入了噪声，如果最终的嵌入是确定的，那么模型只具备还原能力，不具备生成能力。引入的噪声能让模型学习到整个数据的分布，而不只是还原某个特定样本。</p>
+
+<h3 id="reference">Reference</h3>
+
+<ul>
+  <li>https://zhuanlan.zhihu.com/p/563661713</li>
+  <li>https://chatgpt.com/c/e5825e80-d7ae-4795-9c44-7bd122746d1d</li>
+  <li>https://spaces.ac.cn/archives/9119</li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>https://arxiv.org/abs/2006.11239 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>https://arxiv.org/abs/1503.03585 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+
+
+
+
+<!--  -->
+
+<footer class="footer-main">
+    Yang Yang © 2025
+
+    <a class="link" href="http://localhost:4000/feed.xml" target="_blank">
+        <i class="fa-solid fa-rss"></i>
+    </a>
+
+    <!-- <p class="extra">
+        <a class="link" href="https://github.com/sergiokopplin/indigo">Indigo theme</a>
+        by
+        <a class="link" href="https://github.com/sergiokopplin/indigo">Kopplin</a>
+    </p> -->
+</footer>
+
+
+            </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
+

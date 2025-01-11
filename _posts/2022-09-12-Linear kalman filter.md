@@ -1,5 +1,5 @@
 ---
-title: "Kalman filter"
+title: "Linear Kalman filter"
 layout: post
 date: 2022-09-11 22:48
 # image: /assets/images/markdown.jpg
