@@ -9,19 +9,24 @@
     <meta name=author content="Yang Yang">
 
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Variational Autoencoder | Yang Yang</title>
+<title>A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation | Yang Yang</title>
 <meta name="generator" content="Jekyll v3.9.2" />
-<meta property="og:title" content="Variational Autoencoder" />
+<meta property="og:title" content="A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation" />
+<meta name="author" content="yang yang" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/assets/Blog/VAE/2022-12-19-Variational_Autoencoder/" />
-<meta property="og:url" content="http://localhost:4000/assets/Blog/VAE/2022-12-19-Variational_Autoencoder/" />
+<meta name="description" content="This is a simple and minimalist template for Jekyll for those who likes to eat noodles." />
+<meta property="og:description" content="This is a simple and minimalist template for Jekyll for those who likes to eat noodles." />
+<link rel="canonical" href="http://localhost:4000/assets/project/2020-07-01-pose-refinement/" />
+<meta property="og:url" content="http://localhost:4000/assets/project/2020-07-01-pose-refinement/" />
 <meta property="og:site_name" content="Yang Yang" />
+<meta property="og:image" content="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-12-18T22:25:00+08:00" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Variational Autoencoder" />
+<meta property="article:published_time" content="2020-07-01T00:00:00+08:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png" />
+<meta property="twitter:title" content="A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-18T22:25:00+08:00","datePublished":"2022-12-18T22:25:00+08:00","headline":"Variational Autoencoder","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/assets/Blog/VAE/2022-12-19-Variational_Autoencoder/"},"url":"http://localhost:4000/assets/Blog/VAE/2022-12-19-Variational_Autoencoder/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yang yang"},"dateModified":"2020-07-01T00:00:00+08:00","datePublished":"2020-07-01T00:00:00+08:00","description":"This is a simple and minimalist template for Jekyll for those who likes to eat noodles.","headline":"A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation","image":"https://sergiokopplin.github.io/indigo/assets/images/jekyll-logo-light-solid.png","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/assets/project/2020-07-01-pose-refinement/"},"url":"http://localhost:4000/assets/project/2020-07-01-pose-refinement/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -47,7 +52,7 @@
 <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 
-    <link rel="canonical" href="http://localhost:4000/assets/Blog/VAE/2022-12-19-Variational_Autoencoder/">
+    <link rel="canonical" href="http://localhost:4000/assets/project/2020-07-01-pose-refinement/">
     <link rel="alternate" type="application/rss+xml" title="Yang Yang" href="http://localhost:4000/feed.xml" />
 
     <script src="https://kit.fontawesome.com/d9b09040a7.js" crossorigin="anonymous"></script>
@@ -483,7 +488,7 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
         
             
                 <li class="item">
-                    <a class="link" href="http://localhost:4000/projects">Project</a>
+                    <a class="link" href="http://localhost:4000/opensource">Project</a>
                 </li>
             
         
@@ -496,15 +501,15 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 
 
 
-<h1 class="title">Variational Autoencoder</h1>
+<h1 class="title">A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation</h1>
 
 <!-- <span class="date">
-    <time datetime="18-12-2022">Sunday. December 18, 2022</time>
+    <time datetime="01-07-2020">Wednesday. July 01, 2020</time>
     
 </span> -->
 
 <!-- <span class="date">
-    <time datetime="12-2022">December, 2022</time>
+    <time datetime="07-2020">July, 2020</time>
     
 </span> -->
 
@@ -514,179 +519,104 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
     </div>
 
 
-<h3 id="ae-autoencoder">AE (Autoencoder)</h3>
-<p><img src="image.png" alt="AE (Autoencoder)" style="display: block; margin: auto; width: 60%;" /></p>
+<!-- ![Screenshot](https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png)
 
-<p>自编码的目的是：学习对高维数据做低维度“表示”。主要有两个部分组成：编码器和解码器</p>
+Example of project - Indigo Minimalist Jekyll Template - [Demo](https://sergiokopplin.github.io/indigo/). This is a simple and minimalist template for Jekyll for those who likes to eat noodles. -->
+
+<h3 id="1-video-demo">1. Video Demo</h3>
+<iframe src="https://player.bilibili.com/player.html?aid=689871603&amp;bvid=BV1o24y1f7NQ&amp;cid=883264732&amp;page=1&amp;high_quality=1&amp;danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" high_quality="1"></iframe>
+
+<h4 id="-link-a-patch-based-real-time-6d-object-pose-refinement-method-for-robotic-manipulation">     Link: <a href="https://www.bilibili.com/video/BV1o24y1f7NQ/?share_source=copy_web&amp;vd_source=926e5fb00a879a3a9c35633c5af54c69">A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation</a></h4>
+
+<h4 id="the-above-video-shows-the-test-results-of-our-pose-refinement-method-in-the-test-environment-and-the-open-environment-where-the-initial-refined-and-ground-truth-3d-bounding-box-are-shown-in-orange-blue-and-green-respectively">  The above video shows the test results of our pose refinement method in the test environment and the open environment, where the initial, refined and Ground-Truth 3D Bounding Box are shown in orange, blue and green, respectively.</h4>
+<hr />
+<h3 id="2-image-demo">2. Image Demo</h3>
+
+<!-- <embed src="Figure_21.pdf"
+ type="application/pdf"  width="800px" height="2400px">
+
+<iframe src="Figure_21.pdf"
+ width="800px" height="2400px"></iframe>
+
+<object data="Figure_21.pdf"
+ type="application/pdf" width="800px" height="2400px"></object> -->
+
+<p><img src="https://raw.githubusercontent.com/yang-yang-o-o/yang-yang-o-o.github.io/main/assets/images/Figure_21.jpg" alt="Markdowm Image" /></p>
+<figcaption class="caption">Fig. 1. Pose refinement visualization on test data.</figcaption>
+
+<h4 id="the-fig1-shows-the-pose-refinement-visualization-of-our-method-where-the-refined-and-ground-truth-3d-bounding-box-are-shown-in-blue-and-green-respectively">  The Fig.1 shows the Pose refinement visualization of our method, where the refined and Ground-Truth 3D Bounding Box are shown in blue and green, respectively.</h4>
+
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/111.png?raw=true" width="60%" height="60%" />
+</center>
+
+<!-- ![Markdowm Image](https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/111.png?raw=true){: class="center-image" } -->
+<figcaption class="caption">Fig. 2. Robotic manipulation platform of Eye-in-Hand.</figcaption>
+
+<p><img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/Figure_12.jpg?raw=true" alt="Markdowm Image" /></p>
+<figcaption class="caption">Fig. 3. The pose estimation results visualization of Eye-in-Hand.</figcaption>
+
+<h4 id="as-shown-in-fig-3-we-fix-the-relative-pose-between-the-calibration-board-and-the-object-to-evaluate-the-pose-refinement-accuracy-under-various-camera-view-points">  As shown in Fig. 3, we fix the relative pose between the calibration board and the object to evaluate the pose refinement accuracy under various camera view-points.</h4>
+
+<hr />
+<!-- What has inside?
+
+- Gulp
+- BrowserSync
+- Stylus
+- SVG
+- No JS
+- [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F) -->
+<h3 id="3-key-inside">3. Key-inside</h3>
 
 <ul>
-  <li>编码器训练得到函数 $\boldsymbol{f(·)}$</li>
-  <li>解码器训练得到函数 $\boldsymbol{g(·)}$</li>
+  <li>Siamese neural network</li>
+  <li>Image patch matching</li>
+  <li>PnP algorithm</li>
+  <li>Opencv</li>
+  <li>Pinhole camera model</li>
+  <li>Rigid Object 6D pose description</li>
 </ul>
 
-<p>那么对于输入 $\boldsymbol{x}$，Encoder 编码过程为</p>
+<hr />
 
-\[\boldsymbol{z = f(X)}\]
+<h3 id="4-method">4. Method</h3>
 
-<p>其中 $\boldsymbol{z}$ 为编码向量，Decoder 解码过程为</p>
+<p><img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/127.jpg?raw=true" alt="Markdowm Image" /></p>
 
-\[\boldsymbol{\hat{x} = g(z)}\]
+<hr />
 
-<p>训练loss为重建损失</p>
+<h3 id="5-contrast">5. Contrast</h3>
 
-\[\boldsymbol{loss：||x-\hat{x}||}^2\]
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/128.png?raw=true" width="100%" height="100%" />
+</center>
 
-<p>这种方式编码向量 $\boldsymbol{z}$ 和输入 $\boldsymbol{x}$ 是对应的，只有与 $\boldsymbol{x}$ 对应的 $\boldsymbol{z}$ 才能通过解码过程重构 $\boldsymbol{x}$，任意的 $\boldsymbol{z}$ 通过解码过程重构结果没有明显的意义。这种方式只有降维编码的能力，没有diversity的生成能力。</p>
+<center>
+<img src="https://github.com/yang-yang-o-o/yang-yang-o-o.github.io/blob/main/assets/images/129.png?raw=true" width="60%" height="60%" />
+</center>
 
-<h3 id="vae-variational-autoencoder">VAE (Variational Autoencoder)</h3>
+<h5 id="yolo6d-cvpr-2018-b-tekin-s-n-sinha-and-p-fua-real-time-seamless-single-shot-6d-object-pose-prediction-in-proceedings-of-the-ieee-conference-on-computer-vision-and-pattern-recognition-2018-pp-292301">YOLO6D (CVPR 2018): B. Tekin, S. N. Sinha, and P. Fua, “Real-time seamless single shot 6d object pose prediction,” in Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, 2018, pp. 292–301</h5>
 
-<p><img src="image-1.png" alt="VAE (Variational Autoencoder)" style="display: block; margin: auto; width: 90%;" /></p>
+<h5 id="cullnet-iccvw-2019-k-gupta-l-petersson-and-r-hartley-cullnet-calibrated-and-pose-aware-confidence-scores-for-object-pose-estimation-in-proceedings-of-the-ieeecvf-international-conference-on-computer-vision-workshops-2019-pp-00">CullNet (ICCVW 2019): K. Gupta, L. Petersson, and R. Hartley, “Cullnet: Calibrated and pose aware confidence scores for object pose estimation,” in Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops, 2019, pp. 0–0</h5>
 
-<p>变分自编码器在基本的自编码器的基础上引入了<strong>概率模型</strong>，编码器可将输入变量 $\boldsymbol{x}$ 映射到与变分分布的参数相对应的潜空间（Latent Space），这样便可以在这个潜空间中采样 $\boldsymbol{z}$ 来生成和 $\boldsymbol{x}$ 遵循同一分布的新样本 $\boldsymbol{\hat{x}}$。</p>
+<h5 id="pvnet-cvpr-2019-s-peng-y-liu-q-huang-x-zhou-and-h-bao-pvnet-pixel-wise-voting-network-for-6dof-pose-estimation-in-proceedings-of-the-ieeecvf-conference-on-computer-vision-and-pattern-recognition-2019-pp-45614570">PVNet (CVPR 2019): S. Peng, Y. Liu, Q. Huang, X. Zhou, and H. Bao, “Pvnet: Pixel-wise voting network for 6dof pose estimation,” in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2019, pp. 4561–4570</h5>
 
-<p>本质上是在自编码器的基础上引入了噪声 $\sigma$，迫使模型去关注、抽象和编码那些重要、显著的特征，而基于这些特征，就可以生成新的和输入数据 <strong>“和而不同”</strong> 的样本，而不是像自编码器一样完全拟合输入数据且无法生成新的样本。</p>
-
-<p>训练目标是从大量的观测数据 $\boldsymbol{x_i}$ 中总结出数据的分布 $\boldsymbol{p(x)}$，进而在这个分布中采样生成新的数据。然而分布 $\boldsymbol{p(x)}$ 不存在解析解，可以通过最大似然估计构建一个参数化的分布 $\boldsymbol{p_θ(x)}$ 来逼近分布 $\boldsymbol{p(x)}$，即 $\theta^*=\operatorname{argmin}<em>\theta\left(-\log \left(p</em>\theta(x)\right)\right)$。
-假设一个数据由隐变量 $z$ 生成</p>
-
-\[p_θ(x)=\int p_θ(x \mid z) p_θ(z) d z\]
-
-<p>其中：</p>
-
-<ul>
-  <li>$p_θ(z)$ 是隐变量的先验分布（通常设为标准正态分布 N(0,I)）。</li>
-  <li>$p_θ(x \mid z)$ 是生成模型。</li>
-</ul>
-
-<p>直接计算 $p_θ(x)$ 很困难，因为积分高维隐变量 $z$ 通常不可解析。由于 $z$ 是通过编码 $x$ 得到的，所以可以用 $p_θ(z \mid x)$ 来代替 $p_θ(z)$，由贝叶斯定理：</p>
-
-<p>\(\begin{aligned}
-p_\theta\left({z} \mid {x}\right) &amp; =\frac{p_\theta\left({x} \mid {z}\right) p({z})}{p_\theta\left({x}\right)} \\
-&amp; =\frac{p_\theta\left({x} \mid {z}\right) p({z})}{\int_{\hat} p_\theta\left({x} \mid \hat\right) p(\hat) {d} \hat}
-\end{aligned}\)
-但求解过程需要对 $z$ 进行大量采样，可以通过变分推断引入参数化分布 $q_θ(z \mid x)$ 来近似 $p_θ(z \mid x)$</p>
-
-\[\begin{aligned}
-\log p(x) &amp; =\mathbb{E}_{q(z \mid x)}[\log p(x)] \\
-&amp; =\mathbb{E}_{q(z \mid x)}\left[\log \frac{p(x, z)}{p(z \mid x)}\right]=\mathbb{E}_{q(z \mid x)}\left[\log \frac{\textcolor{red}{q(z \mid x)} p(x, z)}{p(z \mid x) \textcolor{red}{q(z \mid x)}}\right] \\
-&amp; =\mathbb{E}_{q(z \mid x)}[\log p(x, z)-\log q(z \mid x)]+\underbrace{D_{K L}(q(z \mid x) \| p(z \mid x))}_{\geq 0} \\
-&amp; \geq \mathbb{E}_{q(z \mid x)}[\log p(x, z)-\log q(z \mid x)] \\
-&amp; :=E L B O \\
-&amp; =\mathbb{E}_{q(z \mid x)}[\log p(z)+\log p(x \mid z)-\log q(z \mid x)] \\
-&amp; =\underbrace{\mathbb{E}_{q(z \mid x)}[\log p(x \mid z)]}_{\text {Reconstruct term } L_{\text {Rec }}}-\underbrace{D_{K L}(q(z \mid x) \| p(z))}_{\text {KL term } L_{K L}}
-\end{aligned}\]
-
-<p>其中，</p>
+<hr />
+<!-- [Check it out](https://sergiokopplin.github.io/indigo/) here.
+If you need some help, just [tell me](https://github.com/sergiokopplin/indigo/issues). -->
+<h3 id="6-paper">6. Paper</h3>
 
 <ul>
-  <li>联合概率: $p(x, z) = p(z \mid x)p(x) = p(x \mid z)p(z)$</li>
-  <li>离散概率分布的KL散度: $K L(p | q)=\sum p(x) \log \frac{p(x)}{q(x)}$</li>
-  <li>重构误差 $\mathbb{E}_{q(z \mid x)}[\log p(x \mid z)]$
-    <ul>
-      <li>衡量生成数据 $x$ 与真实数据的相似程度。</li>
-      <li>本质上是数据重建误差（通常使用对数似然表示）。</li>
-    </ul>
+  <li>
+    <h4 id="a-patch-based-real-time-6d-object-pose-refinement-method-for-robotic-manipulation-password-yang"><a href="https://pan.baidu.com/s/1se1wJLHhyGKLw54SS35zAQ">A Patch Based Real-Time 6D Object Pose Refinement Method for Robotic Manipulation</a>, password: yang</h4>
   </li>
-  <li>正则化项 $D_{K L}(q(z \mid x) | p(z))$
-    <ul>
-      <li>衡量近似后验 $q(z∣x)$ 与先验 $p(z)$ 的相似性。</li>
-      <li>迫使隐变量 $z$ 遵循先验分布。</li>
-    </ul>
+  <li>
+    <h4 id="code-come-soon">code come soon.</h4>
   </li>
 </ul>
 
-<p>变分自编码器通过变分推理近似后验分布，最大化变分下界来进行训练，使用重构误差和KL散度联合优化模型，最终的目标是最大化 ELBO ，等价于最小化以下损失函数：</p>
-
-\[\mathcal{L}=-\mathbb{E}_{q({z} \mid {x})}[\log p({x} \mid {z})]+\mathrm{KL}(q({z} \mid {x}) \| p({z}))\]
-
-<p>在实现中：</p>
-
-<ul>
-  <li>$q(z∣x)$ 通常通过神经网络参数化，设为高斯分布 $N(μ,diag(σ ^2))$。</li>
-  <li>重构误差根据具体任务计算，例如二值数据用交叉熵损失，多值数据用均方误差。</li>
-</ul>
-
-<p>为了解决采样 $z∼q(z∣x)$ 导致的梯度不可传播问题，使用重参数化技巧：</p>
-
-\[{z}={\mu}+{\sigma} \odot {\epsilon}, \quad {\epsilon} \sim \mathcal{N}(0, I)\]
-
-<p>这样就可以通过 $μ$ 和 $σ$ 对损失函数进行反向传播。</p>
-
-<h3 id="cvae-conditional-variational-autoencoder">CVAE (Conditional Variational Autoencoder)</h3>
-
-<p><img src="image-4.png" alt="CVAE (Conditional Variational Autoencoder)" style="display: block; margin: auto; width: 90%;" /></p>
-
-<p>变分自编码器学习到的是数据的分布，从分布中的采样是任意的、不受控制的。要控制生成的数据，需要增加额外的条件。</p>
-
-<p>条件变分自编码器在变分自编码器的基础上引入条件 $y$ 用于编码，同时也为采样过程提供先验分布信息，引入条件 $y$ 后，模型学习到一个条件分布 $p(x \mid y)$，从而能针对条件 $y$ 生成特定的数据 $x$。例如对于手写数字数据集 $D={(x_0,y_0),(x_1,y_1),(x_2,y_2),(x_3,y_3),…,(x_n,y_n)}$，其中 $x_i$ 是图片数据，$y_i$ 是对应的 0~9 数字标签，在知道条件分布概率模型 $p(x \mid y)$ 后，我们就可以根据给定的标签来生成对应数字的图片。</p>
-
-<p>目标函数是最大化 $\log p(x \mid y)$，即给定条件 $y$ 时 $x$ 的对数似然，通过学习一个潜在变量 z 的分布来实现条件概率分布的学习：</p>
-
-\[\log p(x \mid y)=\log \int p(x, z \mid y) d z\]
-
-<ul>
-  <li>$z∼p(z \mid x,y)$ 是编码的分布</li>
-  <li>解码器 $p(x \mid z,y)$ 用于生成数据</li>
-</ul>
-
-<p>同样的直接优化上述的积分是非常困难的，因此使用一个参数化的分布 $q(z \mid x,y)$ 来近似分布 $p(z \mid x,y)$，通过变分推断的证据下界(ELBO)来进行优化：</p>
-
-\[\begin{aligned}
-\log p(x \mid y) &amp; =\mathbb{E}_{q(z \mid x, y)}[\log p(x \mid y)] \\
-&amp; =\mathbb{E}_{q(z \mid x, y)}\left[\log \frac{p(x, z \mid y)}{p(z \mid x, y)}\right] \\
-&amp; =\mathbb{E}_{q(z \mid x, y)}\left[\log \frac{p(x, z \mid y)}{\textcolor{red}{q(z \mid x, y)}} \frac{\textcolor{red}{q(z \mid x, y)}}{p(z \mid x, y)}\right] \\
-&amp; =\mathbb{E}_{q(z \mid x, y)}[\log p(x, z \mid y)-\log q(z \mid x, y)]+\underbrace{D_{K L}(q(z \mid x, y) \| p(z \mid x, y))}_{\geq 0} \\
-&amp; \geq \mathbb{E}_{q(z \mid x, y)}[\log p(x, z \mid y)-\log q(z \mid x, y)] \\
-&amp; :=E L B O \\
-&amp; =\mathbb{E}_{q(z \mid x, y)}[\log p(z \mid y)+\log p(x \mid z, y)-\log q(z \mid x, y)] \\
-&amp; =\underbrace{\mathbb{E}_{q(z \mid x, y)}[\log p(x \mid z, y)]}_{\text {Reconstruct term } L_{\text {Rec }}}-\underbrace{D_{K L}(q(z \mid x, y) \| \textcolor{red}{p(z \mid y)})}_{\text {KL term } L_{K L}}
-\end{aligned}\]
-
-<p>其中，</p>
-
-<ul>
-  <li>联合概率分布和条件概率分布关系：$p(x, z \mid y)=p(x \mid z, y) p(z \mid y)=p(z \mid x, y) p(x \mid y)$</li>
-  <li>离散概率分布的KL散度: $K L(p | q)=\sum p(x) \log \frac{p(x)}{q(x)}$</li>
-  <li>ELBO包含两项：
-    <ul>
-      <li>重构损失：$\mathbb{E}_{q(z \mid x, y)}[\log p(x \mid z, y)]$，是解码器的对数似然，表示生成数据 $x$ 的能力</li>
-      <li>KL散度损失：$D_{K L}(q(z \mid x, y) | \textcolor{red}{p(z \mid y)})$，衡量近似后验 $q(z \mid x, y)$ 与先验 $p(z \mid y)$ 的差异。</li>
-    </ul>
-  </li>
-  <li>如果条件 $y$ 和隐变量 $z$ 是相互独立的，则先验概率 $\textcolor{red}{p(z \mid y)} = \textcolor{red}{p(z)}$，则先验概率便可以和VAE一样，假设为已知的高斯分布，此时：</li>
-</ul>
-
-\[\log p(x \mid y)=\underbrace{\mathbb{E}_{q(z \mid x, y)}[\log p(x \mid z, y)]}_{\text {Reconstruct term } L_{\text {Rec }}}-\underbrace{D_{K L}(q(z \mid x, y) \| \textcolor{red}{p(z)})}_{\text {KL term } L_{K L}}\]
-
-<p>最终损失函数为：</p>
-
-\[\mathcal{L}=-\mathbb{E}_{q(z \mid x, y)}[\log p(x \mid z, y)]+\operatorname{KL}(q(z \mid x, y) \| p(z \mid y))\]
-
-<p>其中，</p>
-<ul>
-  <li>第一项为重构损失：$-\mathbb{E}_{q(z \mid x, y)}[\log p(x \mid z, y)]$，这部分可以用采样的 $z$ 来近似计算，通常通过解码器输出的重构误差（如均方误差或交叉熵）衡量。</li>
-  <li>第二项为KL散度损失：$\operatorname{KL}(q(z \mid x, y) | p(z \mid y))$，当先验 $p(z \mid y)$ 是标准正态分布 $N(0,I)$，而 $q(z \mid x, y)$ 是高斯分布 $N(\mu,\sigma^2)$，KL散度有解析解：</li>
-</ul>
-
-\[\mathrm{KL}=-\frac{1}{2} \sum_{i=1}^d\left(1+\log \sigma_i^2-\mu_i^2-\sigma_i^2\right)\]
-
-<h3 id="reference">reference</h3>
-
-<ul>
-  <li>https://zhuanlan.zhihu.com/p/389386601</li>
-  <li>https://www.zywvvd.com/notes/study/deep-learning/generation/vae/cvae/cvae/</li>
-  <li>https://blog.csdn.net/qq_25602729/article/details/119980336</li>
-  <li>https://spaces.ac.cn/archives/5253</li>
-  <li>https://spaces.ac.cn/archives/5343</li>
-  <li>https://zh.wikipedia.org/wiki/%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86</li>
-  <li>https://blog.csdn.net/smileyan9/article/details/114986479</li>
-  <li>https://www.zhangzhenhu.com/aigc/%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8.html</li>
-  <li>https://www.jianshu.com/p/94d68a03c13e</li>
-  <li>https://www.zywvvd.com/notes/study/deep-learning/generation/vae/cvae/cvae/</li>
-  <li>https://zh.wikipedia.org/wiki/%E5%8F%98%E5%88%86%E8%87%AA%E7%BC%96%E7%A0%81%E5%99%A8</li>
-  <li>https://chatgpt.com/</li>
-  <li>https://papers.cool/arxiv/1312.6114</li>
-</ul>
+<hr />
 
 
 
