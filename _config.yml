@@ -36,7 +36,8 @@ permalink: /:title/
 # if you don't have any of social below, comment the line
 # facebook: myfacebook
 # twitter: mytwitter
-# reading: myreading
+reading: myreading
+# photo: myphoto
 # instagram: 61.4101792
 # linkedin: mylinkedin
 github: yang-yang-o-o

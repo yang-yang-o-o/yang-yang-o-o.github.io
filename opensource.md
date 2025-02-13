@@ -11,14 +11,31 @@ layout: page
     <ul style="margin: 0; padding-left: 20px;">
         <li>
             <h4 style="margin: 0;">
+                YOLO6D：RGB based 6D Object pose estimation.<br>
+                [<a id="repo-link" href="https://github.com/yang-yang-o-o/YOLO6D" target="_blank" style="color: blue; text-decoration: underline;">Opensource</a>]
+                <span id="star-count" style="font-size: 0.9em; color: gray;"></span><br>
+                <span style="display: block; text-align: right; color: red;">6D Object Pose Estimation</span>
+            </h4>
+            <!-- <p style="text-indent: 2em; font-style: italic; margin: 0;">
+                <strong>I led the design of the project, developing the entire algorithm framework, verifying its feasibility.</strong>
+            </p> -->
+        </li>
+    </ul>
+</div>
+
+
+<div style="line-height: 1.2; display: flex; flex-direction: column; gap: 16px;">
+    <ul style="margin: 0; padding-left: 20px;">
+        <li>
+            <h4 style="margin: 0;">
                 Multi-view edge optimization based 6D Object pose refinement and tracking.<br>
                 [<a id="repo-link" href="https://github.com/yang-yang-o-o/torchchat" target="_blank" style="color: blue; text-decoration: underline;">Opensource</a>]
                 <span id="star-count" style="font-size: 0.9em; color: gray;"></span><br>
-                <span style="display: block; text-align: right; color: red;">Object Pose Refinement &amp; Tracking</span>
+                <span style="display: block; text-align: right; color: red;">6D Object Pose Refinement &amp; Tracking</span>
             </h4>
-            <p style="text-indent: 2em; font-style: italic; margin: 0;">
+            <!-- <p style="text-indent: 2em; font-style: italic; margin: 0;">
                 <strong>I led the design of the project, developing the entire algorithm framework, verifying its feasibility.</strong>
-            </p>
+            </p> -->
         </li>
     </ul>
 </div>
