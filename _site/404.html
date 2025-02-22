@@ -374,10 +374,12 @@ pre { box-sizing: border-box; margin: 0 0 1.75em 0; width: 100%; padding: 5px 10
 .header-home > .description { font-size: 1.85rem; font-weight: 300; font-style: normal; color: #aaa; width: 80%; margin: 0 auto 30px; }
 .header-home > .description a { font-weight: 200; }
 
-.nav > .list, .nav-home > .list { list-style: none; margin: 0; padding: 0 13px 0; }
+.nav > .list, .nav-home > .list { list-style: none; margin: 0; padding: 0 13px 0; display: flex; flex-wrap: wrap; justify-content: center; }
 .nav > .list > .item, .nav-home > .list > .item { display: inline-block; }
 .nav > .list > .item > .link, .nav-home > .list > .item > .link { display: inline-block; font-weight: 300; font-size: 1.4rem; padding: 20px 10px; text-decoration: none; }
 
+@media (max-width: 768px) { .nav-home > .list { justify-content: space-around; flex-direction: column; align-items: center; }
+  .nav-home > .item > .link { font-size: 1.2rem; padding: 10px 15px; width: auto; } }
 .nav { position: absolute; right: 0; top: 0; }
 .nav > .list { padding: 0 13px 0; }
 .nav > .list > .item > .link { font-size: 1.4rem; padding: 20px 10px; }

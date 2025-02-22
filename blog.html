@@ -10,6 +10,44 @@ pagination:
     <h1 class="text-center">Blogs</h1>
 </section>
 
+<section class="blog-header">
+    <!-- <h1 class="text-center">Blogs</h1> -->
+    <style>
+        .blog-header {
+            text-align: center; /* 标签整体居中 */
+            display: flex;
+            flex-wrap: wrap; /* 使标签自动换行 */
+            justify-content: center; /* 标签水平居中 */
+            gap: 10px; /* 调整标签间距 */
+        }
+
+    	.blog-header ._tag {
+            display: inline-flex; /* 标签水平排列 */
+            padding: 5px 10px; /* 添加内边距 */
+            border: 1px solid #ddd; /* 可选，边框样式 */
+            border-radius: 5px; /* 可选，圆角效果 */
+            text-decoration: none; /* 移除链接的下划线 */
+            color: #333; /* 文字颜色 */
+            min-width: 60px; /* 最小宽度 */
+            justify-content: center; /* 内容居中对齐 */
+            align-items: center; /* 内容垂直居中 */
+            box-sizing: border-box; /* 让 padding 不影响宽度 */
+        }
+    </style>
+
+	{% assign tags_list = site.tags %}
+
+    {% if tags_list.first[0] == null %}
+        {% for tag in tags_list %}
+            <a class="_tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}
+    {% else %}
+        {% for tag in tags_list %}
+            <a class="_tag" href="/tags/#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        {% endfor %}
+    {% endif %}
+</section>
+
 <section class="list">
 	{% if site.posts.size == 0 %}
 		<p class="text-center">Nothing published yet!</p>
