@@ -1,0 +1,580 @@
+{% if page.title == "Home" %}
+<!-- 动态背景样式 -->
+<style>
+    /* 不修改 body 背景，保持原始主页的浅色背景 */
+    #dynamic-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        pointer-events: none;
+        background: transparent;
+    }
+    #dynamic-background canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+    }
+    .wrapper-normal,
+    .wrapper-large {
+        position: relative;
+        z-index: 10;
+    }
+    /* 确保主页内容在背景上可见 */
+    .home {
+        position: relative;
+        z-index: 10;
+    }
+    .header-home {
+        position: relative;
+        z-index: 99;
+    }
+    .nav-home {
+        position: relative;
+        z-index: 99;
+    }
+    /* 摄像头预览与调试层 - 适配浅色背景 */
+    .video-container {
+        position: fixed;
+        bottom: 20px; left: 20px;
+        width: 160px; height: 120px;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        z-index: 90;
+        display: none; 
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .input_video { width: 100%; height: 100%; object-fit: cover; }
+    .canvas_debug { position: absolute; top:0; left:0; width: 100%; height: 100%; }
+
+    /* UI 面板 (精简版) - 适配浅色背景 - 隐藏 */
+    #ui-container {
+        position: fixed;
+        top: 20px; right: 20px;
+        width: 200px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        padding: 15px;
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #333;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        display: none; /* 隐藏交互状态面板 */
+    }
+    #ui-container h2 { margin: 0 0 10px 0; font-size: 14px; color: #4b0082; text-align: center; letter-spacing: 2px; }
+    
+    /* 调试开关 */
+    .debug-row { margin-top: 5px; font-size: 12px; color: #666; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .status-row { margin-top:10px; font-size:12px; color:#666; text-align:center; line-height: 1.6;}
+    .status-row .highlight { color: #4b0082; font-weight: bold; }
+
+    /* 浮动文字 (星语) - 固定在屏幕底部居中，不随3D旋转 - 适配浅色背景 */
+    #message-container {
+        position: fixed; bottom: 40px; left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%; text-align: center;
+        pointer-events: none; z-index: 50;
+        opacity: 0; transition: opacity 1s ease, transform 1.5s ease;
+    }
+    #message-text {
+        font-family: 'Georgia', serif; font-size: 32px; color: #4b0082;
+        text-shadow: 0 2px 10px rgba(75, 0, 130, 0.3), 0 0 20px rgba(255, 255, 255, 0.8); 
+        letter-spacing: 2px; font-weight: 500;
+    }
+    #message-sub { font-size: 12px; color: #666; margin-top: 10px; letter-spacing: 4px; text-transform: uppercase; }
+
+    /* Loading - 适配浅色背景 - 顶部居中 */
+    #loading {
+        position: fixed; top: 40px; left: 50%; transform: translate(-50%, 0);
+        color: #4b0082; font-size: 18px; pointer-events: none; transition: opacity 0.5s;
+        text-align: center; z-index: 200;
+    }
+</style>
+
+<!-- 引入库 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+
+<!-- 动态背景容器 -->
+<div id="dynamic-background"></div>
+
+<div id="loading">
+    正在构建全息宇宙...<br>
+    <span style="font-size:12px; color:#888">请允许摄像头权限</span>
+</div>
+
+<div id="message-container">
+    <div id="message-text"></div>
+    <div id="message-sub">— 浩瀚星河 唯你是念 —</div>
+</div>
+
+<div id="ui-container">
+    <h2>交互状态</h2>
+    <div class="status-row">
+        手势: <span id="status-grip" class="highlight">未检测</span><br>
+        视角: <span id="status-view" class="highlight">居中</span>
+    </div>
+    <div class="debug-row">
+        <input type="checkbox" id="debug-toggle"> <label for="debug-toggle">显示调试窗</label>
+    </div>
+</div>
+
+<div class="video-container" id="video-debug-box">
+    <video class="input_video"></video>
+    <canvas class="canvas_debug" width="160" height="120"></canvas>
+</div>
+
+<script>
+// --- 1. 短语库 ---
+const phraseLibrary = [
+    "你本是宇宙的一粒星尘，偶然落入人间。", "愿你的生活常温暖，日子总是温柔又闪光。", 
+    "万物皆有裂痕，那是光照进来的地方。", "保持热爱，奔赴山海。", 
+    "星光不问赶路人，时光不负有心人。", "凡是过往，皆为序章。",
+    "生活原本沉闷，但跑起来就有风。", "温柔是宝藏，你也是。",
+    "满眼星辰，皆是你。", "愿你一生努力，一生被爱。", 
+    "把烦恼挂在月亮上，回家睡觉。", "好事总会发生在下个转弯。",
+    "做自己的光，不需要太亮，足以照亮自己就好。", "岁月漫长，值得等待。",
+    "心中有丘壑，眉目作山河。", "这世界很酷，你也是。", 
+    "愿你以渺小启程，以伟大结束。", "你来人间一趟，你要看看太阳。",
+    "所愿皆如愿，所行皆坦途。", "保持心脏震荡，有人等你共鸣。",
+    "你若盛开，清风自来。", "愿你被这个世界温柔以待。", 
+    "梦想是不会发光的，发光的是追梦的你。", "前路漫漫，亦有星光。",
+    "人生值得，未来可期。", "相信相信的力量。"
+]; 
+
+let phraseBag = [];
+function getUniquePhrase() {
+    if (phraseBag.length === 0) {
+        phraseBag = [...phraseLibrary];
+        for (let i = phraseBag.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [phraseBag[i], phraseBag[j]] = [phraseBag[j], phraseBag[i]];
+        }
+    }
+    return phraseBag.pop();
+}
+
+// --- 2. Three.js 场景构建 ---
+const scene = new THREE.Scene();
+// 移除雾效果，保持背景透明，不影响原始主页背景
+// scene.fog = new THREE.FogExp2(0x020205, 0.015);
+
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const initialCamZ = 35;
+camera.position.z = initialCamZ;
+camera.position.y = 2;
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.setClearColor(0x000000, 0); // 完全透明背景
+document.getElementById('dynamic-background').appendChild(renderer.domElement);
+
+// --- 检测背景色，实现自适应颜色 ---
+function detectBackgroundBrightness() {
+    const bodyStyle = window.getComputedStyle(document.body);
+    const bgColor = bodyStyle.backgroundColor;
+    // 解析 RGB 值
+    const rgbMatch = bgColor.match(/\d+/g);
+    if (rgbMatch && rgbMatch.length >= 3) {
+        const r = parseInt(rgbMatch[0]);
+        const g = parseInt(rgbMatch[1]);
+        const b = parseInt(rgbMatch[2]);
+        // 计算亮度 (0-255)
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        return brightness > 128; // 大于128认为是浅色背景
+    }
+    return true; // 默认浅色背景
+}
+
+let isLightBackground = detectBackgroundBrightness();
+
+// 监听主题变化（如果使用浏览器插件强制深色）
+const observer = new MutationObserver(() => {
+    setTimeout(() => {
+        const newIsLight = detectBackgroundBrightness();
+        if (newIsLight !== isLightBackground) {
+            isLightBackground = newIsLight;
+            updateSaturnColors();
+        }
+    }, 100);
+});
+observer.observe(document.body, { attributes: true, attributeFilter: ['style', 'class'] });
+observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style', 'class'] });
+
+// 监听媒体查询变化
+if (window.matchMedia) {
+    const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handler = (e) => {
+        isLightBackground = !e.matches;
+        updateSaturnColors();
+    };
+    darkModeQuery.addEventListener('change', handler);
+    // 初始化时也检查
+    isLightBackground = !darkModeQuery.matches;
+}
+
+// 粒子系统配置
+const particleCount = 18000;
+const geometry = new THREE.BufferGeometry();
+const positions = new Float32Array(particleCount * 3);
+const colors = new Float32Array(particleCount * 3);
+const sizes = new Float32Array(particleCount);
+
+const targets = {
+    positions: new Float32Array(particleCount * 3),
+    colors: new Float32Array(particleCount * 3),
+    sizes: new Float32Array(particleCount)
+};
+
+const universe = {
+    positions: new Float32Array(particleCount * 3),
+    colors: new Float32Array(particleCount * 3),
+    sizes: new Float32Array(particleCount)
+};
+
+// --- 初始化 全息宇宙 (散开) 状态 - 恢复原始颜色 ---
+for (let i = 0; i < particleCount; i++) {
+    const range = 250;
+    universe.positions[i*3] = (Math.random() - 0.5) * range;
+    universe.positions[i*3+1] = (Math.random() - 0.5) * range * 0.6;
+    universe.positions[i*3+2] = (Math.random() - 0.5) * range * 0.8;
+
+    const rnd = Math.random();
+    if (rnd > 0.85) {
+        // 金色粒子 (15%) - 较大
+        universe.colors[i*3] = 1.0;   // R
+        universe.colors[i*3+1] = 0.8; // G
+        universe.colors[i*3+2] = 0.1; // B
+        universe.sizes[i] = Math.random() * 2.5 + 1.5;
+    } else {
+        // 白色粒子 (85%) - 较小，发光
+        universe.colors[i*3] = 0.9 + Math.random()*0.1; 
+        universe.colors[i*3+1] = 0.9 + Math.random()*0.1;
+        universe.colors[i*3+2] = 1.0;
+        universe.sizes[i] = Math.random() * 0.8 + 0.2;
+    }
+}
+
+// --- Shader Material ---
+const material = new THREE.ShaderMaterial({
+    uniforms: {
+        pointTexture: { value: createTexture() },
+        opacity: { value: isLightBackground ? 0.4 : 0.3 } // 浅色背景透明度更高，深色背景稍低
+    },
+    vertexShader: `
+        attribute float size;
+        attribute vec3 customColor;
+        varying vec3 vColor;
+        void main() {
+            vColor = customColor;
+            vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+            gl_PointSize = size * (300.0 / -mvPosition.z);
+            gl_Position = projectionMatrix * mvPosition;
+        }
+    `,
+    fragmentShader: `
+        uniform sampler2D pointTexture;
+        uniform float opacity;
+        varying vec3 vColor;
+        void main() {
+            vec4 texColor = texture2D(pointTexture, gl_PointCoord);
+            gl_FragColor = vec4(vColor, opacity) * texColor;
+            // 稍微提高discard阈值，让光点更锐利
+            if (gl_FragColor.a < 0.1) discard;
+        }
+    `,
+    blending: isLightBackground ? THREE.NormalBlending : THREE.AdditiveBlending, // 浅色背景用正常混合，深色背景用叠加混合
+    depthTest: false,
+    transparent: true,
+    vertexColors: true
+});
+
+// 更新混合模式和透明度的函数
+function updateBlendingMode() {
+    material.blending = isLightBackground ? THREE.NormalBlending : THREE.AdditiveBlending;
+    material.uniforms.opacity.value = isLightBackground ? 0.4 : 0.3; // 浅色背景更透明，深色背景稍低
+    material.needsUpdate = true;
+}
+
+function createTexture() {
+    const c = document.createElement('canvas'); c.width=32; c.height=32;
+    const ctx = c.getContext('2d');
+    // 增强核心亮度，制造发光感 - 恢复原始白色纹理
+    const g = ctx.createRadialGradient(16,16,0,16,16,16);
+    g.addColorStop(0,'rgba(255,255,255,1)'); 
+    g.addColorStop(0.2,'rgba(255,255,255,0.8)'); 
+    g.addColorStop(0.5,'rgba(255,255,255,0.2)'); 
+    g.addColorStop(1,'rgba(0,0,0,0)');
+    ctx.fillStyle=g; ctx.fillRect(0,0,32,32);
+    const t = new THREE.Texture(c);
+    t.needsUpdate = true;
+    return t;
+}
+
+geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+geometry.setAttribute('customColor', new THREE.BufferAttribute(colors, 3));
+geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+const particles = new THREE.Points(geometry, material);
+scene.add(particles);
+
+// --- 3. 生成土星形状（自适应颜色） ---
+function getSaturnColors() {
+    if (isLightBackground) {
+        // 浅色背景：使用浅色（接近白色），保持一定距离，起到透明效果
+        return {
+            body: { r: 0.85, g: 0.8, b: 0.75 },   // 浅金黄色，接近白色但保持距离
+            ring: { r: 0.75, g: 0.75, b: 0.8 }     // 浅灰蓝色，接近白色但保持距离
+        };
+    } else {
+        // 深色背景：使用柔和的原始土星色，降低强度
+        return {
+            body: { r: 0.6, g: 0.5, b: 0.4 },      // 柔和的金黄色
+            ring: { r: 0.4, g: 0.4, b: 0.45 }       // 柔和的灰蓝色
+        };
+    }
+}
+
+function initSaturnShape() {
+    const tPos = targets.positions;
+    const tCol = targets.colors;
+    const tSize = targets.sizes;
+    const colors = getSaturnColors();
+
+    for (let i = 0; i < particleCount; i++) {
+        let x = 0, y = 0, z = 0, r = 1, g = 1, b = 1, s = 1;
+
+        if(Math.random()<0.6){
+            const theta=Math.random()*Math.PI*2; 
+            const phi=Math.acos(2*Math.random()-1); 
+            const R=9;
+            x=R*Math.sin(phi)*Math.cos(theta); 
+            y=R*Math.sin(phi)*Math.sin(theta); 
+            z=R*Math.cos(phi);
+            // 土星本体颜色 - 自适应
+            r=colors.body.r; g=colors.body.g; b=colors.body.b; s=1.0;
+        } else {
+            const ang=Math.random()*Math.PI*2; 
+            const R=14+Math.random()*8;
+            x=R*Math.cos(ang); 
+            z=R*Math.sin(ang); 
+            y=(Math.random()-0.5)*0.5;
+            const ty=y*Math.cos(0.4)-z*Math.sin(0.4); 
+            const tz=y*Math.sin(0.4)+z*Math.cos(0.4); 
+            y=ty; z=tz;
+            // 土星环颜色 - 自适应
+            r=colors.ring.r; g=colors.ring.g; b=colors.ring.b; s=0.6;
+        }
+
+        tPos[i*3]=x; tPos[i*3+1]=y; tPos[i*3+2]=z;
+        tCol[i*3]=r; tCol[i*3+1]=g; tCol[i*3+2]=b;
+        tSize[i]=s;
+    }
+}
+
+function updateSaturnColors() {
+    const tCol = targets.colors;
+    const colors = getSaturnColors();
+    
+    // 重新计算所有粒子的颜色（根据它们在土星中的位置）
+    for (let i = 0; i < particleCount; i++) {
+        // 根据目标位置判断是本体还是环
+        const tx = targets.positions[i*3];
+        const ty = targets.positions[i*3+1];
+        const tz = targets.positions[i*3+2];
+        const dist = Math.sqrt(tx*tx + ty*ty + tz*tz);
+        
+        if (dist < 12) {
+            // 土星本体（半径约9，加上一些容差）
+            tCol[i*3] = colors.body.r;
+            tCol[i*3+1] = colors.body.g;
+            tCol[i*3+2] = colors.body.b;
+        } else {
+            // 土星环
+            tCol[i*3] = colors.ring.r;
+            tCol[i*3+1] = colors.ring.g;
+            tCol[i*3+2] = colors.ring.b;
+        }
+    }
+    geometry.attributes.customColor.needsUpdate = true;
+    updateBlendingMode();
+}
+
+initSaturnShape();
+
+// --- 4. 动画与交互逻辑 ---
+let gripFactor = 1;
+let smoothedGrip = 1;
+let handX = 0.5;
+let smoothedHandX = 0.5;
+let cameraAngle = 0;
+
+let isMessageVisible = false;
+const msgContainer = document.getElementById('message-container');
+const msgText = document.getElementById('message-text');
+
+function animate() {
+    requestAnimationFrame(animate);
+    const time = Date.now() * 0.001;
+
+    smoothedGrip += (gripFactor - smoothedGrip) * 0.05;
+    smoothedHandX += (handX - smoothedHandX) * 0.05;
+
+    const targetAngle = (smoothedHandX - 0.5) * 1.5;
+    const effectiveAngle = targetAngle * (1 - smoothedGrip) * (1 - smoothedGrip); 
+    
+    const radius = initialCamZ;
+    camera.position.x = radius * Math.sin(effectiveAngle);
+    camera.position.z = radius * Math.cos(effectiveAngle);
+    camera.lookAt(0, 0, 0);
+
+    if (smoothedGrip < 0.3 && !isMessageVisible) {
+        isMessageVisible = true;
+        msgText.innerText = getUniquePhrase();
+        msgContainer.style.opacity = 1;
+        msgContainer.style.transform = "translate(-50%, 0) scale(1)";
+    } else if (smoothedGrip > 0.6 && isMessageVisible) {
+        isMessageVisible = false;
+        msgContainer.style.opacity = 0;
+        msgContainer.style.transform = "translate(-50%, 20px) scale(1.1)";
+    }
+
+    if (smoothedGrip > 0.5) {
+        particles.rotation.y += 0.002;
+    }
+
+    const posAttr = geometry.attributes.position;
+    const colAttr = geometry.attributes.customColor;
+    const sizeAttr = geometry.attributes.size;
+
+    for(let i=0; i<particleCount; i++){
+        const ix=i*3;
+        
+        const sx = universe.positions[ix] + Math.sin(time + i)*0.5;
+        const sy = universe.positions[ix+1] + Math.cos(time + i*0.8)*0.5;
+        const sz = universe.positions[ix+2] + Math.sin(time + i*0.2)*0.5;
+        
+        const tx = targets.positions[ix];
+        const ty = targets.positions[ix+1];
+        const tz = targets.positions[ix+2];
+
+        const t = smoothedGrip * smoothedGrip * (3 - 2 * smoothedGrip);
+
+        posAttr.array[ix] = sx + (tx - sx) * t;
+        posAttr.array[ix+1] = sy + (ty - sy) * t;
+        posAttr.array[ix+2] = sz + (tz - sz) * t;
+
+        colAttr.array[ix] = universe.colors[ix] + (targets.colors[ix] - universe.colors[ix])*t;
+        colAttr.array[ix+1] = universe.colors[ix+1] + (targets.colors[ix+1] - universe.colors[ix+1])*t;
+        colAttr.array[ix+2] = universe.colors[ix+2] + (targets.colors[ix+2] - universe.colors[ix+2])*t;
+
+        sizeAttr.array[i] = universe.sizes[i] + (targets.sizes[i] - universe.sizes[i])*t;
+    }
+
+    posAttr.needsUpdate = true;
+    colAttr.needsUpdate = true;
+    sizeAttr.needsUpdate = true;
+    renderer.render(scene, camera);
+}
+animate();
+
+// --- 5. MediaPipe Hands 设置 ---
+const videoElement = document.getElementsByClassName('input_video')[0];
+const canvasElement = document.getElementsByClassName('canvas_debug')[0];
+const canvasCtx = canvasElement.getContext('2d');
+const statusGrip = document.getElementById('status-grip');
+const statusView = document.getElementById('status-view');
+
+function onResults(results) {
+    document.getElementById('loading').style.opacity = 0;
+
+    if (document.getElementById('debug-toggle').checked) {
+        canvasCtx.save();
+        canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+        canvasCtx.drawImage(results.image, 0, 0, canvasElement.width, canvasElement.height);
+        if (results.multiHandLandmarks) {
+            for (const landmarks of results.multiHandLandmarks) {
+                drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS, {color: '#00FF00', lineWidth: 1});
+                drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 1, radius: 2});
+            }
+        }
+        canvasCtx.restore();
+    }
+
+    if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+        const lm = results.multiHandLandmarks[0];
+        const wrist = lm[0];
+        const tips = [8,12,16,20]; 
+        
+        let avgDist = 0;
+        tips.forEach(idx => {
+            const d = Math.sqrt(Math.pow(lm[idx].x - wrist.x, 2) + Math.pow(lm[idx].y - wrist.y, 2));
+            avgDist += d;
+        });
+        avgDist /= 4;
+
+        let val = (0.28 - avgDist) / 0.13;
+        val = Math.max(0, Math.min(1, val)); 
+        gripFactor = val;
+
+        if(val > 0.8) statusGrip.innerText = "握拳 (土星)";
+        else if(val < 0.2) statusGrip.innerText = "张开 (星海)";
+        else statusGrip.innerText = "变换中...";
+
+        handX = 1.0 - wrist.x;
+
+        if(handX < 0.4) statusView.innerText = "视角: 左侧";
+        else if(handX > 0.6) statusView.innerText = "视角: 右侧";
+        else statusView.innerText = "视角: 正中";
+
+    } else {
+        statusGrip.innerText = "未检测";
+        statusView.innerText = "-";
+        gripFactor = 1;
+        handX = 0.5;
+    }
+}
+
+const hands = new Hands({locateFile: (file) => {
+    return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
+}});
+
+hands.setOptions({
+    maxNumHands: 1,
+    modelComplexity: 1,
+    minDetectionConfidence: 0.5,
+    minTrackingConfidence: 0.5
+});
+
+hands.onResults(onResults);
+
+const cameraUtils = new Camera(videoElement, {
+    onFrame: async () => {
+        await hands.send({image: videoElement});
+    },
+    width: 320,
+    height: 240
+});
+
+cameraUtils.start();
+
+document.getElementById('debug-toggle').addEventListener('change', (e) => {
+    document.getElementById('video-debug-box').style.display = e.target.checked ? 'block' : 'none';
+});
+
+window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script>
+{% endif %}
+

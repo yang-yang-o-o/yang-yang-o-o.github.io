@@ -40,6 +40,10 @@ layout: compress
     {{ scss_sheet | scssify }}
     </style>
 
+    {% if page.title == "Home" %}
+        {% include dynamic-background.html %}
+    {% endif %}
+
 </head>
 <body>
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
