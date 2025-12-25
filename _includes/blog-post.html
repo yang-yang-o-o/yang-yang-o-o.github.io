@@ -8,9 +8,15 @@
 </nav>
 
 <div class="item {% if post.star %}star{% endif %}">
-    <a class="url" href="{{ site.url }}{{ post.url }}">
+    <a class="url" href="{% if post.external_url %}{{ post.external_url }}{% else %}{{ site.url }}{{ post.url }}{% endif %}"
+      {% if post.external_url %}target="_blank" rel="noopener noreferrer"{% endif %}>
         <!-- <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside> -->
-        <h3 class="title" style="margin: 0;">{{ post.title }}</h3>
+        <h3 class="title" style="margin: 0;">
+          {{ post.title }}
+          {% if post.external_url %}
+            <span style="font-size: 0.8em; opacity: 0.6;">↗</span>
+          {% endif %}
+        </h3>
         <!-- <div style="display: flex; justify-content: space-between; align-items: center;"> -->
           <!-- 标题左对齐 -->
           <!-- <h3 class="title" style="margin: 0;">
